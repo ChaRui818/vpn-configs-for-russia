@@ -1,6 +1,6 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Mobile-150-(1)
 # profile-update-interval: 1
-# Date/Time: 2026-07-30 / 15:47 (Moscow)
+# Date/Time: 2026-07-30 / 17:00 (Moscow)
 # Количество: 150
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
@@ -9,7 +9,7 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: 🇵🇱 Poland [*CIDR] YA
+- name: 🇮🇹 Italy [*CIDR] YA
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x32\x31"
   port: 443
@@ -17,13 +17,27 @@ proxies:
   udp: true
   encryption: none
   tls: true
-  servername: "\x63\x73\x31\x30\x32\x31\x30\x2e\x76\x6b\x2e\x63\x6f\x6d"
+  servername: "\x77\x77\x77\x2e\x65\x6e\x69\x2e\x63\x6f\x6d"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: jWVk2Z7eFkyDcu2xgzqX8JsPbZuCVhHUWD463Vfgazw
+    short-id: 7a5b89ecdb01f781
+  flow: xtls-rprx-vision
+- name: '🇮🇹 Italy [*CIDR] YA #2'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x32\x31"
+  port: 443
+  uuid: "\x61\x38\x66\x38\x34\x31\x37\x31\x2d\x35\x66\x39\x36\x2d\x34\x35\x34\x37\x2d\x62\x36\x32\x31\x2d\x35\x39\x37\x35\x38\x66\x65\x36\x36\x38\x63\x38"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x77\x77\x77\x2e\x65\x6e\x69\x2e\x63\x6f\x6d"
   client-fingerprint: chrome
   reality-opts:
     public-key: jWVk2Z7eFkyDcu2xgzqX8JsPbZuCVhHUWD463Vfgazw
     short-id: 7a5b89ecdb01f781
   flow: xtls-rprx-vision
-- name: '🇵🇱 Poland [*CIDR] YA #2'
+- name: '🇮🇹 Italy [*CIDR] YA #3'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x32\x31"
   port: 443
@@ -31,11 +45,39 @@ proxies:
   udp: true
   encryption: none
   tls: true
-  servername: "\x63\x73\x31\x30\x32\x31\x30\x2e\x76\x6b\x2e\x63\x6f\x6d"
-  client-fingerprint: firefox
+  servername: "\x77\x77\x77\x2e\x65\x6e\x69\x2e\x63\x6f\x6d"
+  client-fingerprint: safari
   reality-opts:
     public-key: jWVk2Z7eFkyDcu2xgzqX8JsPbZuCVhHUWD463Vfgazw
     short-id: 7a5b89ecdb01f781
+  flow: xtls-rprx-vision
+- name: 🇵🇱 Poland [*CIDR] YA
+  type: vless
+  server: "\x31\x35\x38\x2e\x31\x36\x30\x2e\x32\x30\x37\x2e\x34\x35"
+  port: 29446
+  uuid: "\x30\x64\x37\x64\x39\x35\x39\x66\x2d\x35\x34\x39\x38\x2d\x34\x35\x37\x65\x2d\x61\x65\x65\x37\x2d\x66\x64\x31\x36\x62\x31\x66\x33\x65\x37\x37\x64"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x77\x77\x77\x2e\x74\x77\x69\x74\x63\x68\x2e\x74\x76"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 3cCVMGigEU7wpQm3SkT7EeBuR7QT9_xgAyiC5trENFY
+    short-id: 1297b6f0f6dc88d0
+  flow: xtls-rprx-vision
+- name: '🇵🇱 Poland [*CIDR] YA #2'
+  type: vless
+  server: "\x31\x35\x38\x2e\x31\x36\x30\x2e\x32\x30\x37\x2e\x34\x35"
+  port: 29446
+  uuid: "\x30\x64\x37\x64\x39\x35\x39\x66\x2d\x35\x34\x39\x38\x2d\x34\x35\x37\x65\x2d\x61\x65\x65\x37\x2d\x66\x64\x31\x36\x62\x31\x66\x33\x65\x37\x37\x64"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x77\x77\x77\x2e\x74\x77\x69\x74\x63\x68\x2e\x74\x76"
+  client-fingerprint: edge
+  reality-opts:
+    public-key: 3cCVMGigEU7wpQm3SkT7EeBuR7QT9_xgAyiC5trENFY
+    short-id: 1297b6f0f6dc88d0
   flow: xtls-rprx-vision
 - name: '🇵🇱 Poland [*CIDR] YA #3'
   type: vless
@@ -46,21 +88,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x63\x73\x31\x30\x32\x31\x30\x2e\x76\x6b\x2e\x63\x6f\x6d"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: jWVk2Z7eFkyDcu2xgzqX8JsPbZuCVhHUWD463Vfgazw
-    short-id: 7a5b89ecdb01f781
-  flow: xtls-rprx-vision
-- name: '🇵🇱 Poland [*CIDR] YA #4'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x32\x31"
-  port: 443
-  uuid: "\x61\x38\x66\x38\x34\x31\x37\x31\x2d\x35\x66\x39\x36\x2d\x34\x35\x34\x37\x2d\x62\x36\x32\x31\x2d\x35\x39\x37\x35\x38\x66\x65\x36\x36\x38\x63\x38"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x63\x73\x31\x30\x32\x31\x30\x2e\x76\x6b\x2e\x63\x6f\x6d"
-  client-fingerprint: edge
+  client-fingerprint: firefox
   reality-opts:
     public-key: jWVk2Z7eFkyDcu2xgzqX8JsPbZuCVhHUWD463Vfgazw
     short-id: 7a5b89ecdb01f781
@@ -81,7 +109,7 @@ proxies:
   flow: xtls-rprx-vision
 - name: 🇳🇱 The Netherlands | 🌐 [*CIDR] YA
   type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x34\x33"
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x35\x39"
   port: 443
   uuid: "\x33\x35\x36\x39\x39\x63\x35\x34\x2d\x39\x31\x38\x38\x2d\x34\x66\x34\x33\x2d\x39\x37\x32\x65\x2d\x65\x38\x65\x34\x32\x64\x62\x62\x31\x30\x34\x65"
   udp: true
@@ -90,7 +118,7 @@ proxies:
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
   client-fingerprint: chrome
   reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #2'
   type: vless
@@ -101,7 +129,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: chrome
+  client-fingerprint: ios
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
@@ -114,11 +142,24 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
+  client-fingerprint: chrome
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #4'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x34\x33"
+  port: 443
+  uuid: "\x33\x35\x36\x39\x39\x63\x35\x34\x2d\x39\x31\x38\x38\x2d\x34\x66\x34\x33\x2d\x39\x37\x32\x65\x2d\x65\x38\x65\x34\x32\x64\x62\x62\x31\x30\x34\x65"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #5'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x35\x2e\x36\x35"
   port: 443
@@ -131,33 +172,7 @@ proxies:
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #5'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x31\x37"
-  port: 443
-  uuid: "\x33\x35\x36\x39\x39\x63\x35\x34\x2d\x39\x31\x38\x38\x2d\x34\x66\x34\x33\x2d\x39\x37\x32\x65\x2d\x65\x38\x65\x34\x32\x64\x62\x62\x31\x30\x34\x65"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
-  flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #6'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x31\x37"
-  port: 443
-  uuid: "\x33\x35\x36\x39\x39\x63\x35\x34\x2d\x39\x31\x38\x38\x2d\x34\x66\x34\x33\x2d\x39\x37\x32\x65\x2d\x65\x38\x65\x34\x32\x64\x62\x62\x31\x30\x34\x65"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #7'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x32\x39"
   port: 443
@@ -170,7 +185,7 @@ proxies:
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #8'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #7'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x32\x39"
   port: 443
@@ -179,9 +194,22 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: ios
+  client-fingerprint: chrome
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #8'
+  type: vless
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x38\x39"
+  port: 443
+  uuid: "\x33\x35\x36\x39\x39\x63\x35\x34\x2d\x39\x31\x38\x38\x2d\x34\x66\x34\x33\x2d\x39\x37\x32\x65\x2d\x65\x38\x65\x34\x32\x64\x62\x62\x31\x30\x34\x65"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #9'
   type: vless
@@ -198,19 +226,6 @@ proxies:
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #10'
   type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x38\x39"
-  port: 443
-  uuid: "\x33\x35\x36\x39\x39\x63\x35\x34\x2d\x39\x31\x38\x38\x2d\x34\x66\x34\x33\x2d\x39\x37\x32\x65\x2d\x65\x38\x65\x34\x32\x64\x62\x62\x31\x30\x34\x65"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #11'
-  type: vless
   server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
   port: 443
   uuid: "\x33\x35\x36\x39\x39\x63\x35\x34\x2d\x39\x31\x38\x38\x2d\x34\x66\x34\x33\x2d\x39\x37\x32\x65\x2d\x65\x38\x65\x34\x32\x64\x62\x62\x31\x30\x34\x65"
@@ -222,7 +237,7 @@ proxies:
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #12'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #11'
   type: vless
   server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
   port: 443
@@ -235,7 +250,7 @@ proxies:
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #13'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #12'
   type: vless
   server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x39"
   port: 443
@@ -248,7 +263,7 @@ proxies:
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #14'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #13'
   type: vless
   server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x39"
   port: 443
@@ -261,9 +276,22 @@ proxies:
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #15'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #14'
   type: vless
   server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x39"
+  port: 443
+  uuid: "\x33\x35\x36\x39\x39\x63\x35\x34\x2d\x39\x31\x38\x38\x2d\x34\x66\x34\x33\x2d\x39\x37\x32\x65\x2d\x65\x38\x65\x34\x32\x64\x62\x62\x31\x30\x34\x65"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #15'
+  type: vless
+  server: "\x72\x75\x64\x65\x64\x31\x2e\x6f\x6e\x6c\x69\x6e\x65\x73\x74\x72\x65\x61\x6d\x73\x65\x6c\x66\x2e\x63\x6f\x6d"
   port: 443
   uuid: "\x33\x35\x36\x39\x39\x63\x35\x34\x2d\x39\x31\x38\x38\x2d\x34\x66\x34\x33\x2d\x39\x37\x32\x65\x2d\x65\x38\x65\x34\x32\x64\x62\x62\x31\x30\x34\x65"
   udp: true
@@ -283,13 +311,26 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
+  client-fingerprint: chrome
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #17'
   type: vless
-  server: "\x72\x75\x64\x65\x64\x31\x2e\x6f\x6e\x6c\x69\x6e\x65\x73\x74\x72\x65\x61\x6d\x73\x65\x6c\x66\x2e\x63\x6f\x6d"
+  server: "\x72\x75\x64\x65\x64\x32\x2e\x6f\x6e\x6c\x69\x6e\x65\x73\x74\x72\x65\x61\x6d\x73\x65\x6c\x66\x2e\x63\x6f\x6d"
+  port: 443
+  uuid: "\x33\x35\x36\x39\x39\x63\x35\x34\x2d\x39\x31\x38\x38\x2d\x34\x66\x34\x33\x2d\x39\x37\x32\x65\x2d\x65\x38\x65\x34\x32\x64\x62\x62\x31\x30\x34\x65"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #18'
+  type: vless
+  server: "\x72\x75\x64\x65\x64\x33\x2e\x6f\x6e\x6c\x69\x6e\x65\x73\x74\x72\x65\x61\x6d\x73\x65\x6c\x66\x2e\x63\x6f\x6d"
   port: 443
   uuid: "\x33\x35\x36\x39\x39\x63\x35\x34\x2d\x39\x31\x38\x38\x2d\x34\x66\x34\x33\x2d\x39\x37\x32\x65\x2d\x65\x38\x65\x34\x32\x64\x62\x62\x31\x30\x34\x65"
   udp: true
@@ -298,9 +339,9 @@ proxies:
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
   client-fingerprint: chrome
   reality-opts:
-    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
+    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #18'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #19'
   type: vless
   server: "\x72\x75\x64\x65\x64\x33\x2e\x6f\x6e\x6c\x69\x6e\x65\x73\x74\x72\x65\x61\x6d\x73\x65\x6c\x66\x2e\x63\x6f\x6d"
   port: 443
@@ -313,19 +354,6 @@ proxies:
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #19'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x34\x33"
-  port: 443
-  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: ios
-  reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
-  flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #20'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x34\x33"
@@ -335,7 +363,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: safari
+  client-fingerprint: ios
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
@@ -348,7 +376,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: firefox
+  client-fingerprint: safari
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
@@ -361,11 +389,63 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
+  client-fingerprint: chrome
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #23'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x34\x33"
+  port: 443
+  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #24'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x34\x33"
+  port: 443
+  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #25'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x35\x39"
+  port: 443
+  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: ios
+  reality-opts:
+    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #26'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x35\x39"
+  port: 443
+  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #27'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x35\x39"
   port: 443
@@ -378,7 +458,20 @@ proxies:
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #24'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #28'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x34\x33"
+  port: 443
+  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #29'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x34\x33"
   port: 443
@@ -391,7 +484,7 @@ proxies:
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #25'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #30'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x34\x33"
   port: 443
@@ -404,74 +497,9 @@ proxies:
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #26'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x35\x2e\x36\x35"
-  port: 443
-  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #27'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x35\x2e\x36\x35"
-  port: 443
-  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #28'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x35\x2e\x36\x35"
-  port: 443
-  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #29'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x31\x37"
-  port: 443
-  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: ios
-  reality-opts:
-    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #30'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x31\x37"
-  port: 443
-  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
-  flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #31'
   type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x32\x39"
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x35\x2e\x36\x35"
   port: 443
   uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
   udp: true
@@ -484,20 +512,20 @@ proxies:
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #32'
   type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x32\x39"
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x35\x2e\x36\x35"
   port: 443
   uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
   udp: true
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: edge
+  client-fingerprint: safari
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #33'
   type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x32\x39"
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x35\x2e\x36\x35"
   port: 443
   uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
   udp: true
@@ -510,6 +538,45 @@ proxies:
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #34'
   type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x31\x37"
+  port: 443
+  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: ios
+  reality-opts:
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #35'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x31\x37"
+  port: 443
+  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #36'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x32\x39"
+  port: 443
+  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #37'
+  type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x32\x39"
   port: 443
   uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
@@ -521,7 +588,7 @@ proxies:
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #35'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #38'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x32\x39"
   port: 443
@@ -534,7 +601,20 @@ proxies:
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #36'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #39'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x32\x39"
+  port: 443
+  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #40'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x34\x31"
   port: 443
@@ -547,7 +627,7 @@ proxies:
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #37'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #41'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x34\x31"
   port: 443
@@ -560,20 +640,20 @@ proxies:
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #38'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #42'
   type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x34\x31"
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x38\x39"
   port: 443
   uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
   udp: true
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: safari
+  client-fingerprint: qq
   reality-opts:
-    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #39'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #43'
   type: vless
   server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x38\x39"
   port: 443
@@ -586,7 +666,7 @@ proxies:
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #40'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #44'
   type: vless
   server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x38\x39"
   port: 443
@@ -599,20 +679,7 @@ proxies:
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #41'
-  type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x38\x39"
-  port: 443
-  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #42'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #45'
   type: vless
   server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x38\x39"
   port: 443
@@ -626,7 +693,7 @@ proxies:
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #43'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #46'
   type: vless
   server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x39\x31"
   port: 443
@@ -639,45 +706,6 @@ proxies:
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #44'
-  type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x39\x31"
-  port: 443
-  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #45'
-  type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x39\x31"
-  port: 443
-  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #46'
-  type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x39\x31"
-  port: 443
-  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
-  flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #47'
   type: vless
   server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x39\x31"
@@ -687,7 +715,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
+  client-fingerprint: firefox
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
@@ -706,7 +734,20 @@ proxies:
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #49'
   type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x39\x31"
+  port: 443
+  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #50'
+  type: vless
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x39\x31"
   port: 443
   uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
   udp: true
@@ -715,9 +756,22 @@ proxies:
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
   client-fingerprint: qq
   reality-opts:
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #51'
+  type: vless
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
+  port: 443
+  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: chrome
+  reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #50'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #52'
   type: vless
   server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
   port: 443
@@ -730,7 +784,20 @@ proxies:
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #51'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #53'
+  type: vless
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
+  port: 443
+  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #54'
   type: vless
   server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
   port: 443
@@ -743,45 +810,6 @@ proxies:
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #52'
-  type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x39"
-  port: 443
-  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #53'
-  type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x39"
-  port: 443
-  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: edge
-  reality-opts:
-    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #54'
-  type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x39"
-  port: 443
-  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
-  flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #55'
   type: vless
   server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x39"
@@ -791,7 +819,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: firefox
+  client-fingerprint: qq
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
@@ -804,13 +832,27 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
+  client-fingerprint: edge
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #57'
   type: vless
-  server: "\x72\x75\x64\x65\x64\x31\x2e\x6f\x6e\x6c\x69\x6e\x65\x73\x74\x72\x65\x61\x6d\x73\x65\x6c\x66\x2e\x63\x6f\x6d"
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x39"
+  port: 443
+  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #58'
+  type: vless
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x39"
   port: 443
   uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
   udp: true
@@ -821,9 +863,22 @@ proxies:
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #58'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #59'
   type: vless
-  server: "\x72\x75\x64\x65\x64\x31\x2e\x6f\x6e\x6c\x69\x6e\x65\x73\x74\x72\x65\x61\x6d\x73\x65\x6c\x66\x2e\x63\x6f\x6d"
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x39"
+  port: 443
+  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #60'
+  type: vless
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x39"
   port: 443
   uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
   udp: true
@@ -834,7 +889,59 @@ proxies:
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #59'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #61'
+  type: vless
+  server: "\x72\x75\x64\x65\x64\x32\x2e\x6f\x6e\x6c\x69\x6e\x65\x73\x74\x72\x65\x61\x6d\x73\x65\x6c\x66\x2e\x63\x6f\x6d"
+  port: 443
+  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #62'
+  type: vless
+  server: "\x72\x75\x64\x65\x64\x32\x2e\x6f\x6e\x6c\x69\x6e\x65\x73\x74\x72\x65\x61\x6d\x73\x65\x6c\x66\x2e\x63\x6f\x6d"
+  port: 443
+  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #63'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x34\x33"
+  port: 443
+  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #64'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x34\x33"
+  port: 443
+  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #65'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x34\x33"
   port: 443
@@ -847,7 +954,7 @@ proxies:
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #60'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #66'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x35\x39"
   port: 443
@@ -860,7 +967,20 @@ proxies:
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #61'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #67'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x35\x39"
+  port: 443
+  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #68'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x35\x39"
   port: 443
@@ -873,100 +993,9 @@ proxies:
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #62'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x35\x2e\x36\x35"
-  port: 443
-  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #63'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x35\x2e\x36\x35"
-  port: 443
-  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #64'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x35\x2e\x36\x35"
-  port: 443
-  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #65'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x32\x39"
-  port: 443
-  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #66'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x32\x39"
-  port: 443
-  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #67'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x32\x39"
-  port: 443
-  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #68'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x32\x39"
-  port: 443
-  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
-  flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #69'
   type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x39\x31"
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x35\x2e\x36\x35"
   port: 443
   uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
   udp: true
@@ -979,6 +1008,84 @@ proxies:
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #70'
   type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x35\x2e\x36\x35"
+  port: 443
+  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #71'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x35\x2e\x36\x35"
+  port: 443
+  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #72'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x32\x39"
+  port: 443
+  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #73'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x32\x39"
+  port: 443
+  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #74'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x32\x39"
+  port: 443
+  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #75'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x32\x39"
+  port: 443
+  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #76'
+  type: vless
   server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x39\x31"
   port: 443
   uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
@@ -990,20 +1097,7 @@ proxies:
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #71'
-  type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x39\x31"
-  port: 443
-  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #72'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #77'
   type: vless
   server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x39\x31"
   port: 443
@@ -1016,33 +1110,7 @@ proxies:
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #73'
-  type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x39\x31"
-  port: 443
-  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #74'
-  type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x39\x31"
-  port: 443
-  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #75'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #78'
   type: vless
   server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
   port: 443
@@ -1055,45 +1123,6 @@ proxies:
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #76'
-  type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
-  port: 443
-  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: ios
-  reality-opts:
-    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #77'
-  type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
-  port: 443
-  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #78'
-  type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
-  port: 443
-  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
-  flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #79'
   type: vless
   server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
@@ -1103,7 +1132,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
+  client-fingerprint: ios
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
@@ -1122,6 +1151,58 @@ proxies:
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #81'
   type: vless
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
+  port: 443
+  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #82'
+  type: vless
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
+  port: 443
+  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #83'
+  type: vless
+  server: "\x72\x75\x64\x65\x64\x32\x2e\x6f\x6e\x6c\x69\x6e\x65\x73\x74\x72\x65\x61\x6d\x73\x65\x6c\x66\x2e\x63\x6f\x6d"
+  port: 443
+  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #84'
+  type: vless
+  server: "\x72\x75\x64\x65\x64\x33\x2e\x6f\x6e\x6c\x69\x6e\x65\x73\x74\x72\x65\x61\x6d\x73\x65\x6c\x66\x2e\x63\x6f\x6d"
+  port: 443
+  uuid: "\x64\x36\x64\x63\x31\x33\x35\x38\x2d\x31\x62\x62\x35\x2d\x34\x61\x39\x64\x2d\x39\x32\x66\x64\x2d\x33\x65\x32\x35\x35\x35\x36\x37\x65\x33\x66\x63"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #85'
+  type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x34\x33"
   port: 443
   uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
@@ -1132,58 +1213,6 @@ proxies:
   client-fingerprint: qq
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #82'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x34\x33"
-  port: 443
-  uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: edge
-  reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #83'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x34\x33"
-  port: 443
-  uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: ios
-  reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #84'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x35\x39"
-  port: 443
-  uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #85'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x35\x39"
-  port: 443
-  uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #86'
   type: vless
@@ -1194,11 +1223,24 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: safari
+  client-fingerprint: chrome
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #87'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x31\x35\x39"
+  port: 443
+  uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #88'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x34\x33"
   port: 443
@@ -1211,7 +1253,7 @@ proxies:
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #88'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #89'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x34\x33"
   port: 443
@@ -1224,7 +1266,33 @@ proxies:
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #89'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #90'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x34\x33"
+  port: 443
+  uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #91'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x34\x2e\x34\x33"
+  port: 443
+  uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #92'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x35\x2e\x36\x35"
   port: 443
@@ -1237,7 +1305,7 @@ proxies:
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #90'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #93'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x35\x2e\x36\x35"
   port: 443
@@ -1250,7 +1318,7 @@ proxies:
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #91'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #94'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x35\x2e\x36\x35"
   port: 443
@@ -1263,7 +1331,7 @@ proxies:
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #92'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #95'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x35\x2e\x36\x35"
   port: 443
@@ -1276,48 +1344,9 @@ proxies:
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #93'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x31\x37"
-  port: 443
-  uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #94'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x31\x37"
-  port: 443
-  uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #95'
-  type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x32\x39"
-  port: 443
-  uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
-  flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #96'
   type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x34\x31"
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x31\x37"
   port: 443
   uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
   udp: true
@@ -1326,11 +1355,37 @@ proxies:
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
   client-fingerprint: firefox
   reality-opts:
-    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #97'
   type: vless
-  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x34\x31"
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x31\x37"
+  port: 443
+  uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #98'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x31\x32\x39"
+  port: 443
+  uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+  flow: xtls-rprx-vision
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #99'
+  type: vless
+  server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x32\x39"
   port: 443
   uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
   udp: true
@@ -1341,7 +1396,7 @@ proxies:
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #98'
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #100'
   type: vless
   server: "\x39\x34\x2e\x31\x32\x36\x2e\x32\x30\x36\x2e\x34\x31"
   port: 443
@@ -1353,32 +1408,6 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #99'
-  type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x38\x39"
-  port: 443
-  uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
-  flow: xtls-rprx-vision
-- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #100'
-  type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x38\x39"
-  port: 443
-  uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #101'
   type: vless
@@ -1389,7 +1418,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
+  client-fingerprint: chrome
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
@@ -1402,7 +1431,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: safari
+  client-fingerprint: firefox
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
@@ -1428,35 +1457,35 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
+  client-fingerprint: safari
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #105'
   type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x39\x31"
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x38\x39"
   port: 443
   uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
   udp: true
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: firefox
+  client-fingerprint: qq
   reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #106'
   type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x39\x31"
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x38\x39"
   port: 443
   uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
   udp: true
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: ios
+  client-fingerprint: qq
   reality-opts:
-    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #107'
   type: vless
@@ -1467,7 +1496,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
+  client-fingerprint: firefox
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
@@ -1480,48 +1509,48 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: edge
+  client-fingerprint: ios
   reality-opts:
     public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #109'
   type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x39\x31"
   port: 443
   uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
   udp: true
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: chrome
+  client-fingerprint: qq
   reality-opts:
-    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #110'
   type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x39\x31"
   port: 443
   uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
   udp: true
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: firefox
+  client-fingerprint: edge
   reality-opts:
-    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #111'
   type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x31\x39\x31"
   port: 443
   uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
   udp: true
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: chrome
+  client-fingerprint: edge
   reality-opts:
-    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #112'
   type: vless
@@ -1532,7 +1561,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
+  client-fingerprint: chrome
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
@@ -1545,13 +1574,13 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   reality-opts:
     public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #114'
   type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x39"
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
   port: 443
   uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
   udp: true
@@ -1560,20 +1589,20 @@ proxies:
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
   client-fingerprint: chrome
   reality-opts:
-    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
+    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #115'
   type: vless
-  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x39"
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x32\x33"
   port: 443
   uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
   udp: true
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: firefox
+  client-fingerprint: qq
   reality-opts:
-    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
+    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #116'
   type: vless
@@ -1584,7 +1613,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
@@ -1597,7 +1626,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
+  client-fingerprint: firefox
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
@@ -1610,7 +1639,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: safari
+  client-fingerprint: firefox
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
@@ -1623,35 +1652,91 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: firefox
+  client-fingerprint: qq
   reality-opts:
     public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
 - name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #120'
   type: vless
-  server: "\x72\x75\x64\x65\x64\x33\x2e\x6f\x6e\x6c\x69\x6e\x65\x73\x74\x72\x65\x61\x6d\x73\x65\x6c\x66\x2e\x63\x6f\x6d"
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x39"
   port: 443
   uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
   udp: true
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: chrome
+  client-fingerprint: safari
   reality-opts:
-    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
   flow: xtls-rprx-vision
-- name: 🇳🇱 The Netherlands [*CIDR] YA
+- name: '🇳🇱 The Netherlands | 🌐 [*CIDR] YA #121'
   type: vless
-  server: "\x72\x75\x64\x65\x64\x33\x2e\x6f\x6e\x6c\x69\x6e\x65\x73\x74\x72\x65\x61\x6d\x73\x65\x6c\x66\x2e\x63\x6f\x6d"
+  server: "\x39\x34\x2e\x31\x33\x39\x2e\x32\x35\x31\x2e\x39"
   port: 443
-  uuid: "\x36\x34\x62\x36\x66\x39\x30\x35\x2d\x39\x34\x64\x35\x2d\x34\x37\x34\x35\x2d\x38\x66\x39\x32\x2d\x63\x61\x66\x61\x31\x30\x37\x62\x37\x63\x31\x36"
+  uuid: "\x65\x61\x64\x63\x61\x63\x66\x61\x2d\x65\x66\x31\x61\x2d\x34\x39\x30\x31\x2d\x61\x32\x38\x62\x2d\x38\x38\x31\x35\x66\x61\x31\x39\x36\x32\x61\x35"
   udp: true
   encryption: none
   tls: true
   servername: "\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
+  flow: xtls-rprx-vision
+- name: 🇺🇸 United States [*CIDR] YA
+  type: vless
+  server: "\x31\x35\x38\x2e\x31\x36\x30\x2e\x32\x30\x37\x2e\x34\x35"
+  port: 29445
+  uuid: "\x30\x64\x37\x64\x39\x35\x39\x66\x2d\x35\x34\x39\x38\x2d\x34\x35\x37\x65\x2d\x61\x65\x65\x37\x2d\x66\x64\x31\x36\x62\x31\x66\x33\x65\x37\x37\x64"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x77\x77\x77\x2e\x74\x77\x69\x74\x63\x68\x2e\x74\x76"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 3cCVMGigEU7wpQm3SkT7EeBuR7QT9_xgAyiC5trENFY
+    short-id: 1297b6f0f6dc88d0
+  flow: xtls-rprx-vision
+- name: '🇺🇸 United States [*CIDR] YA #2'
+  type: vless
+  server: "\x31\x35\x38\x2e\x31\x36\x30\x2e\x32\x30\x37\x2e\x34\x35"
+  port: 29445
+  uuid: "\x30\x64\x37\x64\x39\x35\x39\x66\x2d\x35\x34\x39\x38\x2d\x34\x35\x37\x65\x2d\x61\x65\x65\x37\x2d\x66\x64\x31\x36\x62\x31\x66\x33\x65\x37\x37\x64"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x77\x77\x77\x2e\x74\x77\x69\x74\x63\x68\x2e\x74\x76"
   client-fingerprint: safari
   reality-opts:
-    public-key: 6ycuxfrEPsqE9eXZ5_Osbnx4g6hXWmkc8pFuAJkJ4jY
+    public-key: 3cCVMGigEU7wpQm3SkT7EeBuR7QT9_xgAyiC5trENFY
+    short-id: 1297b6f0f6dc88d0
+  flow: xtls-rprx-vision
+- name: '🇺🇸 United States [*CIDR] YA #3'
+  type: vless
+  server: "\x31\x35\x38\x2e\x31\x36\x30\x2e\x32\x30\x37\x2e\x34\x35"
+  port: 29445
+  uuid: "\x30\x64\x37\x64\x39\x35\x39\x66\x2d\x35\x34\x39\x38\x2d\x34\x35\x37\x65\x2d\x61\x65\x65\x37\x2d\x66\x64\x31\x36\x62\x31\x66\x33\x65\x37\x37\x64"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x77\x77\x77\x2e\x74\x77\x69\x74\x63\x68\x2e\x74\x76"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 3cCVMGigEU7wpQm3SkT7EeBuR7QT9_xgAyiC5trENFY
+    short-id: 1297b6f0f6dc88d0
+  flow: xtls-rprx-vision
+- name: '🇺🇸 United States [*CIDR] YA #4'
+  type: vless
+  server: "\x31\x35\x38\x2e\x31\x36\x30\x2e\x32\x30\x37\x2e\x34\x35"
+  port: 29445
+  uuid: "\x30\x64\x37\x64\x39\x35\x39\x66\x2d\x35\x34\x39\x38\x2d\x34\x35\x37\x65\x2d\x61\x65\x65\x37\x2d\x66\x64\x31\x36\x62\x31\x66\x33\x65\x37\x37\x64"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x77\x77\x77\x2e\x74\x77\x69\x74\x63\x68\x2e\x74\x76"
+  client-fingerprint: edge
+  reality-opts:
+    public-key: 3cCVMGigEU7wpQm3SkT7EeBuR7QT9_xgAyiC5trENFY
+    short-id: 1297b6f0f6dc88d0
   flow: xtls-rprx-vision
 - name: 🇷🇺 Russia [*CIDR] VK
   type: vless
@@ -1662,7 +1747,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x70\x72\x6f\x2d\x72\x75\x2d\x32\x31\x33\x2e\x65\x6d\x72\x61\x74\x61\x2e\x74\x6f\x70"
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
   flow: xtls-rprx-vision
@@ -1675,24 +1760,11 @@ proxies:
   encryption: none
   tls: true
   servername: "\x70\x72\x6f\x2d\x72\x75\x2d\x32\x31\x33\x2e\x65\x6d\x72\x61\x74\x61\x2e\x74\x6f\x70"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-  flow: xtls-rprx-vision
-- name: '🇷🇺 Russia [*CIDR] VK #3'
-  type: vless
-  server: "\x32\x31\x33\x2e\x32\x31\x39\x2e\x32\x31\x32\x2e\x31\x34"
-  port: 443
-  uuid: "\x37\x37\x66\x64\x64\x65\x30\x66\x2d\x37\x63\x65\x37\x2d\x34\x36\x65\x65\x2d\x61\x33\x37\x39\x2d\x32\x62\x37\x63\x33\x37\x63\x65\x30\x38\x32\x32"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x70\x72\x6f\x2d\x72\x75\x2d\x32\x31\x33\x2e\x65\x6d\x72\x61\x74\x61\x2e\x74\x6f\x70"
   client-fingerprint: qq
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
   flow: xtls-rprx-vision
-- name: '🇷🇺 Russia [*CIDR] VK #4'
+- name: '🇷🇺 Russia [*CIDR] VK #3'
   type: vless
   server: "\x32\x31\x33\x2e\x32\x31\x39\x2e\x32\x31\x32\x2e\x32\x34"
   port: 443
@@ -1705,7 +1777,7 @@ proxies:
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
   flow: xtls-rprx-vision
-- name: '🇷🇺 Russia [*CIDR] VK #5'
+- name: '🇷🇺 Russia [*CIDR] VK #4'
   type: vless
   server: "\x32\x31\x33\x2e\x32\x31\x39\x2e\x32\x31\x32\x2e\x32\x34"
   port: 443
@@ -1718,7 +1790,7 @@ proxies:
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
   flow: xtls-rprx-vision
-- name: '🇷🇺 Russia [*CIDR] VK #6'
+- name: '🇷🇺 Russia [*CIDR] VK #5'
   type: vless
   server: "\x32\x31\x33\x2e\x32\x31\x39\x2e\x32\x31\x32\x2e\x33\x30"
   port: 443
@@ -1731,7 +1803,7 @@ proxies:
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
   flow: xtls-rprx-vision
-- name: '🇷🇺 Russia [*CIDR] VK #7'
+- name: '🇷🇺 Russia [*CIDR] VK #6'
   type: vless
   server: "\x32\x31\x33\x2e\x32\x31\x39\x2e\x32\x31\x32\x2e\x33\x30"
   port: 443
@@ -1744,11 +1816,24 @@ proxies:
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
   flow: xtls-rprx-vision
-- name: '🇷🇺 Russia [*CIDR] VK #8'
+- name: '🇷🇺 Russia [*CIDR] VK #7'
   type: vless
   server: "\x32\x31\x33\x2e\x32\x31\x39\x2e\x32\x31\x32\x2e\x33\x30"
   port: 443
   uuid: "\x37\x37\x66\x64\x64\x65\x30\x66\x2d\x37\x63\x65\x37\x2d\x34\x36\x65\x65\x2d\x61\x33\x37\x39\x2d\x32\x62\x37\x63\x33\x37\x63\x65\x30\x38\x32\x32"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x70\x72\x6f\x2d\x72\x75\x2d\x32\x31\x33\x2e\x65\x6d\x72\x61\x74\x61\x2e\x74\x6f\x70"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+  flow: xtls-rprx-vision
+- name: '🇷🇺 Russia [*CIDR] VK #8'
+  type: vless
+  server: "\x32\x31\x33\x2e\x32\x31\x39\x2e\x32\x31\x32\x2e\x31\x34"
+  port: 443
+  uuid: "\x39\x63\x63\x61\x35\x30\x34\x38\x2d\x39\x37\x36\x32\x2d\x34\x33\x65\x66\x2d\x39\x32\x64\x39\x2d\x33\x61\x62\x66\x63\x64\x33\x37\x66\x38\x32\x34"
   udp: true
   encryption: none
   tls: true
@@ -1766,20 +1851,20 @@ proxies:
   encryption: none
   tls: true
   servername: "\x70\x72\x6f\x2d\x72\x75\x2d\x32\x31\x33\x2e\x65\x6d\x72\x61\x74\x61\x2e\x74\x6f\x70"
-  client-fingerprint: firefox
+  client-fingerprint: safari
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
   flow: xtls-rprx-vision
 - name: '🇷🇺 Russia [*CIDR] VK #10'
   type: vless
-  server: "\x32\x31\x33\x2e\x32\x31\x39\x2e\x32\x31\x32\x2e\x31\x34"
+  server: "\x32\x31\x33\x2e\x32\x31\x39\x2e\x32\x31\x32\x2e\x32\x34"
   port: 443
   uuid: "\x39\x63\x63\x61\x35\x30\x34\x38\x2d\x39\x37\x36\x32\x2d\x34\x33\x65\x66\x2d\x39\x32\x64\x39\x2d\x33\x61\x62\x66\x63\x64\x33\x37\x66\x38\x32\x34"
   udp: true
   encryption: none
   tls: true
   servername: "\x70\x72\x6f\x2d\x72\x75\x2d\x32\x31\x33\x2e\x65\x6d\x72\x61\x74\x61\x2e\x74\x6f\x70"
-  client-fingerprint: safari
+  client-fingerprint: chrome
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
   flow: xtls-rprx-vision
@@ -1792,7 +1877,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x70\x72\x6f\x2d\x72\x75\x2d\x32\x31\x33\x2e\x65\x6d\x72\x61\x74\x61\x2e\x74\x6f\x70"
-  client-fingerprint: chrome
+  client-fingerprint: edge
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
   flow: xtls-rprx-vision
@@ -1811,14 +1896,14 @@ proxies:
   flow: xtls-rprx-vision
 - name: '🇷🇺 Russia [*CIDR] VK #13'
   type: vless
-  server: "\x32\x31\x33\x2e\x32\x31\x39\x2e\x32\x31\x32\x2e\x32\x34"
+  server: "\x32\x31\x33\x2e\x32\x31\x39\x2e\x32\x31\x32\x2e\x33\x30"
   port: 443
   uuid: "\x39\x63\x63\x61\x35\x30\x34\x38\x2d\x39\x37\x36\x32\x2d\x34\x33\x65\x66\x2d\x39\x32\x64\x39\x2d\x33\x61\x62\x66\x63\x64\x33\x37\x66\x38\x32\x34"
   udp: true
   encryption: none
   tls: true
   servername: "\x70\x72\x6f\x2d\x72\x75\x2d\x32\x31\x33\x2e\x65\x6d\x72\x61\x74\x61\x2e\x74\x6f\x70"
-  client-fingerprint: edge
+  client-fingerprint: chrome
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
   flow: xtls-rprx-vision
@@ -1831,7 +1916,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x70\x72\x6f\x2d\x72\x75\x2d\x32\x31\x33\x2e\x65\x6d\x72\x61\x74\x61\x2e\x74\x6f\x70"
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
   flow: xtls-rprx-vision
@@ -1844,109 +1929,39 @@ proxies:
   encryption: none
   tls: true
   servername: "\x70\x72\x6f\x2d\x72\x75\x2d\x32\x31\x33\x2e\x65\x6d\x72\x61\x74\x61\x2e\x74\x6f\x70"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-  flow: xtls-rprx-vision
-- name: '🇷🇺 Russia [*CIDR] VK #16'
-  type: vless
-  server: "\x32\x31\x33\x2e\x32\x31\x39\x2e\x32\x31\x32\x2e\x33\x30"
-  port: 443
-  uuid: "\x39\x63\x63\x61\x35\x30\x34\x38\x2d\x39\x37\x36\x32\x2d\x34\x33\x65\x66\x2d\x39\x32\x64\x39\x2d\x33\x61\x62\x66\x63\x64\x33\x37\x66\x38\x32\x34"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x70\x72\x6f\x2d\x72\x75\x2d\x32\x31\x33\x2e\x65\x6d\x72\x61\x74\x61\x2e\x74\x6f\x70"
   client-fingerprint: qq
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
   flow: xtls-rprx-vision
-- name: '🇷🇺 Russia [*CIDR] VK #17'
+- name: 🇷🇺 Russia [*CIDR] YA
   type: vless
-  server: "\x32\x31\x33\x2e\x32\x31\x39\x2e\x32\x31\x32\x2e\x31\x34"
+  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x36\x33\x2e\x34\x37"
   port: 443
-  uuid: "\x61\x38\x61\x64\x30\x33\x32\x32\x2d\x34\x37\x37\x30\x2d\x34\x62\x66\x61\x2d\x38\x32\x38\x38\x2d\x62\x66\x30\x64\x63\x36\x66\x63\x36\x39\x63\x64"
+  uuid: "\x61\x30\x33\x64\x66\x34\x34\x35\x2d\x30\x36\x36\x36\x2d\x34\x64\x36\x31\x2d\x61\x63\x64\x65\x2d\x39\x37\x30\x35\x30\x30\x39\x65\x34\x30\x39\x63"
   udp: true
   encryption: none
   tls: true
-  servername: "\x70\x72\x6f\x2d\x72\x75\x2d\x32\x31\x33\x2e\x65\x6d\x72\x61\x74\x61\x2e\x74\x6f\x70"
+  servername: "\x35\x70\x6f\x73\x74\x2d\x67\x61\x74\x65\x2e\x78\x35\x2e\x72\x75"
   client-fingerprint: edge
   reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+    public-key: FkyjJ-RLGIBWnsUQAuyfv-qReJSiuyb7qFnJS14ASgQ
+    short-id: 27e53bbcab7593d7
   flow: xtls-rprx-vision
-- name: '🇷🇺 Russia [*CIDR] VK #18'
+- name: '🇷🇺 Russia [*CIDR] YA #2'
   type: vless
-  server: "\x32\x31\x33\x2e\x32\x31\x39\x2e\x32\x31\x32\x2e\x31\x34"
+  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x36\x33\x2e\x34\x37"
   port: 443
-  uuid: "\x61\x38\x61\x64\x30\x33\x32\x32\x2d\x34\x37\x37\x30\x2d\x34\x62\x66\x61\x2d\x38\x32\x38\x38\x2d\x62\x66\x30\x64\x63\x36\x66\x63\x36\x39\x63\x64"
+  uuid: "\x61\x30\x33\x64\x66\x34\x34\x35\x2d\x30\x36\x36\x36\x2d\x34\x64\x36\x31\x2d\x61\x63\x64\x65\x2d\x39\x37\x30\x35\x30\x30\x39\x65\x34\x30\x39\x63"
   udp: true
   encryption: none
   tls: true
-  servername: "\x70\x72\x6f\x2d\x72\x75\x2d\x32\x31\x33\x2e\x65\x6d\x72\x61\x74\x61\x2e\x74\x6f\x70"
-  client-fingerprint: firefox
+  servername: "\x35\x70\x6f\x73\x74\x2d\x67\x61\x74\x65\x2e\x78\x35\x2e\x72\x75"
+  client-fingerprint: random
   reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+    public-key: FkyjJ-RLGIBWnsUQAuyfv-qReJSiuyb7qFnJS14ASgQ
+    short-id: 27e53bbcab7593d7
   flow: xtls-rprx-vision
-- name: '🇷🇺 Russia [*CIDR] VK #19'
-  type: vless
-  server: "\x32\x31\x33\x2e\x32\x31\x39\x2e\x32\x31\x32\x2e\x32\x34"
-  port: 443
-  uuid: "\x61\x38\x61\x64\x30\x33\x32\x32\x2d\x34\x37\x37\x30\x2d\x34\x62\x66\x61\x2d\x38\x32\x38\x38\x2d\x62\x66\x30\x64\x63\x36\x66\x63\x36\x39\x63\x64"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x70\x72\x6f\x2d\x72\x75\x2d\x32\x31\x33\x2e\x65\x6d\x72\x61\x74\x61\x2e\x74\x6f\x70"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-  flow: xtls-rprx-vision
-- name: '🇷🇺 Russia [*CIDR] VK #20'
-  type: vless
-  server: "\x32\x31\x33\x2e\x32\x31\x39\x2e\x32\x31\x32\x2e\x32\x34"
-  port: 443
-  uuid: "\x61\x38\x61\x64\x30\x33\x32\x32\x2d\x34\x37\x37\x30\x2d\x34\x62\x66\x61\x2d\x38\x32\x38\x38\x2d\x62\x66\x30\x64\x63\x36\x66\x63\x36\x39\x63\x64"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x70\x72\x6f\x2d\x72\x75\x2d\x32\x31\x33\x2e\x65\x6d\x72\x61\x74\x61\x2e\x74\x6f\x70"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-  flow: xtls-rprx-vision
-- name: '🇷🇺 Russia [*CIDR] VK #21'
-  type: vless
-  server: "\x32\x31\x33\x2e\x32\x31\x39\x2e\x32\x31\x32\x2e\x33\x30"
-  port: 443
-  uuid: "\x61\x38\x61\x64\x30\x33\x32\x32\x2d\x34\x37\x37\x30\x2d\x34\x62\x66\x61\x2d\x38\x32\x38\x38\x2d\x62\x66\x30\x64\x63\x36\x66\x63\x36\x39\x63\x64"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x70\x72\x6f\x2d\x72\x75\x2d\x32\x31\x33\x2e\x65\x6d\x72\x61\x74\x61\x2e\x74\x6f\x70"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-  flow: xtls-rprx-vision
-- name: '🇷🇺 Russia [*CIDR] VK #22'
-  type: vless
-  server: "\x32\x31\x33\x2e\x32\x31\x39\x2e\x32\x31\x32\x2e\x33\x30"
-  port: 443
-  uuid: "\x61\x38\x61\x64\x30\x33\x32\x32\x2d\x34\x37\x37\x30\x2d\x34\x62\x66\x61\x2d\x38\x32\x38\x38\x2d\x62\x66\x30\x64\x63\x36\x66\x63\x36\x39\x63\x64"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x70\x72\x6f\x2d\x72\x75\x2d\x32\x31\x33\x2e\x65\x6d\x72\x61\x74\x61\x2e\x74\x6f\x70"
-  client-fingerprint: ios
-  reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-  flow: xtls-rprx-vision
-- name: 🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR] Beeline
-  type: hysteria2
-  server: "\x37\x38\x2e\x31\x35\x39\x2e\x32\x35\x30\x2e\x32\x33\x30"
-  port: 8443
-  password: "\x39\x62\x30\x38\x62\x65\x65\x30\x2d\x32\x36\x31\x35\x2d\x34\x36\x63\x36\x2d\x38\x39\x33\x39\x2d\x35\x34\x62\x35\x37\x35\x35\x31\x37\x61\x32\x36"
-  udp: true
-  sni: "\x71\x75\x69\x63\x2e\x74\x79\x72\x2d\x61\x67\x65\x6e\x74\x73\x74\x76\x6f\x2e\x74\x65\x63\x68"
-- name: 🌐 Anycast-IP | 🇵🇱 🇺🇸 [*CIDR] Beeline
+- name: 🌐 Anycast-IP | 🇩🇪 🇵🇱 🇺🇸 [*CIDR] Beeline
   type: hysteria2
   server: "\x37\x38\x2e\x31\x35\x39\x2e\x32\x35\x30\x2e\x32\x33\x30"
   port: 443
