@@ -1,7 +1,7 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | SNI-RU
 # profile-update-interval: 1
-# Date/Time: 2026-08-01 / 21:03 (Moscow)
-# Количество: 1
+# Date/Time: 2026-08-01 / 22:22 (Moscow)
+# Количество: 2
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
@@ -9,17 +9,31 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: 🌐 Anycast-IP | 🇩🇪 🇵🇱 [SNI-RU] sun6-21.userapi.com
+- name: 🇯🇵 Japan | [SNI-RU] ads.x5.ru
   type: vless
-  server: "\x6e\x6f\x64\x65\x2d\x74\x77\x30\x2e\x6f\x6d\x68\x76\x70\x2e\x63\x6f"
+  server: "\x33\x31\x2e\x37\x36\x2e\x39\x31\x2e\x33\x36"
   port: 443
-  uuid: "\x61\x38\x66\x38\x34\x31\x37\x31\x2d\x35\x66\x39\x36\x2d\x34\x35\x34\x37\x2d\x62\x36\x32\x31\x2d\x35\x39\x37\x35\x38\x66\x65\x36\x36\x38\x63\x38"
+  uuid: "\x37\x38\x63\x36\x65\x64\x38\x66\x2d\x66\x61\x30\x66\x2d\x34\x61\x65\x34\x2d\x38\x30\x61\x38\x2d\x36\x38\x62\x30\x38\x30\x63\x34\x63\x64\x39\x30"
   udp: true
   encryption: none
   tls: true
-  servername: "\x73\x75\x6e\x36\x2d\x32\x31\x2e\x75\x73\x65\x72\x61\x70\x69\x2e\x63\x6f\x6d"
+  servername: "\x61\x64\x73\x2e\x78\x35\x2e\x72\x75"
+  client-fingerprint: android
+  reality-opts:
+    public-key: 26_EC0jKyFwjkVBQmCJkIwlZwiNCC3Uzl5j6ur6QUwM
+    short-id: d2e7fddd2450b86a
+  flow: xtls-rprx-vision
+- name: '🇯🇵 Japan | [SNI-RU] ads.x5.ru #2'
+  type: vless
+  server: "\x33\x31\x2e\x37\x36\x2e\x39\x31\x2e\x33\x36"
+  port: 443
+  uuid: "\x37\x38\x63\x36\x65\x64\x38\x66\x2d\x66\x61\x30\x66\x2d\x34\x61\x65\x34\x2d\x38\x30\x61\x38\x2d\x36\x38\x62\x30\x38\x30\x63\x34\x63\x64\x39\x30"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x64\x73\x2e\x78\x35\x2e\x72\x75"
   client-fingerprint: firefox
   reality-opts:
-    public-key: jWVk2Z7eFkyDcu2xgzqX8JsPbZuCVhHUWD463Vfgazw
-    short-id: 7a5b89ecdb01f781
+    public-key: 26_EC0jKyFwjkVBQmCJkIwlZwiNCC3Uzl5j6ur6QUwM
+    short-id: d2e7fddd2450b86a
   flow: xtls-rprx-vision
