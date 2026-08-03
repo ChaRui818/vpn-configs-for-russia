@@ -1,7 +1,7 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | SNI-RU
 # profile-update-interval: 1
-# Date/Time: 2026-08-04 / 00:43 (Moscow)
-# Количество: 17
+# Date/Time: 2026-08-04 / 02:08 (Moscow)
+# Количество: 21
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
@@ -9,6 +9,48 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
+- name: 🇩🇪 Germany | 🌐 [SNI-RU] api-maps.yandex.ru
+  type: vless
+  server: "\x69\x68\x63\x31\x38\x35\x2e\x63\x64\x6e\x73\x2e\x73\x75"
+  port: 8443
+  uuid: "\x31\x30\x65\x65\x37\x35\x31\x39\x2d\x37\x38\x64\x63\x2d\x34\x39\x61\x39\x2d\x62\x38\x65\x39\x2d\x38\x30\x62\x37\x33\x33\x64\x32\x32\x39\x38\x34"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x70\x69\x2d\x6d\x61\x70\x73\x2e\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  flow: xtls-rprx-vision
+- name: 🇩🇪 Germany | 🌐 [SNI-RU] m.vk.com
+  type: vless
+  server: "\x69\x68\x63\x31\x38\x35\x2e\x63\x64\x6e\x73\x2e\x73\x75"
+  port: 8443
+  uuid: "\x31\x30\x65\x65\x37\x35\x31\x39\x2d\x37\x38\x64\x63\x2d\x34\x39\x61\x39\x2d\x62\x38\x65\x39\x2d\x38\x30\x62\x37\x33\x33\x64\x32\x32\x39\x38\x34"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x6d\x2e\x76\x6b\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  flow: xtls-rprx-vision
+- name: 🇩🇪 Germany | 🌐 [SNI-RU] ozon.ru
+  type: vless
+  server: "\x69\x68\x63\x31\x38\x35\x2e\x63\x64\x6e\x73\x2e\x73\x75"
+  port: 8443
+  uuid: "\x31\x30\x65\x65\x37\x35\x31\x39\x2d\x37\x38\x64\x63\x2d\x34\x39\x61\x39\x2d\x62\x38\x65\x39\x2d\x38\x30\x62\x37\x33\x33\x64\x32\x32\x39\x38\x34"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x6f\x7a\x6f\x6e\x2e\x72\x75"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  flow: xtls-rprx-vision
 - name: 🇩🇪 Germany | 🌐 [SNI-RU] ya.ru
   type: vless
   server: "\x6d\x6e\x6c\x2e\x73\x61\x76\x65\x73\x61\x66\x65\x2e\x73\x70\x61\x63\x65"
@@ -104,7 +146,7 @@ proxies:
     mode: auto
     headers:
       Host: "\x6d\x6e\x6c\x2e\x73\x61\x76\x65\x73\x61\x66\x65\x2e\x73\x70\x61\x63\x65"
-- name: 🇭🇺 Hungary | [SNI-RU] mail.yandex.ru
+- name: 🇭🇺 Hungary [SNI-RU] mail.yandex.ru
   type: vless
   server: "\x68\x75\x61\x2e\x6b\x6f\x73\x6d\x6f\x73\x61\x70\x70\x2e\x72\x75"
   port: 16923
@@ -120,7 +162,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: neurex
-- name: '🇭🇺 Hungary | [SNI-RU] mail.yandex.ru #2'
+- name: '🇭🇺 Hungary [SNI-RU] mail.yandex.ru #2'
   type: vless
   server: "\x68\x75\x61\x2e\x6b\x6f\x73\x6d\x6f\x73\x61\x70\x70\x2e\x72\x75"
   port: 16923
@@ -136,7 +178,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: neurex
-- name: 🇵🇱 Poland | [SNI-RU] maps.yandex.ru
+- name: 🇵🇱 Poland [SNI-RU] maps.yandex.ru
   type: vless
   server: "\x70\x6c\x62\x2e\x6b\x6f\x73\x6d\x6f\x73\x61\x70\x70\x2e\x72\x75"
   port: 16923
@@ -152,7 +194,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: neurex
-- name: '🇵🇱 Poland | [SNI-RU] maps.yandex.ru #2'
+- name: '🇵🇱 Poland [SNI-RU] maps.yandex.ru #2'
   type: vless
   server: "\x70\x6c\x62\x2e\x6b\x6f\x73\x6d\x6f\x73\x61\x70\x70\x2e\x72\x75"
   port: 16923
@@ -170,14 +212,14 @@ proxies:
     grpc-service-name: neurex
 - name: 🇵🇱 Poland [SNI-RU] yandex.ru
   type: vless
-  server: "\x70\x6c\x63\x2e\x6b\x6f\x73\x6d\x6f\x73\x61\x70\x70\x2e\x72\x75"
+  server: "\x31\x35\x32\x2e\x32\x33\x33\x2e\x34\x33\x2e\x39\x30"
   port: 16923
   uuid: "\x32\x38\x38\x36\x33\x39\x38\x36\x2d\x37\x35\x66\x62\x2d\x34\x62\x32\x66\x2d\x62\x30\x30\x36\x2d\x36\x35\x65\x36\x32\x31\x39\x34\x33\x35\x38\x64"
   udp: true
   encryption: none
   tls: true
   servername: "\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
-  client-fingerprint: edge
+  client-fingerprint: firefox
   reality-opts:
     public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
     short-id: 10ffb85da1c2d986
@@ -193,6 +235,22 @@ proxies:
   encryption: none
   tls: true
   servername: "\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
+  client-fingerprint: edge
+  reality-opts:
+    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
+    short-id: 10ffb85da1c2d986
+  network: grpc
+  grpc-opts:
+    grpc-service-name: neurex
+- name: '🇵🇱 Poland [SNI-RU] yandex.ru #3'
+  type: vless
+  server: "\x70\x6c\x63\x2e\x6b\x6f\x73\x6d\x6f\x73\x61\x70\x70\x2e\x72\x75"
+  port: 16923
+  uuid: "\x32\x38\x38\x36\x33\x39\x38\x36\x2d\x37\x35\x66\x62\x2d\x34\x62\x32\x66\x2d\x62\x30\x30\x36\x2d\x36\x35\x65\x36\x32\x31\x39\x34\x33\x35\x38\x64"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
   client-fingerprint: firefox
   reality-opts:
     public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
@@ -200,7 +258,23 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: neurex
-- name: 🇬🇧 United Kingdom | [SNI-RU] music.yandex.ru
+- name: '🇵🇱 Poland [SNI-RU] yandex.ru #4'
+  type: vless
+  server: "\x70\x6c\x63\x2e\x6b\x6f\x73\x6d\x6f\x73\x61\x70\x70\x2e\x72\x75"
+  port: 16923
+  uuid: "\x32\x38\x38\x36\x33\x39\x38\x36\x2d\x37\x35\x66\x62\x2d\x34\x62\x32\x66\x2d\x62\x30\x30\x36\x2d\x36\x35\x65\x36\x32\x31\x39\x34\x33\x35\x38\x64"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
+    short-id: 10ffb85da1c2d986
+  network: grpc
+  grpc-opts:
+    grpc-service-name: neurex
+- name: 🇬🇧 United Kingdom [SNI-RU] music.yandex.ru
   type: vless
   server: "\x64\x65\x62\x2e\x6b\x6f\x73\x6d\x6f\x73\x61\x70\x70\x2e\x72\x75"
   port: 16923
@@ -216,7 +290,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: neurex
-- name: '🇬🇧 United Kingdom | [SNI-RU] music.yandex.ru #2'
+- name: '🇬🇧 United Kingdom [SNI-RU] music.yandex.ru #2'
   type: vless
   server: "\x64\x65\x62\x2e\x6b\x6f\x73\x6d\x6f\x73\x61\x70\x70\x2e\x72\x75"
   port: 16923
@@ -232,7 +306,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: neurex
-- name: 🇬🇧 United Kingdom | [SNI-RU] yandex.ru
+- name: 🇬🇧 United Kingdom [SNI-RU] yandex.ru
   type: vless
   server: "\x64\x65\x64\x2e\x6b\x6f\x73\x6d\x6f\x73\x61\x70\x70\x2e\x72\x75"
   port: 16923
@@ -248,23 +322,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: neurex
-- name: '🇬🇧 United Kingdom | [SNI-RU] yandex.ru #2'
-  type: vless
-  server: "\x64\x65\x64\x2e\x6b\x6f\x73\x6d\x6f\x73\x61\x70\x70\x2e\x72\x75"
-  port: 16923
-  uuid: "\x63\x66\x30\x33\x31\x30\x62\x30\x2d\x32\x63\x64\x36\x2d\x34\x61\x65\x31\x2d\x62\x34\x63\x34\x2d\x65\x30\x32\x39\x65\x37\x66\x62\x30\x65\x65\x33"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
-    short-id: 10ffb85da1c2d986
-  network: grpc
-  grpc-opts:
-    grpc-service-name: neurex
-- name: 🇷🇺 Russia | [SNI-RU] yandex.ru
+- name: 🇷🇺 Russia [SNI-RU] yandex.ru
   type: vless
   server: "\x72\x75\x64\x2e\x6b\x6f\x73\x6d\x6f\x73\x61\x70\x70\x2e\x72\x75"
   port: 16923
@@ -280,7 +338,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: neurex
-- name: '🇷🇺 Russia | [SNI-RU] yandex.ru #2'
+- name: '🇷🇺 Russia [SNI-RU] yandex.ru #2'
   type: vless
   server: "\x72\x75\x64\x2e\x6b\x6f\x73\x6d\x6f\x73\x61\x70\x70\x2e\x72\x75"
   port: 16923
