@@ -1,11 +1,40 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | SNI-RU
 # profile-update-interval: 1
-# Date/Time: 2026-08-05 / 20:37 (Moscow)
-# Количество: 0
+# Date/Time: 2026-08-05 / 21:50 (Moscow)
+# Количество: 2
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: warning
-proxies: []
+proxies:
+- name: 🇵🇱 Poland | 🌐 [SNI-RU] dzen.ru
+  type: vless
+  server: "\x65\x75\x2d\x67\x77\x2e\x76\x69\x64\x65\x6f\x6d\x6f\x6e\x69\x74\x6f\x72\x2e\x63\x6c\x6f\x75\x64"
+  port: 2053
+  uuid: "\x30\x64\x37\x33\x35\x38\x32\x32\x2d\x33\x37\x38\x35\x2d\x31\x31\x66\x31\x2d\x62\x31\x65\x66\x2d\x33\x65\x37\x33\x63\x34\x66\x33\x62\x35\x33\x64"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x64\x7a\x65\x6e\x2e\x72\x75"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: j8OW1foMwfeiy3VMbNPHLgTXgy_ZPdFFxv-H3HrbNF0
+    short-id: f0c18fcc1d09b637
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-direct
+- name: 🇷🇺 Russia | 🌐 [SNI-RU] max.ru
+  type: vless
+  server: "\x72\x75\x73\x73\x69\x61\x2e\x76\x79\x70\x6e\x65\x74\x2e\x73\x75"
+  port: 8443
+  uuid: "\x63\x31\x32\x34\x61\x32\x30\x39\x2d\x64\x39\x34\x39\x2d\x34\x39\x35\x31\x2d\x38\x32\x33\x34\x2d\x65\x32\x64\x39\x31\x38\x62\x33\x65\x36\x63\x30"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x6d\x61\x78\x2e\x72\x75"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: C819rM4M_c473A8glp-eBFh8Fm9O1cmEeXmivDhM1Fc
+  flow: xtls-rprx-vision
