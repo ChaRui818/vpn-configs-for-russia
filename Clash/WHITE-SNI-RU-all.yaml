@@ -1,11 +1,31 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | SNI-RU
 # profile-update-interval: 1
-# Date/Time: 2026-08-06 / 13:25 (Moscow)
-# Количество: 0
+# Date/Time: 2026-08-06 / 14:37 (Moscow)
+# Количество: 1
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: warning
-proxies: []
+proxies:
+- name: 🌐 Anycast-IP | 🇬🇧 🇸🇪 [SNI-RU] yastatic.net
+  type: vless
+  server: "\x79\x61\x6e\x64\x65\x78\x2e\x68\x76\x75\x6d\x79\x72\x70\x73\x74\x67\x68\x65\x6b\x62\x2e\x74\x6f\x70"
+  port: 443
+  uuid: "\x62\x64\x32\x39\x66\x30\x31\x39\x2d\x38\x35\x61\x32\x2d\x34\x33\x66\x36\x2d\x62\x31\x30\x61\x2d\x65\x39\x31\x64\x62\x64\x66\x35\x38\x65\x65\x33"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x79\x61\x73\x74\x61\x74\x69\x63\x2e\x6e\x65\x74"
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  reality-opts:
+    public-key: zecFPSPQrkRM2o4grOw2cvhmq05kyZGTmO0xbFkvZF4
+    short-id: 71fb59bc
+  network: xhttp
+  xhttp-opts:
+    path: "\x2f\x68\x61\x6e\x42\x68\x61\x6d\x30\x51\x53\x6b\x74\x77\x53\x72\x75\x43\x74\x49\x62\x4b\x49\x36\x50\x43\x73\x6a"
+    headers:
+      Host: "\x79\x61\x73\x74\x61\x74\x69\x63\x2e\x6e\x65\x74"
