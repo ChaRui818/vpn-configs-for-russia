@@ -1,7 +1,7 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
 # profile-update-interval: 1
-# Date/Time: 2026-08-06 / 22:41 (Moscow)
-# Количество: 5
+# Date/Time: 2026-08-06 / 23:49 (Moscow)
+# Количество: 6
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
@@ -18,7 +18,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x73\x74\x6f\x72\x61\x67\x65\x2e\x79\x61\x6e\x64\x65\x78\x2e\x6e\x65\x74"
-  client-fingerprint: edge
+  client-fingerprint: android
   reality-opts:
     public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
     short-id: 8d3293f0066e129a
@@ -32,7 +32,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x73\x74\x6f\x72\x61\x67\x65\x2e\x79\x61\x6e\x64\x65\x78\x2e\x6e\x65\x74"
-  client-fingerprint: firefox
+  client-fingerprint: edge
   reality-opts:
     public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
     short-id: 8d3293f0066e129a
@@ -46,12 +46,12 @@ proxies:
   encryption: none
   tls: true
   servername: "\x73\x74\x6f\x72\x61\x67\x65\x2e\x79\x61\x6e\x64\x65\x78\x2e\x6e\x65\x74"
-  client-fingerprint: ios
+  client-fingerprint: safari
   reality-opts:
     public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
     short-id: 8d3293f0066e129a
   flow: xtls-rprx-vision
-- name: '🇩🇪 Germany | [*CIDR] CDN #4'
+- name: 🇩🇪 Germany [*CIDR] CDN
   type: vless
   server: "\x34\x36\x2e\x32\x34\x33\x2e\x32\x33\x32\x2e\x31\x32"
   port: 2027
@@ -65,17 +65,21 @@ proxies:
     public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
     short-id: 8d3293f0066e129a
   flow: xtls-rprx-vision
-- name: '🇩🇪 Germany | [*CIDR] CDN #5'
-  type: vless
-  server: "\x34\x36\x2e\x32\x34\x33\x2e\x32\x33\x32\x2e\x31\x32"
-  port: 2027
-  uuid: "\x38\x35\x31\x65\x64\x30\x64\x38\x2d\x61\x33\x37\x62\x2d\x34\x35\x32\x64\x2d\x38\x65\x66\x32\x2d\x35\x62\x36\x63\x32\x64\x32\x38\x61\x30\x36\x30"
+- name: 🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR] Beeline
+  type: hysteria2
+  server: "\x37\x38\x2e\x31\x35\x39\x2e\x32\x35\x30\x2e\x32\x33\x30"
+  port: 2053
+  password: "\x39\x62\x34\x63\x39\x36\x66\x39\x2d\x36\x30\x65\x38\x2d\x34\x36\x39\x34\x2d\x62\x30\x36\x39\x2d\x63\x34\x36\x39\x39\x32\x33\x39\x30\x35\x35\x35"
   udp: true
-  encryption: none
-  tls: true
-  servername: "\x73\x74\x6f\x72\x61\x67\x65\x2e\x79\x61\x6e\x64\x65\x78\x2e\x6e\x65\x74"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-    short-id: 8d3293f0066e129a
-  flow: xtls-rprx-vision
+  sni: "\x71\x75\x69\x63\x2e\x74\x79\x72\x2d\x61\x67\x65\x6e\x74\x73\x74\x76\x6f\x2e\x74\x65\x63\x68"
+  alpn:
+  - h3
+- name: '🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR] Beeline #2'
+  type: hysteria2
+  server: "\x37\x38\x2e\x31\x35\x39\x2e\x32\x35\x30\x2e\x32\x33\x30"
+  port: 8443
+  password: "\x39\x62\x34\x63\x39\x36\x66\x39\x2d\x36\x30\x65\x38\x2d\x34\x36\x39\x34\x2d\x62\x30\x36\x39\x2d\x63\x34\x36\x39\x39\x32\x33\x39\x30\x35\x35\x35"
+  udp: true
+  sni: "\x71\x75\x69\x63\x2e\x74\x79\x72\x2d\x61\x67\x65\x6e\x74\x73\x74\x76\x6f\x2e\x74\x65\x63\x68"
+  alpn:
+  - h3
