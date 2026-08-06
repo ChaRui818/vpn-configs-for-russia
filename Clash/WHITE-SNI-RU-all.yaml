@@ -1,11 +1,24 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | SNI-RU
 # profile-update-interval: 1
-# Date/Time: 2026-08-06 / 10:14 (Moscow)
-# Количество: 0
+# Date/Time: 2026-08-06 / 11:18 (Moscow)
+# Количество: 1
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: warning
-proxies: []
+proxies:
+- name: 🌐 Anycast-IP | 🇷🇺 🇸🇨 [SNI-RU] live.ok.ru
+  type: vless
+  server: "\x32\x30\x31\x2e\x32\x34\x2e\x31\x31\x38\x2e\x31\x34\x35"
+  port: 4100
+  uuid: "\x62\x65\x65\x32\x31\x39\x31\x38\x2d\x30\x39\x33\x33\x2d\x34\x33\x30\x63\x2d\x39\x30\x34\x62\x2d\x63\x39\x34\x31\x62\x39\x32\x32\x35\x36\x62\x61"
+  udp: true
+  encryption: none
+  tls: false
+  network: ws
+  ws-opts:
+    path: "\x2f\x76\x31"
+    headers:
+      Host: "\x6c\x69\x76\x65\x2e\x6f\x6b\x2e\x72\x75"
