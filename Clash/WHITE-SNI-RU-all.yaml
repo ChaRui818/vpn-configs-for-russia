@@ -1,7 +1,7 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | SNI-RU
 # profile-update-interval: 1
-# Date/Time: 2026-08-06 / 21:35 (Moscow)
-# Количество: 2
+# Date/Time: 2026-08-06 / 22:41 (Moscow)
+# Количество: 1
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
@@ -9,32 +9,16 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: 🇳🇱 The Netherlands [SNI-RU] tele2.ru
+- name: 🌐 Anycast-IP | 🇷🇺 🇸🇨 [SNI-RU] live.ok.ru
   type: vless
-  server: "\x73\x65\x63\x75\x72\x65\x2e\x63\x6f\x76\x77\x6b\x66\x6a\x70\x61\x2e\x74\x6f\x70"
-  port: 443
-  uuid: "\x36\x65\x64\x34\x39\x65\x37\x34\x2d\x62\x33\x33\x62\x2d\x34\x36\x61\x66\x2d\x39\x62\x37\x39\x2d\x65\x66\x35\x65\x31\x34\x32\x39\x62\x66\x64\x66"
+  server: "\x32\x30\x31\x2e\x32\x34\x2e\x31\x31\x38\x2e\x31\x34\x35"
+  port: 4100
+  uuid: "\x62\x65\x65\x32\x31\x39\x31\x38\x2d\x30\x39\x33\x33\x2d\x34\x33\x30\x63\x2d\x39\x30\x34\x62\x2d\x63\x39\x34\x31\x62\x39\x32\x32\x35\x36\x62\x61"
   udp: true
   encryption: none
-  tls: true
-  servername: "\x74\x65\x6c\x65\x32\x2e\x72\x75"
-  client-fingerprint: firefox
-  alpn:
-  - http/1.1
-  reality-opts:
-    public-key: 0pY4iCuMKl3pGatH0kdUsGBbOmKMvax4c3PSIAlfHjs
-    short-id: af5a11c3
-  flow: xtls-rprx-vision
-- name: 🇺🇸 United States [SNI-RU] www.vk.com
-  type: vless
-  server: "\x31\x38\x36\x2e\x32\x34\x36\x2e\x32\x33\x2e\x32\x32\x33"
-  port: 8443
-  uuid: "\x64\x64\x35\x66\x33\x31\x32\x36\x2d\x32\x35\x36\x66\x2d\x34\x65\x38\x38\x2d\x62\x39\x32\x37\x2d\x34\x30\x34\x38\x35\x63\x62\x63\x63\x35\x62\x66"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x77\x77\x77\x2e\x76\x6b\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: BowmCEASgwHg2-NHyr0wDhFHrBy0rvYardueDpFuChY
-  flow: xtls-rprx-vision
+  tls: false
+  network: ws
+  ws-opts:
+    path: "\x2f\x76\x31"
+    headers:
+      Host: "\x6c\x69\x76\x65\x2e\x6f\x6b\x2e\x72\x75"
