@@ -1,11 +1,34 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
 # profile-update-interval: 1
-# Date/Time: 2026-08-15 / 17:35 (Moscow)
-# Количество: 0
+# Date/Time: 2026-08-15 / 19:18 (Moscow)
+# Количество: 2
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: warning
-proxies: []
+proxies:
+- name: 🇩🇪 Germany | 🌐 [*CIDR] CDN
+  type: vless
+  server: "\x62\x73\x2e\x31\x30\x31\x30\x31\x30\x31\x2e\x76\x69\x70"
+  port: 2096
+  uuid: "\x35\x33\x62\x37\x66\x64\x65\x63\x2d\x34\x63\x63\x62\x2d\x34\x38\x31\x61\x2d\x38\x64\x39\x38\x2d\x38\x33\x61\x61\x31\x39\x35\x30\x39\x33\x33\x30"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x69\x64\x2e\x76\x6b\x2e\x63\x6f\x6d"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
+- name: 🇩🇪 Germany [*CIDR] VK
+  type: vless
+  server: "\x73\x65\x72\x76\x32\x35\x2e\x73\x74\x72\x65\x74\x74\x65\x6e\x76\x70\x6e\x2e\x63\x6f\x6d"
+  port: 443
+  uuid: "\x37\x30\x37\x64\x62\x38\x37\x62\x2d\x39\x63\x62\x66\x2d\x34\x33\x38\x66\x2d\x62\x34\x63\x37\x2d\x39\x64\x39\x38\x34\x63\x38\x65\x39\x34\x34\x61"
+  udp: true
+  encryption: none
+  tls: false
