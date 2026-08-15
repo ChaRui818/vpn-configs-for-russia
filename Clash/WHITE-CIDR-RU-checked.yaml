@@ -1,7 +1,7 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
 # profile-update-interval: 1
-# Date/Time: 2026-08-15 / 08:41 (Moscow)
-# Количество: 1
+# Date/Time: 2026-08-15 / 10:26 (Moscow)
+# Количество: 2
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
@@ -9,7 +9,20 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: 🇸🇪 Sweden [*CIDR] VK
+- name: 🇸🇪 Sweden | [*CIDR] VK
+  type: vless
+  server: "\x39\x30\x2e\x31\x35\x36\x2e\x32\x31\x38\x2e\x32\x33\x36"
+  port: 443
+  uuid: "\x38\x32\x37\x38\x33\x35\x62\x36\x2d\x36\x66\x34\x66\x2d\x34\x66\x39\x64\x2d\x62\x62\x66\x33\x2d\x66\x35\x64\x34\x66\x35\x38\x65\x37\x66\x30\x61"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x33\x36\x30\x2e\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: VaKp9XjMqT7lA4F3b6hpdF6fmsiY4B_hz6MzT6fv938
+  network: grpc
+- name: '🇸🇪 Sweden | [*CIDR] VK #2'
   type: vless
   server: "\x39\x30\x2e\x31\x35\x36\x2e\x32\x31\x38\x2e\x32\x33\x36"
   port: 443
