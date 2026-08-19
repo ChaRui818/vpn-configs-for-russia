@@ -1,7 +1,7 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
 # profile-update-interval: 1
-# Date/Time: 2026-08-19 / 23:11 (Moscow)
-# Количество: 16
+# Date/Time: 2026-08-20 / 00:43 (Moscow)
+# Количество: 15
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
@@ -9,6 +9,34 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
+- name: 🇫🇷 France | [*CIDR] VK
+  type: vless
+  server: "\x66\x72\x61\x62\x72\x69\x64\x67\x65\x31\x2e\x66\x72\x6f\x73\x74\x2d\x61\x70\x69\x2e\x63\x6f\x6d"
+  port: 443
+  uuid: "\x63\x62\x65\x35\x36\x31\x31\x66\x2d\x33\x39\x32\x62\x2d\x34\x65\x63\x33\x2d\x39\x64\x38\x62\x2d\x35\x62\x62\x65\x35\x39\x63\x30\x66\x61\x36\x38"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x6d\x61\x78\x2e\x72\x75"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw
+    short-id: e7
+  flow: xtls-rprx-vision
+- name: '🇫🇷 France | [*CIDR] VK #2'
+  type: vless
+  server: "\x66\x72\x61\x62\x72\x69\x64\x67\x65\x31\x2e\x66\x72\x6f\x73\x74\x2d\x61\x70\x69\x2e\x63\x6f\x6d"
+  port: 443
+  uuid: "\x63\x62\x65\x35\x36\x31\x31\x66\x2d\x33\x39\x32\x62\x2d\x34\x65\x63\x33\x2d\x39\x64\x38\x62\x2d\x35\x62\x62\x65\x35\x39\x63\x30\x66\x61\x36\x38"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x6d\x61\x78\x2e\x72\x75"
+  client-fingerprint: ios
+  reality-opts:
+    public-key: SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw
+    short-id: e7
+  flow: xtls-rprx-vision
 - name: 🇳🇴 Norway [*CIDR] VK
   type: vless
   server: "\x32\x31\x32\x2e\x32\x33\x33\x2e\x39\x39\x2e\x31\x33\x32"
@@ -60,22 +88,6 @@ proxies:
   encryption: none
   tls: true
   servername: "\x77\x77\x77\x2e\x73\x6f\x6e\x79\x2e\x63\x6f\x6d"
-  client-fingerprint: android
-  reality-opts:
-    public-key: D_6yJhDg-rnm_4y3onQwlfpTjCfoJvSeihN7D4pHnCA
-    short-id: 7e4aa03904fefb
-  network: grpc
-  grpc-opts:
-    grpc-service-name: NekoService
-- name: '🇳🇱 The Netherlands | [*CIDR] VK #2'
-  type: vless
-  server: "\x32\x31\x32\x2e\x32\x33\x33\x2e\x39\x39\x2e\x31\x33\x32"
-  port: 6444
-  uuid: "\x66\x65\x30\x31\x33\x38\x62\x35\x2d\x63\x61\x36\x30\x2d\x34\x61\x36\x37\x2d\x39\x31\x61\x61\x2d\x62\x35\x61\x34\x39\x32\x36\x36\x65\x65\x62\x35"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x77\x77\x77\x2e\x73\x6f\x6e\x79\x2e\x63\x6f\x6d"
   client-fingerprint: edge
   reality-opts:
     public-key: D_6yJhDg-rnm_4y3onQwlfpTjCfoJvSeihN7D4pHnCA
@@ -83,7 +95,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: NekoService
-- name: '🇳🇱 The Netherlands | [*CIDR] VK #3'
+- name: '🇳🇱 The Netherlands | [*CIDR] VK #2'
   type: vless
   server: "\x32\x31\x32\x2e\x32\x33\x33\x2e\x39\x39\x2e\x31\x33\x32"
   port: 6444
@@ -164,7 +176,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x77\x77\x77\x2e\x6f\x72\x61\x63\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: ios
+  client-fingerprint: qq
   reality-opts:
     public-key: aFbCyrLOre-V3ORpBjqenGfDt62Ng_i1sSq-DmZHVgc
     short-id: 89e0494514ec
@@ -178,38 +190,10 @@ proxies:
   encryption: none
   tls: true
   servername: "\x77\x77\x77\x2e\x6f\x72\x61\x63\x6c\x65\x2e\x63\x6f\x6d"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: aFbCyrLOre-V3ORpBjqenGfDt62Ng_i1sSq-DmZHVgc
-    short-id: 89e0494514ec
-  flow: xtls-rprx-vision
-- name: '🇹🇷 Turkey [*CIDR] VK #4'
-  type: vless
-  server: "\x32\x31\x32\x2e\x32\x33\x33\x2e\x39\x39\x2e\x31\x33\x32"
-  port: 6448
-  uuid: "\x66\x65\x30\x31\x33\x38\x62\x35\x2d\x63\x61\x36\x30\x2d\x34\x61\x36\x37\x2d\x39\x31\x61\x61\x2d\x62\x35\x61\x34\x39\x32\x36\x36\x65\x65\x62\x35"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x77\x77\x77\x2e\x6f\x72\x61\x63\x6c\x65\x2e\x63\x6f\x6d"
   client-fingerprint: safari
   reality-opts:
     public-key: aFbCyrLOre-V3ORpBjqenGfDt62Ng_i1sSq-DmZHVgc
     short-id: 89e0494514ec
-  flow: xtls-rprx-vision
-- name: 🇷🇺 Russia | [*CIDR] VK
-  type: vless
-  server: "\x32\x31\x32\x2e\x32\x33\x33\x2e\x39\x39\x2e\x31\x33\x32"
-  port: 443
-  uuid: "\x66\x65\x30\x31\x33\x38\x62\x35\x2d\x63\x61\x36\x30\x2d\x34\x61\x36\x37\x2d\x39\x31\x61\x61\x2d\x62\x35\x61\x34\x39\x32\x36\x36\x65\x65\x62\x35"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x72\x75\x2e\x63\x68\x69\x63\x6b\x2d\x74\x65\x61\x6d\x2e\x72\x75"
-  client-fingerprint: android
-  reality-opts:
-    public-key: NBiCX_Tj3BeMAyG-GbLLKpGjW_qacm3A2Mz5mN8v3Xk
-    short-id: ab532d3308daa67b
   flow: xtls-rprx-vision
 - name: 🇷🇺 Russia [*CIDR] VK
   type: vless
