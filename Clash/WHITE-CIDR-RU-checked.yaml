@@ -1,7 +1,7 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
 # profile-update-interval: 1
-# Date/Time: 2026-08-19 / 14:55 (Moscow)
-# Количество: 1
+# Date/Time: 2026-08-19 / 16:12 (Moscow)
+# Количество: 2
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
@@ -10,6 +10,13 @@ mode: rule
 log-level: warning
 proxies:
 - name: 🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR] CDN
+  type: hysteria2
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x31\x35\x36"
+  port: 8443
+  password: "\x33\x39\x31\x66\x30\x39\x33\x66\x2d\x38\x35\x66\x63\x2d\x34\x37\x33\x64\x2d\x61\x62\x65\x32\x2d\x65\x61\x36\x30\x37\x62\x39\x66\x66\x35\x36\x37"
+  udp: true
+  sni: "\x71\x75\x69\x63\x2e\x74\x79\x72\x2d\x61\x67\x65\x6e\x74\x73\x74\x76\x6f\x2e\x74\x65\x63\x68"
+- name: '🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR] CDN #2'
   type: hysteria2
   server: "\x34\x36\x2e\x32\x34\x33\x2e\x32\x33\x35\x2e\x32\x33"
   port: 8443
