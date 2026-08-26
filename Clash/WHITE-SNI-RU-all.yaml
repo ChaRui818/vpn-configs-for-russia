@@ -1,7 +1,7 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | SNI-RU
 # profile-update-interval: 1
-# Date/Time: 2026-08-26 / 08:09 (Moscow)
-# Количество: 16
+# Date/Time: 2026-08-26 / 09:17 (Moscow)
+# Количество: 13
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
@@ -9,45 +9,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: 🌐 Anycast-IP | 🇩🇪 🇷🇺 🇸🇨 | [SNI-RU] live.ok.ru
-  type: vless
-  server: "\x32\x30\x31\x2e\x32\x34\x2e\x34\x39\x2e\x36\x39"
-  port: 4100
-  uuid: "\x32\x63\x64\x35\x66\x30\x35\x32\x2d\x36\x34\x35\x35\x2d\x34\x31\x35\x33\x2d\x62\x37\x64\x33\x2d\x30\x35\x34\x35\x31\x38\x34\x64\x63\x36\x34\x63"
-  udp: true
-  encryption: none
-  tls: false
-  network: ws
-  ws-opts:
-    path: "\x2f\x76\x31"
-    headers:
-      Host: "\x6c\x69\x76\x65\x2e\x6f\x6b\x2e\x72\x75"
-- name: '🌐 Anycast-IP | 🇩🇪 🇷🇺 🇸🇨 | [SNI-RU] live.ok.ru #2'
-  type: vless
-  server: "\x32\x30\x31\x2e\x32\x34\x2e\x34\x39\x2e\x36\x39"
-  port: 4100
-  uuid: "\x32\x63\x64\x35\x66\x30\x35\x32\x2d\x36\x34\x35\x35\x2d\x34\x31\x35\x33\x2d\x62\x37\x64\x33\x2d\x30\x35\x34\x35\x31\x38\x34\x64\x63\x36\x34\x63"
-  udp: true
-  encryption: none
-  tls: false
-  network: ws
-  ws-opts:
-    path: "\x2f\x76\x31"
-    headers:
-      Host: "\x6c\x69\x76\x65\x2e\x6f\x6b\x2e\x72\x75"
-- name: '🌐 Anycast-IP | 🇩🇪 🇷🇺 🇸🇨 | [SNI-RU] live.ok.ru #3'
-  type: vless
-  server: "\x32\x30\x31\x2e\x32\x34\x2e\x34\x39\x2e\x36\x39"
-  port: 4100
-  uuid: "\x32\x63\x64\x35\x66\x30\x35\x32\x2d\x36\x34\x35\x35\x2d\x34\x31\x35\x33\x2d\x62\x37\x64\x33\x2d\x30\x35\x34\x35\x31\x38\x34\x64\x63\x36\x34\x63"
-  udp: true
-  encryption: none
-  tls: false
-  network: ws
-  ws-opts:
-    path: "\x2f\x76\x31"
-    headers:
-      Host: "\x6c\x69\x76\x65\x2e\x6f\x6b\x2e\x72\x75"
 - name: 🇷🇺 Russia | [SNI-RU] api-maps.yandex.ru
   type: vless
   server: "\x31\x38\x35\x2e\x31\x34\x31\x2e\x32\x32\x37\x2e\x31\x35\x30"
@@ -192,7 +153,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-reality
-- name: '🇷🇺 Russia | [SNI-RU] api-maps.yandex.ru #10'
+- name: 🇷🇺 Russia | 🌐 [SNI-RU] api-maps.yandex.ru
   type: vless
   server: "\x31\x38\x35\x2e\x31\x34\x31\x2e\x32\x32\x37\x2e\x31\x35\x33"
   port: 9001
@@ -201,26 +162,21 @@ proxies:
   encryption: none
   tls: true
   servername: "\x61\x70\x69\x2d\x6d\x61\x70\x73\x2e\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
-  client-fingerprint: safari
+  client-fingerprint: chrome
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-reality
-- name: 🌐 Anycast-IP | 🇩🇪 🇷🇺 🇸🇨 [SNI-RU] live.ok.ru
-  type: vless
-  server: "\x32\x30\x31\x2e\x32\x34\x2e\x34\x39\x2e\x36\x39"
-  port: 4100
-  uuid: "\x32\x63\x64\x35\x66\x30\x35\x32\x2d\x36\x34\x35\x35\x2d\x34\x31\x35\x33\x2d\x62\x37\x64\x33\x2d\x30\x35\x34\x35\x31\x38\x34\x64\x63\x36\x34\x63"
+- name: 🇨🇦 Canada [SNI-RU] vk.com
+  type: hysteria2
+  server: "\x76\x70\x6e\x2d\x63\x61\x2d\x30\x30\x31\x2e\x66\x61\x73\x74\x65\x72\x76\x70\x6e\x2e\x77\x6f\x72\x6c\x64"
+  port: 443
+  password: "\x48\x37\x6d\x50\x32\x78\x59\x39\x6b\x4a\x34\x6e\x51\x38\x77\x52\x35\x74\x46\x36\x76\x42\x33\x7a"
   udp: true
-  encryption: none
-  tls: false
-  network: ws
-  ws-opts:
-    path: "\x2f\x76\x31"
-    headers:
-      Host: "\x6c\x69\x76\x65\x2e\x6f\x6b\x2e\x72\x75"
+  sni: "\x76\x6b\x2e\x63\x6f\x6d"
+  skip-cert-verify: true
 - name: 🇫🇷 France | 🌐 [SNI-RU] vk.com
   type: hysteria2
   server: "\x36\x32\x2e\x32\x31\x30\x2e\x37\x2e\x31\x33\x39"
