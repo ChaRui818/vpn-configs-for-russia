@@ -1,7 +1,7 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
 # profile-update-interval: 1
-# Date/Time: 2026-09-03 / 07:42 (Moscow)
-# Количество: 6
+# Date/Time: 2026-09-03 / 08:51 (Moscow)
+# Количество: 8
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
@@ -9,6 +9,22 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
+- name: 🇩🇪 Germany | [*CIDR] CDN
+  type: vless
+  server: "\x34\x36\x2e\x32\x34\x33\x2e\x32\x33\x34\x2e\x31\x34\x33"
+  port: 2053
+  uuid: "\x39\x64\x36\x33\x35\x34\x36\x34\x2d\x35\x37\x64\x63\x2d\x34\x62\x61\x63\x2d\x61\x31\x62\x65\x2d\x64\x64\x37\x33\x31\x64\x37\x34\x65\x64\x30\x36"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x35\x70\x6f\x73\x74\x2d\x67\x61\x74\x65\x2e\x78\x35\x2e\x72\x75"
+  client-fingerprint: android
+  reality-opts:
+    public-key: EtfCxtqZmJ_cNs8Q02ZLuiHFoH7o7DogIcMSQjuuAiI
+    short-id: 346951f93706f6ec
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-wl
 - name: 🇩🇪 Germany | [*CIDR] YA
   type: vless
   server: "\x31\x35\x38\x2e\x31\x36\x30\x2e\x31\x39\x38\x2e\x36\x33"
@@ -24,6 +40,22 @@ proxies:
     path: "\x2f\x77\x65\x62\x73\x6f\x63\x6b\x65\x74"
     headers:
       Host: "\x63\x6c\x6f\x75\x64\x66\x6c\x61\x72\x65\x2e\x66\x77\x71\x66\x77\x37\x38\x33\x72\x67\x32\x64\x61\x64\x2e\x77\x65\x62\x73\x69\x74\x65"
+- name: 🇩🇪 Germany [*CIDR] CDN
+  type: vless
+  server: "\x34\x36\x2e\x32\x34\x33\x2e\x32\x33\x34\x2e\x31\x34\x33"
+  port: 2053
+  uuid: "\x39\x64\x36\x33\x35\x34\x36\x34\x2d\x35\x37\x64\x63\x2d\x34\x62\x61\x63\x2d\x61\x31\x62\x65\x2d\x64\x64\x37\x33\x31\x64\x37\x34\x65\x64\x30\x36"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x35\x70\x6f\x73\x74\x2d\x67\x61\x74\x65\x2e\x78\x35\x2e\x72\x75"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: EtfCxtqZmJ_cNs8Q02ZLuiHFoH7o7DogIcMSQjuuAiI
+    short-id: 346951f93706f6ec
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-wl
 - name: 🇩🇪 Germany [*CIDR] YA
   type: vless
   server: "\x31\x35\x38\x2e\x31\x36\x30\x2e\x31\x39\x38\x2e\x36\x33"
@@ -79,11 +111,11 @@ proxies:
   udp: true
   sni: "\x76\x6b\x63\x37\x2e\x73\x65\x63\x75\x72\x65\x64\x2d\x62\x79\x2d\x74\x65\x6e\x7a\x6f\x2e\x73\x62\x73"
   skip-cert-verify: true
-  client-fingerprint: firefox
+  client-fingerprint: safari
   alpn:
   - h2
   - http/1.1
-- name: '🇨🇭 Switzerland | 🌐 [*CIDR] VK #2'
+- name: 🇨🇭 Switzerland | 🌐 | [*CIDR] VK
   type: trojan
   server: "\x39\x30\x2e\x31\x35\x36\x2e\x32\x31\x38\x2e\x31\x32\x36"
   port: 2223
@@ -91,7 +123,7 @@ proxies:
   udp: true
   sni: "\x76\x6b\x63\x37\x2e\x73\x65\x63\x75\x72\x65\x64\x2d\x62\x79\x2d\x74\x65\x6e\x7a\x6f\x2e\x73\x62\x73"
   skip-cert-verify: true
-  client-fingerprint: safari
+  client-fingerprint: firefox
   alpn:
   - h2
   - http/1.1
