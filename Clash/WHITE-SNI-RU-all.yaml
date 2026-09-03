@@ -1,7 +1,7 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | SNI-RU
 # profile-update-interval: 1
-# Date/Time: 2026-09-03 / 10:01 (Moscow)
-# Количество: 2
+# Date/Time: 2026-09-03 / 11:13 (Moscow)
+# Количество: 5
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
@@ -25,3 +25,36 @@ proxies:
   udp: true
   sni: "\x76\x6b\x2e\x63\x6f\x6d"
   skip-cert-verify: true
+- name: 🇬🇧 United Kingdom | [SNI-RU] vk.com
+  type: trojan
+  server: "\x34\x35\x2e\x38\x35\x2e\x38\x38\x2e\x31\x39\x34"
+  port: 2234
+  password: "\x74\x72\x69\x70\x69\x74\x72\x6f\x70\x61\x39\x39\x34\x38\x32\x35"
+  udp: true
+  sni: "\x76\x6b\x2e\x63\x6f\x6d"
+  skip-cert-verify: true
+  client-fingerprint: edge
+  alpn:
+  - http/1.1
+- name: '🇬🇧 United Kingdom | [SNI-RU] vk.com #2'
+  type: trojan
+  server: "\x34\x35\x2e\x38\x35\x2e\x38\x38\x2e\x31\x39\x34"
+  port: 2234
+  password: "\x74\x72\x69\x70\x69\x74\x72\x6f\x70\x61\x39\x39\x34\x38\x32\x35"
+  udp: true
+  sni: "\x76\x6b\x2e\x63\x6f\x6d"
+  skip-cert-verify: true
+  client-fingerprint: ios
+  alpn:
+  - http/1.1
+- name: 🇬🇧 United Kingdom [SNI-RU] vk.com
+  type: trojan
+  server: "\x34\x35\x2e\x38\x35\x2e\x38\x38\x2e\x31\x39\x34"
+  port: 2234
+  password: "\x74\x72\x69\x70\x69\x74\x72\x6f\x70\x61\x39\x39\x34\x38\x32\x35"
+  udp: true
+  sni: "\x76\x6b\x2e\x63\x6f\x6d"
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  alpn:
+  - http/1.1
