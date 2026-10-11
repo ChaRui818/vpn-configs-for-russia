@@ -8,7 +8,7 @@
     ],
     "client": "v2rayNG",
     "source": "WHITE-SNI-RU-all.txt",
-    "source_datetime": "2026-10-11 23:09 Moscow"
+    "source_datetime": "2026-10-12 00:37 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -433,33 +433,37 @@
       "settings": {
         "vnext": [
           {
-            "address": "31.59.210.32",
-            "port": 443,
+            "address": "206.223.249.90",
+            "port": 33891,
             "users": [
               {
-                "id": "5413edfb-08d6-4fba-b51c-809c04feb127",
-                "encryption": "none"
+                "id": "9977ba41-b6aa-4033-9492-2f6abfcade31",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "grpcSettings": {
-          "serviceName": "astracat",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "www.yandex.ru",
-          "fingerprint": "random",
-          "publicKey": "qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA",
-          "shortId": "7ec4374ffc6308fd"
+          "serverName": "browser.yandex.com",
+          "fingerprint": "chrome",
+          "publicKey": "fj5f0rWTOAgd2gqCCWgag3oAGwb6MCef3OFNdnQLWW8",
+          "shortId": "f5bc6788",
+          "spiderX": "/api"
         }
       }
     },
@@ -496,9 +500,10 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "browser.yandex.com",
-          "fingerprint": "android",
+          "fingerprint": "edge",
           "publicKey": "fj5f0rWTOAgd2gqCCWgag3oAGwb6MCef3OFNdnQLWW8",
-          "shortId": "f5bc6788"
+          "shortId": "f5bc6788",
+          "spiderX": "/api"
         }
       }
     },
@@ -535,9 +540,10 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "browser.yandex.com",
-          "fingerprint": "firefox",
+          "fingerprint": "qq",
           "publicKey": "fj5f0rWTOAgd2gqCCWgag3oAGwb6MCef3OFNdnQLWW8",
-          "shortId": "f5bc6788"
+          "shortId": "f5bc6788",
+          "spiderX": "/api"
         }
       }
     },
@@ -547,11 +553,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "151.236.114.253",
-            "port": 443,
+            "address": "206.223.249.90",
+            "port": 33891,
             "users": [
               {
-                "id": "37914d93-f1a7-4bd2-8cfe-c44c26a720f2",
+                "id": "9977ba41-b6aa-4033-9492-2f6abfcade31",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -573,10 +579,11 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "rutube.ru",
-          "fingerprint": "firefox",
-          "publicKey": "BgH8ba_xaAeLa5pyvwwJp6HT7i09aNoiAsE1HgTXXkU",
-          "shortId": "3275b9d98d3b69fc"
+          "serverName": "browser.yandex.com",
+          "fingerprint": "safari",
+          "publicKey": "fj5f0rWTOAgd2gqCCWgag3oAGwb6MCef3OFNdnQLWW8",
+          "shortId": "f5bc6788",
+          "spiderX": "/api"
         }
       }
     },
@@ -586,36 +593,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "151.236.114.253",
+            "address": "31.59.210.32",
             "port": 443,
             "users": [
               {
-                "id": "37914d93-f1a7-4bd2-8cfe-c44c26a720f2",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "5413edfb-08d6-4fba-b51c-809c04feb127",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "astracat",
+          "multiMode": false
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "rutube.ru",
-          "fingerprint": "qq",
-          "publicKey": "BgH8ba_xaAeLa5pyvwwJp6HT7i09aNoiAsE1HgTXXkU",
-          "shortId": "3275b9d98d3b69fc"
+          "serverName": "www.yandex.ru",
+          "fingerprint": "firefox",
+          "publicKey": "qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA",
+          "shortId": "7ec4374ffc6308fd"
         }
       }
     },
@@ -685,7 +689,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "www.yandex.ru",
-          "fingerprint": "firefox",
+          "fingerprint": "random",
           "publicKey": "qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA",
           "shortId": "7ec4374ffc6308fd"
         }
