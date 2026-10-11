@@ -3,12 +3,12 @@
     "name": "WHITE-SNI-RU-all — v2rayNG Auto Select GLOBAL",
     "generator": "Igareck GitHub",
     "notes": [
-      "2 proxies",
+      "3 proxies",
       "Interval is 5 minutes + leastPing + routing GLOBAL."
     ],
     "client": "v2rayNG",
     "source": "WHITE-SNI-RU-all.txt",
-    "source_datetime": "2026-10-11 10:52 Moscow"
+    "source_datetime": "2026-10-11 13:46 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -69,8 +69,7 @@
           "full:localhost",
           "domain:local",
           "domain:lan",
-          "regexp:^[^.]+$",
-          "full:se3.h1cloud.net"
+          "regexp:^[^.]+$"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -126,8 +125,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:se3.h1cloud.net"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -147,8 +145,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:se3.h1cloud.net"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -168,8 +165,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:se3.h1cloud.net"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -189,8 +185,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:se3.h1cloud.net"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -210,8 +205,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:se3.h1cloud.net"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -231,8 +225,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:se3.h1cloud.net"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -252,8 +245,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:se3.h1cloud.net"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -273,8 +265,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:se3.h1cloud.net"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -294,8 +285,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:se3.h1cloud.net"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -315,8 +305,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:se3.h1cloud.net"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -336,8 +325,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:se3.h1cloud.net"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -357,8 +345,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:se3.h1cloud.net"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -446,11 +433,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "se3.h1cloud.net",
-            "port": 25642,
+            "address": "31.59.210.32",
+            "port": 443,
             "users": [
               {
-                "id": "83383473-0d62-4089-ac4d-d7ecb413504a",
+                "id": "5413edfb-08d6-4fba-b51c-809c04feb127",
                 "encryption": "none"
               }
             ]
@@ -458,24 +445,21 @@
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "astracat",
+          "multiMode": false
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "sun6-21.userapi.com",
-          "fingerprint": "android",
-          "publicKey": "0PdoBW4uTOpf4zUR1Jc_5WHy1QKHp-W81emZAQKL93s",
-          "shortId": "225dc9f736dc9058",
-          "spiderX": "/"
+          "serverName": "www.yandex.ru",
+          "fingerprint": "firefox",
+          "publicKey": "qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA",
+          "shortId": "7ec4374ffc6308fd"
         }
       }
     },
@@ -485,11 +469,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "se3.h1cloud.net",
-            "port": 25642,
+            "address": "31.59.210.32",
+            "port": 443,
             "users": [
               {
-                "id": "83383473-0d62-4089-ac4d-d7ecb413504a",
+                "id": "5413edfb-08d6-4fba-b51c-809c04feb127",
                 "encryption": "none"
               }
             ]
@@ -497,44 +481,58 @@
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "astracat",
+          "multiMode": false
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "sun6-21.userapi.com",
-          "fingerprint": "firefox",
-          "publicKey": "0PdoBW4uTOpf4zUR1Jc_5WHy1QKHp-W81emZAQKL93s",
-          "shortId": "225dc9f736dc9058",
-          "spiderX": "/"
+          "serverName": "www.yandex.ru",
+          "fingerprint": "random",
+          "publicKey": "qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA",
+          "shortId": "7ec4374ffc6308fd"
         }
       }
     },
     {
-      "tag": "fragment",
-      "protocol": "freedom",
+      "tag": "igareck-node-003",
+      "protocol": "vless",
       "settings": {
-        "fragment": {
-          "packets": "1-3",
-          "length": "50-100",
-          "interval": "10-20",
-          "maxSplit": "10"
-        },
-        "noises": [
+        "vnext": [
           {
-            "type": "rand",
-            "packet": "50-150",
-            "delay": "10-50"
+            "address": "31.59.210.32",
+            "port": 443,
+            "users": [
+              {
+                "id": "5413edfb-08d6-4fba-b51c-809c04feb127",
+                "encryption": "none"
+              }
+            ]
           }
         ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "astracat",
+          "multiMode": false
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.yandex.ru",
+          "fingerprint": "safari",
+          "publicKey": "qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA",
+          "shortId": "7ec4374ffc6308fd"
+        }
       }
     },
     {
