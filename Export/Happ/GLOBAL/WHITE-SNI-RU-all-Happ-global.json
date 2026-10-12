@@ -3,12 +3,12 @@
     "name": "WHITE-SNI-RU-all — Happ Auto Select GLOBAL",
     "generator": "Igareck GitHub",
     "notes": [
-      "11 proxies",
+      "4 proxies",
       "Interval is 5 minutes + leastPing + routing GLOBAL."
     ],
     "client": "Happ",
     "source": "WHITE-SNI-RU-all.txt",
-    "source_datetime": "2026-10-12 06:23 Moscow"
+    "source_datetime": "2026-10-12 07:56 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -426,36 +426,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "206.223.249.90",
-            "port": 33891,
+            "address": "31.59.210.32",
+            "port": 443,
             "users": [
               {
-                "id": "9977ba41-b6aa-4033-9492-2f6abfcade31",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "5413edfb-08d6-4fba-b51c-809c04feb127",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "astracat",
+          "multiMode": false
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "browser.yandex.com",
-          "fingerprint": "firefox",
-          "publicKey": "fj5f0rWTOAgd2gqCCWgag3oAGwb6MCef3OFNdnQLWW8",
-          "shortId": "f5bc6788"
+          "serverName": "www.yandex.ru",
+          "fingerprint": "random",
+          "publicKey": "qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA",
+          "shortId": "7ec4374ffc6308fd"
         }
       }
     },
@@ -465,281 +462,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "206.223.249.90",
-            "port": 33891,
-            "users": [
-              {
-                "id": "9977ba41-b6aa-4033-9492-2f6abfcade31",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "browser.yandex.com",
-          "fingerprint": "chrome",
-          "publicKey": "fj5f0rWTOAgd2gqCCWgag3oAGwb6MCef3OFNdnQLWW8",
-          "shortId": "f5bc6788",
-          "spiderX": "/api"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-003",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "206.223.249.90",
-            "port": 33891,
-            "users": [
-              {
-                "id": "9977ba41-b6aa-4033-9492-2f6abfcade31",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "browser.yandex.com",
-          "fingerprint": "edge",
-          "publicKey": "fj5f0rWTOAgd2gqCCWgag3oAGwb6MCef3OFNdnQLWW8",
-          "shortId": "f5bc6788",
-          "spiderX": "/api"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-004",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "206.223.249.90",
-            "port": 33891,
-            "users": [
-              {
-                "id": "9977ba41-b6aa-4033-9492-2f6abfcade31",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "browser.yandex.com",
-          "fingerprint": "ios",
-          "publicKey": "fj5f0rWTOAgd2gqCCWgag3oAGwb6MCef3OFNdnQLWW8",
-          "shortId": "f5bc6788",
-          "spiderX": "/api"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-005",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "206.223.249.90",
-            "port": 33891,
-            "users": [
-              {
-                "id": "9977ba41-b6aa-4033-9492-2f6abfcade31",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "browser.yandex.com",
-          "fingerprint": "safari",
-          "publicKey": "fj5f0rWTOAgd2gqCCWgag3oAGwb6MCef3OFNdnQLWW8",
-          "shortId": "f5bc6788",
-          "spiderX": "/api"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-006",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "206.223.249.90",
-            "port": 33891,
-            "users": [
-              {
-                "id": "9977ba41-b6aa-4033-9492-2f6abfcade31",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "browser.yandex.com",
-          "fingerprint": "chrome",
-          "publicKey": "fj5f0rWTOAgd2gqCCWgag3oAGwb6MCef3OFNdnQLWW8",
-          "shortId": "f5bc6788",
-          "spiderX": "/api"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-007",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "206.223.249.90",
-            "port": 33891,
-            "users": [
-              {
-                "id": "9977ba41-b6aa-4033-9492-2f6abfcade31",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "browser.yandex.com",
-          "fingerprint": "random",
-          "publicKey": "fj5f0rWTOAgd2gqCCWgag3oAGwb6MCef3OFNdnQLWW8",
-          "shortId": "f5bc6788"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-008",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "31.59.210.32",
-            "port": 443,
-            "users": [
-              {
-                "id": "5413edfb-08d6-4fba-b51c-809c04feb127",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "astracat",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.yandex.ru",
-          "fingerprint": "random",
-          "publicKey": "qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA",
-          "shortId": "7ec4374ffc6308fd"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-009",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "31.59.210.32",
             "port": 443,
             "users": [
@@ -771,7 +493,7 @@
       }
     },
     {
-      "tag": "igareck-node-010",
+      "tag": "igareck-node-003",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -807,7 +529,7 @@
       }
     },
     {
-      "tag": "igareck-node-011",
+      "tag": "igareck-node-004",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -840,25 +562,6 @@
           "publicKey": "qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA",
           "shortId": "7ec4374ffc6308fd"
         }
-      }
-    },
-    {
-      "tag": "fragment",
-      "protocol": "freedom",
-      "settings": {
-        "fragment": {
-          "packets": "1-3",
-          "length": "50-100",
-          "interval": "10-20",
-          "maxSplit": "10"
-        },
-        "noises": [
-          {
-            "type": "rand",
-            "packet": "50-150",
-            "delay": "10-50"
-          }
-        ]
       }
     },
     {
