@@ -3,12 +3,12 @@
     "name": "WHITE-SNI-RU-all — Happ Auto Select GLOBAL",
     "generator": "Igareck GitHub",
     "notes": [
-      "4 proxies",
+      "3 proxies",
       "Interval is 5 minutes + leastPing + routing GLOBAL."
     ],
     "client": "Happ",
     "source": "WHITE-SNI-RU-all.txt",
-    "source_datetime": "2026-10-12 10:57 Moscow"
+    "source_datetime": "2026-10-13 16:46 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -426,33 +426,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "31.59.210.32",
+            "address": "132.243.74.70",
             "port": 443,
             "users": [
               {
-                "id": "5413edfb-08d6-4fba-b51c-809c04feb127",
-                "encryption": "none"
+                "id": "4eb80efa-363e-4f7f-a787-7e280c5dadd0",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "grpcSettings": {
-          "serviceName": "astracat",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "www.yandex.ru",
-          "fingerprint": "random",
-          "publicKey": "qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA",
-          "shortId": "7ec4374ffc6308fd"
+          "serverName": "yandex.ru",
+          "fingerprint": "chrome",
+          "publicKey": "4puvvJ1CFZuEGMT_h2gxqLzYpgmKEfDV1omah9ATKQs",
+          "shortId": "57ce34a1cbed916f"
         }
       }
     },
@@ -462,33 +465,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "31.59.210.32",
+            "address": "132.243.74.70",
             "port": 443,
             "users": [
               {
-                "id": "5413edfb-08d6-4fba-b51c-809c04feb127",
-                "encryption": "none"
+                "id": "4eb80efa-363e-4f7f-a787-7e280c5dadd0",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "grpcSettings": {
-          "serviceName": "astracat",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "www.yandex.ru",
-          "fingerprint": "firefox",
-          "publicKey": "qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA",
-          "shortId": "7ec4374ffc6308fd"
+          "serverName": "yandex.ru",
+          "fingerprint": "edge",
+          "publicKey": "4puvvJ1CFZuEGMT_h2gxqLzYpgmKEfDV1omah9ATKQs",
+          "shortId": "57ce34a1cbed916f"
         }
       }
     },
@@ -498,70 +504,56 @@
       "settings": {
         "vnext": [
           {
-            "address": "31.59.210.32",
+            "address": "132.243.74.70",
             "port": 443,
             "users": [
               {
-                "id": "5413edfb-08d6-4fba-b51c-809c04feb127",
-                "encryption": "none"
+                "id": "4eb80efa-363e-4f7f-a787-7e280c5dadd0",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "grpcSettings": {
-          "serviceName": "astracat",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "www.yandex.ru",
-          "fingerprint": "safari",
-          "publicKey": "qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA",
-          "shortId": "7ec4374ffc6308fd"
+          "serverName": "yandex.ru",
+          "fingerprint": "firefox",
+          "publicKey": "4puvvJ1CFZuEGMT_h2gxqLzYpgmKEfDV1omah9ATKQs",
+          "shortId": "57ce34a1cbed916f"
         }
       }
     },
     {
-      "tag": "igareck-node-004",
-      "protocol": "vless",
+      "tag": "fragment",
+      "protocol": "freedom",
       "settings": {
-        "vnext": [
+        "fragment": {
+          "packets": "1-3",
+          "length": "50-100",
+          "interval": "10-20",
+          "maxSplit": "10"
+        },
+        "noises": [
           {
-            "address": "31.59.210.32",
-            "port": 443,
-            "users": [
-              {
-                "id": "5413edfb-08d6-4fba-b51c-809c04feb127",
-                "encryption": "none"
-              }
-            ]
+            "type": "rand",
+            "packet": "50-150",
+            "delay": "10-50"
           }
         ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "astracat",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.yandex.ru",
-          "fingerprint": "ios",
-          "publicKey": "qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA",
-          "shortId": "7ec4374ffc6308fd"
-        }
       }
     },
     {
