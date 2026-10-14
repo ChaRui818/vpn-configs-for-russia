@@ -477,10 +477,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "n2.185-86-145-142.sslip.io",
-          "fingerprint": "random",
-          "alpn": [
-            "http/1.1"
-          ]
+          "fingerprint": "random"
         }
       }
     },
@@ -510,12 +507,17 @@
         },
         "wsSettings": {
           "path": "/e7ws",
-          "headers": {}
+          "headers": {
+            "Host": "n2.185-86-145-142.sslip.io"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "serverName": "n2.185-86-145-142.sslip.io",
-          "fingerprint": "random"
+          "fingerprint": "random",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -556,45 +558,6 @@
           "alpn": [
             "http/1.1"
           ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-005",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "90.156.218.163",
-            "port": 443,
-            "users": [
-              {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "qq",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
         }
       }
     },
