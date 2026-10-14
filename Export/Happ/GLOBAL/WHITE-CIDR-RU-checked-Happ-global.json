@@ -3,12 +3,12 @@
     "name": "WHITE-CIDR-RU-checked — Happ Auto Select GLOBAL",
     "generator": "Igareck GitHub",
     "notes": [
-      "20 proxies",
+      "22 proxies",
       "Interval is 5 minutes + leastPing + routing GLOBAL."
     ],
     "client": "Happ",
     "source": "WHITE-CIDR-RU-checked.txt",
-    "source_datetime": "2026-10-14 02:07 Moscow"
+    "source_datetime": "2026-10-14 03:37 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -69,7 +69,7 @@
           "domain:local",
           "domain:lan",
           "regexp:^[^.]+$",
-          "full:cdn1.cloud-vk.com"
+          "full:n2.185-86-145-142.sslip.io"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -126,7 +126,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:cdn1.cloud-vk.com"
+          "full:n2.185-86-145-142.sslip.io"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -147,7 +147,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:cdn1.cloud-vk.com"
+          "full:n2.185-86-145-142.sslip.io"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -168,7 +168,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:cdn1.cloud-vk.com"
+          "full:n2.185-86-145-142.sslip.io"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -189,7 +189,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:cdn1.cloud-vk.com"
+          "full:n2.185-86-145-142.sslip.io"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -210,7 +210,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:cdn1.cloud-vk.com"
+          "full:n2.185-86-145-142.sslip.io"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -231,7 +231,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:cdn1.cloud-vk.com"
+          "full:n2.185-86-145-142.sslip.io"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -252,7 +252,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:cdn1.cloud-vk.com"
+          "full:n2.185-86-145-142.sslip.io"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -273,7 +273,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:cdn1.cloud-vk.com"
+          "full:n2.185-86-145-142.sslip.io"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -294,7 +294,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:cdn1.cloud-vk.com"
+          "full:n2.185-86-145-142.sslip.io"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -315,7 +315,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:cdn1.cloud-vk.com"
+          "full:n2.185-86-145-142.sslip.io"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -336,7 +336,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:cdn1.cloud-vk.com"
+          "full:n2.185-86-145-142.sslip.io"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -357,7 +357,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:cdn1.cloud-vk.com"
+          "full:n2.185-86-145-142.sslip.io"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -439,36 +439,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdn1.cloud-vk.com",
-            "port": 9443,
+            "address": "185.86.145.142",
+            "port": 443,
             "users": [
               {
-                "id": "4c9b944f-6637-4cc2-a71c-5213806084ae",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "7832b450-d561-45d6-b425-8527fa8babe0",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/e7ws",
+          "headers": {
+            "Host": "n2.185-86-145-142.sslip.io"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "id.vk.ru",
-          "fingerprint": "qq",
-          "publicKey": "i_6iv4715amoJKjYdMvdfhDCvrTu34ttnPPnuc5TBxY",
-          "shortId": "55"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "n2.185-86-145-142.sslip.io",
+          "fingerprint": "firefox"
         }
       }
     },
@@ -505,7 +503,10 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "n2.185-86-145-142.sslip.io",
-          "fingerprint": "firefox"
+          "fingerprint": "random",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -515,36 +516,37 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
+            "address": "n2.185-86-145-142.sslip.io",
             "port": 443,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "7832b450-d561-45d6-b425-8527fa8babe0",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/e7ws",
+          "headers": {
+            "Host": "n2.185-86-145-142.sslip.io"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "firefox",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "n2.185-86-145-142.sslip.io",
+          "fingerprint": "random",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -581,7 +583,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "ios",
+          "fingerprint": "firefox",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -620,7 +622,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "qq",
+          "fingerprint": "ios",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -659,7 +661,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "edge",
+          "fingerprint": "qq",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -698,7 +700,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "firefox",
+          "fingerprint": "edge",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -737,7 +739,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "safari",
+          "fingerprint": "firefox",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -776,7 +778,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "ios",
+          "fingerprint": "safari",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -815,7 +817,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "chrome",
+          "fingerprint": "edge",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -854,6 +856,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
+          "fingerprint": "ios",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -931,7 +934,6 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "random",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -970,7 +972,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "edge",
+          "fingerprint": "chrome",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -1009,7 +1011,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "safari",
+          "fingerprint": "random",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -1048,7 +1050,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "ios",
+          "fingerprint": "edge",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -1087,7 +1089,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "chrome",
+          "fingerprint": "safari",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -1126,7 +1128,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "qq",
+          "fingerprint": "firefox",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -1165,7 +1167,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "safari",
+          "fingerprint": "ios",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -1177,11 +1179,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.86.145.55",
-            "port": 7449,
+            "address": "90.156.218.163",
+            "port": 443,
             "users": [
               {
-                "id": "7ac594a4-fabc-486c-9a91-5662c09e63cd",
+                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -1203,10 +1205,88 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "passport.yandex.ru",
-          "fingerprint": "firefox",
-          "publicKey": "LQ9efyV9IrV5BRFwC3tNI9kXu8WyeiZV-juU6PsUAy4",
-          "shortId": "60bc5cc8b4c6cf3f"
+          "serverName": "eh.vk.ru",
+          "fingerprint": "chrome",
+          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "shortId": "db04ce8bdb8900f1"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-021",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "90.156.218.163",
+            "port": 443,
+            "users": [
+              {
+                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "eh.vk.ru",
+          "fingerprint": "qq",
+          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "shortId": "db04ce8bdb8900f1"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-022",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "90.156.218.163",
+            "port": 443,
+            "users": [
+              {
+                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "eh.vk.ru",
+          "fingerprint": "safari",
+          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "shortId": "db04ce8bdb8900f1"
         }
       }
     },
