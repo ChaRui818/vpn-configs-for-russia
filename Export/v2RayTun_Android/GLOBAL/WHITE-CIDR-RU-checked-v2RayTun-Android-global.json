@@ -58,7 +58,8 @@
           "full:localhost",
           "domain:local",
           "domain:lan",
-          "regexp:^[^.]+$"
+          "regexp:^[^.]+$",
+          "full:ya-ne-nefor.whitenw.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -114,7 +115,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ya-ne-nefor.whitenw.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -134,7 +136,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ya-ne-nefor.whitenw.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -154,7 +157,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ya-ne-nefor.whitenw.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -174,7 +178,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ya-ne-nefor.whitenw.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -194,7 +199,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ya-ne-nefor.whitenw.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -214,7 +220,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ya-ne-nefor.whitenw.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -234,7 +241,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ya-ne-nefor.whitenw.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -254,7 +262,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ya-ne-nefor.whitenw.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -274,7 +283,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ya-ne-nefor.whitenw.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -294,7 +304,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ya-ne-nefor.whitenw.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -314,7 +325,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ya-ne-nefor.whitenw.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -334,7 +346,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ya-ne-nefor.whitenw.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -424,34 +437,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.86.145.183",
-            "port": 443,
+            "address": "ya-ne-nefor.whitenw.net",
+            "port": 4510,
             "users": [
               {
-                "id": "bcf7fc76-83ad-419c-91c9-d192797ce7a4",
-                "encryption": "none"
+                "id": "c3db7657-88ce-42a6-b998-1e0364b277ac",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "wsSettings": {
-          "path": "/nl7ws",
-          "headers": {
-            "Host": "api.wyre-file.ru"
+        "rawSettings": {
+          "header": {
+            "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "api.wyre-file.ru",
-          "fingerprint": "android"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "9c99da.usecache.net",
+          "fingerprint": "edge",
+          "publicKey": "hkvjyE8WMKHvdGfMta7PAIGz6HAv2WiXvWvAQmsE_DM",
+          "shortId": "2d0c188798bae174"
         }
       }
     },
@@ -461,34 +476,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.86.145.183",
-            "port": 443,
+            "address": "ya-ne-nefor.whitenw.net",
+            "port": 4510,
             "users": [
               {
-                "id": "bcf7fc76-83ad-419c-91c9-d192797ce7a4",
-                "encryption": "none"
+                "id": "c3db7657-88ce-42a6-b998-1e0364b277ac",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "wsSettings": {
-          "path": "/nl7ws",
-          "headers": {
-            "Host": "api.wyre-file.ru"
+        "rawSettings": {
+          "header": {
+            "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "api.wyre-file.ru",
-          "fingerprint": "ios"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "9c99da.usecache.net",
+          "fingerprint": "firefox",
+          "publicKey": "hkvjyE8WMKHvdGfMta7PAIGz6HAv2WiXvWvAQmsE_DM",
+          "shortId": "2d0c188798bae174"
         }
       }
     },
@@ -498,34 +515,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.86.145.183",
-            "port": 443,
+            "address": "ya-ne-nefor.whitenw.net",
+            "port": 4510,
             "users": [
               {
-                "id": "bcf7fc76-83ad-419c-91c9-d192797ce7a4",
-                "encryption": "none"
+                "id": "c3db7657-88ce-42a6-b998-1e0364b277ac",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "wsSettings": {
-          "path": "/nl7ws",
-          "headers": {
-            "Host": "api.wyre-file.ru"
+        "rawSettings": {
+          "header": {
+            "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "api.wyre-file.ru",
-          "fingerprint": "qq"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "9c99da.usecache.net",
+          "fingerprint": "ios",
+          "publicKey": "hkvjyE8WMKHvdGfMta7PAIGz6HAv2WiXvWvAQmsE_DM",
+          "shortId": "2d0c188798bae174"
         }
       }
     },
@@ -535,34 +554,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.86.145.183",
-            "port": 443,
+            "address": "ya-ne-nefor.whitenw.net",
+            "port": 4510,
             "users": [
               {
-                "id": "bcf7fc76-83ad-419c-91c9-d192797ce7a4",
-                "encryption": "none"
+                "id": "c3db7657-88ce-42a6-b998-1e0364b277ac",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "wsSettings": {
-          "path": "/nl7ws",
-          "headers": {
-            "Host": "api.wyre-file.ru"
+        "rawSettings": {
+          "header": {
+            "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "api.wyre-file.ru",
-          "fingerprint": "random"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "9c99da.usecache.net",
+          "fingerprint": "qq",
+          "publicKey": "hkvjyE8WMKHvdGfMta7PAIGz6HAv2WiXvWvAQmsE_DM",
+          "shortId": "2d0c188798bae174"
         }
       }
     },
@@ -572,34 +593,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.86.145.183",
-            "port": 443,
+            "address": "ya-ne-nefor.whitenw.net",
+            "port": 4510,
             "users": [
               {
-                "id": "bcf7fc76-83ad-419c-91c9-d192797ce7a4",
-                "encryption": "none"
+                "id": "c3db7657-88ce-42a6-b998-1e0364b277ac",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "wsSettings": {
-          "path": "/nl7ws",
-          "headers": {
-            "Host": "api.wyre-file.ru"
+        "rawSettings": {
+          "header": {
+            "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "api.wyre-file.ru",
-          "fingerprint": "safari"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "9c99da.usecache.net",
+          "fingerprint": "safari",
+          "publicKey": "hkvjyE8WMKHvdGfMta7PAIGz6HAv2WiXvWvAQmsE_DM",
+          "shortId": "2d0c188798bae174"
         }
       }
     },
