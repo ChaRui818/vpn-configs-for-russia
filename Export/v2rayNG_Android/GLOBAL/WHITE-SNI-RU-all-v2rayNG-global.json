@@ -8,7 +8,7 @@
     ],
     "client": "v2rayNG",
     "source": "WHITE-SNI-RU-all.txt",
-    "source_datetime": "2026-10-15 02:23 Moscow"
+    "source_datetime": "2026-10-15 08:11 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -69,7 +69,8 @@
           "full:localhost",
           "domain:local",
           "domain:lan",
-          "regexp:^[^.]+$"
+          "regexp:^[^.]+$",
+          "full:ns.ll0ll.vip"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -125,7 +126,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ns.ll0ll.vip"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -145,7 +147,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ns.ll0ll.vip"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -165,7 +168,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ns.ll0ll.vip"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -185,7 +189,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ns.ll0ll.vip"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -205,7 +210,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ns.ll0ll.vip"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -225,7 +231,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ns.ll0ll.vip"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -245,7 +252,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ns.ll0ll.vip"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -265,7 +273,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ns.ll0ll.vip"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -285,7 +294,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ns.ll0ll.vip"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -305,7 +315,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ns.ll0ll.vip"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -325,7 +336,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ns.ll0ll.vip"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -345,7 +357,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:ns.ll0ll.vip"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -433,35 +446,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "217.13.105.43",
-            "port": 443,
+            "address": "ns.ll0ll.vip",
+            "port": 2096,
             "users": [
               {
-                "id": "fcfc0d80-65c9-4a2a-a211-825332ddd07c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "768712b8-81dc-440f-9b38-4523bf767df4",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "vless-grpc-reality",
+          "multiMode": false
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "avito.st",
+          "serverName": "id.vk.com",
           "fingerprint": "android",
-          "publicKey": "2C6MqBdf1XxEKmVe_hHfYhov31tM_eEuq_c5ZFMfPAI"
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
         }
       }
     },
@@ -471,35 +481,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "217.13.105.43",
-            "port": 443,
+            "address": "ns.ll0ll.vip",
+            "port": 2096,
             "users": [
               {
-                "id": "fcfc0d80-65c9-4a2a-a211-825332ddd07c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "768712b8-81dc-440f-9b38-4523bf767df4",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "vless-grpc-reality",
+          "multiMode": false
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "avito.st",
-          "fingerprint": "edge",
-          "publicKey": "2C6MqBdf1XxEKmVe_hHfYhov31tM_eEuq_c5ZFMfPAI"
+          "serverName": "id.vk.com",
+          "fingerprint": "chrome",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
         }
       }
     },
@@ -509,35 +516,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "217.13.105.43",
-            "port": 443,
+            "address": "ns.ll0ll.vip",
+            "port": 2096,
             "users": [
               {
-                "id": "fcfc0d80-65c9-4a2a-a211-825332ddd07c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "768712b8-81dc-440f-9b38-4523bf767df4",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "vless-grpc-reality",
+          "multiMode": false
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "avito.st",
+          "serverName": "id.vk.com",
           "fingerprint": "ios",
-          "publicKey": "2C6MqBdf1XxEKmVe_hHfYhov31tM_eEuq_c5ZFMfPAI"
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
         }
       }
     },
@@ -547,35 +551,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "217.13.105.43",
-            "port": 443,
+            "address": "ns.ll0ll.vip",
+            "port": 2096,
             "users": [
               {
-                "id": "fcfc0d80-65c9-4a2a-a211-825332ddd07c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "768712b8-81dc-440f-9b38-4523bf767df4",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "vless-grpc-reality",
+          "multiMode": false
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "avito.st",
+          "serverName": "id.vk.com",
           "fingerprint": "qq",
-          "publicKey": "2C6MqBdf1XxEKmVe_hHfYhov31tM_eEuq_c5ZFMfPAI"
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
         }
       }
     },
@@ -585,55 +586,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "217.13.105.43",
-            "port": 443,
+            "address": "ns.ll0ll.vip",
+            "port": 2096,
             "users": [
               {
-                "id": "fcfc0d80-65c9-4a2a-a211-825332ddd07c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "768712b8-81dc-440f-9b38-4523bf767df4",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "vless-grpc-reality",
+          "multiMode": false
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "avito.st",
+          "serverName": "id.vk.com",
           "fingerprint": "random",
-          "publicKey": "2C6MqBdf1XxEKmVe_hHfYhov31tM_eEuq_c5ZFMfPAI"
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
         }
-      }
-    },
-    {
-      "tag": "fragment",
-      "protocol": "freedom",
-      "settings": {
-        "fragment": {
-          "packets": "1-3",
-          "length": "50-100",
-          "interval": "10-20",
-          "maxSplit": "10"
-        },
-        "noises": [
-          {
-            "type": "rand",
-            "packet": "50-150",
-            "delay": "10-50"
-          }
-        ]
       }
     },
     {
