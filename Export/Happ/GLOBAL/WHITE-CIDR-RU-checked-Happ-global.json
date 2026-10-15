@@ -8,7 +8,7 @@
     ],
     "client": "Happ",
     "source": "WHITE-CIDR-RU-checked.txt",
-    "source_datetime": "2026-10-15 16:44 Moscow"
+    "source_datetime": "2026-10-15 18:12 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -69,6 +69,7 @@
           "domain:local",
           "domain:lan",
           "regexp:^[^.]+$",
+          "full:deliverya.online",
           "full:kaoangeltrahnimenya.net"
         ],
         "skipFallback": true,
@@ -126,6 +127,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:deliverya.online",
           "full:kaoangeltrahnimenya.net"
         ],
         "skipFallback": true,
@@ -147,6 +149,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:deliverya.online",
           "full:kaoangeltrahnimenya.net"
         ],
         "skipFallback": true,
@@ -168,6 +171,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:deliverya.online",
           "full:kaoangeltrahnimenya.net"
         ],
         "skipFallback": true,
@@ -189,6 +193,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:deliverya.online",
           "full:kaoangeltrahnimenya.net"
         ],
         "skipFallback": true,
@@ -210,6 +215,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:deliverya.online",
           "full:kaoangeltrahnimenya.net"
         ],
         "skipFallback": true,
@@ -231,6 +237,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:deliverya.online",
           "full:kaoangeltrahnimenya.net"
         ],
         "skipFallback": true,
@@ -252,6 +259,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:deliverya.online",
           "full:kaoangeltrahnimenya.net"
         ],
         "skipFallback": true,
@@ -273,6 +281,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:deliverya.online",
           "full:kaoangeltrahnimenya.net"
         ],
         "skipFallback": true,
@@ -294,6 +303,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:deliverya.online",
           "full:kaoangeltrahnimenya.net"
         ],
         "skipFallback": true,
@@ -315,6 +325,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:deliverya.online",
           "full:kaoangeltrahnimenya.net"
         ],
         "skipFallback": true,
@@ -336,6 +347,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:deliverya.online",
           "full:kaoangeltrahnimenya.net"
         ],
         "skipFallback": true,
@@ -357,6 +369,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:deliverya.online",
           "full:kaoangeltrahnimenya.net"
         ],
         "skipFallback": true,
@@ -439,36 +452,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
+            "address": "deliverya.online",
             "port": 443,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "ec3fa79e-ae4a-4d2e-b9c9-be8054fbc23d",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "wsSettings": {
+          "path": "/e11ws",
+          "headers": {}
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "android",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "deliverya.online",
+          "fingerprint": "chrome"
         }
       }
     },
@@ -478,36 +487,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
+            "address": "deliverya.online",
             "port": 443,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "ec3fa79e-ae4a-4d2e-b9c9-be8054fbc23d",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "wsSettings": {
+          "path": "/e11ws",
+          "headers": {}
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "firefox",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "deliverya.online",
+          "fingerprint": "edge"
         }
       }
     },
@@ -517,36 +522,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
+            "address": "deliverya.online",
             "port": 443,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "ec3fa79e-ae4a-4d2e-b9c9-be8054fbc23d",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "wsSettings": {
+          "path": "/e11ws",
+          "headers": {}
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "ios",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "deliverya.online",
+          "fingerprint": "ios"
         }
       }
     },
@@ -556,36 +557,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
+            "address": "deliverya.online",
             "port": 443,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "ec3fa79e-ae4a-4d2e-b9c9-be8054fbc23d",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "wsSettings": {
+          "path": "/e11ws",
+          "headers": {}
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "safari",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "deliverya.online",
+          "fingerprint": "safari"
         }
       }
     },
@@ -620,12 +617,86 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "kaoangeltrahnimenya.net",
-          "fingerprint": "chrome"
+          "fingerprint": "ios",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
     {
       "tag": "igareck-node-006",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "37.18.14.168",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "kaoangeltrahnimenya.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "kaoangeltrahnimenya.net",
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-007",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "37.18.14.168",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "kaoangeltrahnimenya.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "kaoangeltrahnimenya.net",
+          "fingerprint": "qq"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-008",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -658,7 +729,7 @@
       }
     },
     {
-      "tag": "igareck-node-007",
+      "tag": "igareck-node-009",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -691,7 +762,40 @@
       }
     },
     {
-      "tag": "igareck-node-008",
+      "tag": "igareck-node-010",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "37.18.14.168",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "kaoangeltrahnimenya.net",
+          "fingerprint": "safari"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-011",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -740,7 +844,42 @@
       }
     },
     {
-      "tag": "igareck-node-009",
+      "tag": "igareck-node-012",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "kaoangeltrahnimenya.net",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "kaoangeltrahnimenya.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "kaoangeltrahnimenya.net",
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-013",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -775,7 +914,7 @@
       }
     },
     {
-      "tag": "igareck-node-010",
+      "tag": "igareck-node-014",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -810,7 +949,7 @@
       }
     },
     {
-      "tag": "igareck-node-011",
+      "tag": "igareck-node-015",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -844,41 +983,7 @@
       }
     },
     {
-      "tag": "igareck-node-012",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "kaoangeltrahnimenya.net",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "kaoangeltrahnimenya.net",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "fingerprint": "ios"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-013",
+      "tag": "igareck-node-016",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -912,231 +1017,6 @@
       }
     },
     {
-      "tag": "igareck-node-014",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.168",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "kaoangeltrahnimenya.net",
-          "mode": "auto",
-          "extra": {
-            "host": "",
-            "path": "",
-            "mode": "",
-            "xPaddingBytes": "100-1000",
-            "xPaddingObfsMode": false,
-            "xPaddingKey": "",
-            "xPaddingHeader": "",
-            "xPaddingPlacement": "",
-            "xPaddingMethod": "",
-            "uplinkHTTPMethod": "",
-            "sessionIDPlacement": "",
-            "sessionIDKey": "",
-            "sessionIDTable": "",
-            "sessionIDLength": "0",
-            "seqPlacement": "",
-            "seqKey": "",
-            "uplinkDataPlacement": "",
-            "uplinkDataKey": "",
-            "uplinkChunkSize": "0",
-            "noGRPCHeader": false,
-            "noSSEHeader": false,
-            "scMaxEachPostBytes": "1000000",
-            "scMinPostsIntervalMs": "30",
-            "scMaxBufferedPosts": 0,
-            "scStreamUpServerSecs": "0",
-            "serverMaxHeaderBytes": 0,
-            "xmux": {
-              "maxConcurrency": "16-32",
-              "maxConnections": "0",
-              "cMaxReuseTimes": "64-128",
-              "hMaxRequestTimes": "0",
-              "hMaxReusableSecs": "0",
-              "hKeepAlivePeriod": 0
-            }
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "kaoangeltrahnimenya.net",
-          "fingerprint": "android",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-015",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.168",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "kaoangeltrahnimenya.net",
-          "mode": "auto",
-          "extra": {
-            "host": "",
-            "path": "",
-            "mode": "",
-            "xPaddingBytes": "100-1000",
-            "xPaddingObfsMode": false,
-            "xPaddingKey": "",
-            "xPaddingHeader": "",
-            "xPaddingPlacement": "",
-            "xPaddingMethod": "",
-            "uplinkHTTPMethod": "",
-            "sessionIDPlacement": "",
-            "sessionIDKey": "",
-            "sessionIDTable": "",
-            "sessionIDLength": "0",
-            "seqPlacement": "",
-            "seqKey": "",
-            "uplinkDataPlacement": "",
-            "uplinkDataKey": "",
-            "uplinkChunkSize": "0",
-            "noGRPCHeader": false,
-            "noSSEHeader": false,
-            "scMaxEachPostBytes": "1000000",
-            "scMinPostsIntervalMs": "30",
-            "scMaxBufferedPosts": 0,
-            "scStreamUpServerSecs": "0",
-            "serverMaxHeaderBytes": 0,
-            "xmux": {
-              "maxConcurrency": "16-32",
-              "maxConnections": "0",
-              "cMaxReuseTimes": "64-128",
-              "hMaxRequestTimes": "0",
-              "hMaxReusableSecs": "0",
-              "hKeepAlivePeriod": 0
-            }
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "kaoangeltrahnimenya.net",
-          "fingerprint": "chrome",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-016",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.168",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "kaoangeltrahnimenya.net",
-          "mode": "auto",
-          "extra": {
-            "host": "",
-            "path": "",
-            "mode": "",
-            "xPaddingBytes": "100-1000",
-            "xPaddingObfsMode": false,
-            "xPaddingKey": "",
-            "xPaddingHeader": "",
-            "xPaddingPlacement": "",
-            "xPaddingMethod": "",
-            "uplinkHTTPMethod": "",
-            "sessionIDPlacement": "",
-            "sessionIDKey": "",
-            "sessionIDTable": "",
-            "sessionIDLength": "0",
-            "seqPlacement": "",
-            "seqKey": "",
-            "uplinkDataPlacement": "",
-            "uplinkDataKey": "",
-            "uplinkChunkSize": "0",
-            "noGRPCHeader": false,
-            "noSSEHeader": false,
-            "scMaxEachPostBytes": "1000000",
-            "scMinPostsIntervalMs": "30",
-            "scMaxBufferedPosts": 0,
-            "scStreamUpServerSecs": "0",
-            "serverMaxHeaderBytes": 0,
-            "xmux": {
-              "maxConcurrency": "16-32",
-              "maxConnections": "0",
-              "cMaxReuseTimes": "64-128",
-              "hMaxRequestTimes": "0",
-              "hMaxReusableSecs": "0",
-              "hKeepAlivePeriod": 0
-            }
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "kaoangeltrahnimenya.net",
-          "fingerprint": "firefox",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
       "tag": "igareck-node-017",
       "protocol": "vless",
       "settings": {
@@ -1162,48 +1042,12 @@
         "xhttpSettings": {
           "path": "/api/v1/upload",
           "host": "kaoangeltrahnimenya.net",
-          "mode": "auto",
-          "extra": {
-            "host": "",
-            "path": "",
-            "mode": "",
-            "xPaddingBytes": "100-1000",
-            "xPaddingObfsMode": false,
-            "xPaddingKey": "",
-            "xPaddingHeader": "",
-            "xPaddingPlacement": "",
-            "xPaddingMethod": "",
-            "uplinkHTTPMethod": "",
-            "sessionIDPlacement": "",
-            "sessionIDKey": "",
-            "sessionIDTable": "",
-            "sessionIDLength": "0",
-            "seqPlacement": "",
-            "seqKey": "",
-            "uplinkDataPlacement": "",
-            "uplinkDataKey": "",
-            "uplinkChunkSize": "0",
-            "noGRPCHeader": false,
-            "noSSEHeader": false,
-            "scMaxEachPostBytes": "1000000",
-            "scMinPostsIntervalMs": "30",
-            "scMaxBufferedPosts": 0,
-            "scStreamUpServerSecs": "0",
-            "serverMaxHeaderBytes": 0,
-            "xmux": {
-              "maxConcurrency": "16-32",
-              "maxConnections": "0",
-              "cMaxReuseTimes": "64-128",
-              "hMaxRequestTimes": "0",
-              "hMaxReusableSecs": "0",
-              "hKeepAlivePeriod": 0
-            }
-          }
+          "mode": "auto"
         },
         "security": "tls",
         "tlsSettings": {
           "serverName": "kaoangeltrahnimenya.net",
-          "fingerprint": "ios",
+          "fingerprint": "chrome",
           "alpn": [
             "h2",
             "http/1.1"
@@ -1242,7 +1086,11 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "kaoangeltrahnimenya.net",
-          "fingerprint": "firefox"
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -1277,7 +1125,11 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "kaoangeltrahnimenya.net",
-          "fingerprint": "ios"
+          "fingerprint": "qq",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -1312,7 +1164,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "kaoangeltrahnimenya.net",
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -1340,12 +1192,14 @@
           "tcpKeepAliveInterval": 60
         },
         "xhttpSettings": {
-          "path": "/api/v1/upload"
+          "path": "/api/v1/upload",
+          "host": "kaoangeltrahnimenya.net",
+          "mode": "auto"
         },
         "security": "tls",
         "tlsSettings": {
           "serverName": "kaoangeltrahnimenya.net",
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         }
       }
     },
@@ -1378,7 +1232,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "kaoangeltrahnimenya.net",
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         }
       }
     },
@@ -1560,7 +1414,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "kaoangeltrahnimenya.net",
-          "fingerprint": "android"
+          "fingerprint": "safari"
         }
       }
     },
@@ -1594,8 +1448,7 @@
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "kaoangeltrahnimenya.net",
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -1629,7 +1482,7 @@
         },
         "security": "tls",
         "tlsSettings": {
-          "fingerprint": "android"
+          "fingerprint": "ios"
         }
       }
     },
