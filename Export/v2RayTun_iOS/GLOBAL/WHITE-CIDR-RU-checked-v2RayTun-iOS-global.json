@@ -58,8 +58,7 @@
           "domain:local",
           "domain:lan",
           "regexp:^[^.]+$",
-          "full:heoleti.pro",
-          "full:mts3.secured-by-tenzo.sbs"
+          "full:api.wyre-file.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -116,8 +115,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:heoleti.pro",
-          "full:mts3.secured-by-tenzo.sbs"
+          "full:api.wyre-file.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -138,8 +136,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:heoleti.pro",
-          "full:mts3.secured-by-tenzo.sbs"
+          "full:api.wyre-file.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -160,8 +157,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:heoleti.pro",
-          "full:mts3.secured-by-tenzo.sbs"
+          "full:api.wyre-file.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -182,8 +178,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:heoleti.pro",
-          "full:mts3.secured-by-tenzo.sbs"
+          "full:api.wyre-file.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -204,8 +199,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:heoleti.pro",
-          "full:mts3.secured-by-tenzo.sbs"
+          "full:api.wyre-file.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -226,8 +220,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:heoleti.pro",
-          "full:mts3.secured-by-tenzo.sbs"
+          "full:api.wyre-file.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -248,8 +241,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:heoleti.pro",
-          "full:mts3.secured-by-tenzo.sbs"
+          "full:api.wyre-file.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -270,8 +262,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:heoleti.pro",
-          "full:mts3.secured-by-tenzo.sbs"
+          "full:api.wyre-file.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -292,8 +283,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:heoleti.pro",
-          "full:mts3.secured-by-tenzo.sbs"
+          "full:api.wyre-file.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -314,8 +304,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:heoleti.pro",
-          "full:mts3.secured-by-tenzo.sbs"
+          "full:api.wyre-file.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -336,8 +325,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:heoleti.pro",
-          "full:mts3.secured-by-tenzo.sbs"
+          "full:api.wyre-file.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -358,8 +346,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:heoleti.pro",
-          "full:mts3.secured-by-tenzo.sbs"
+          "full:api.wyre-file.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -426,36 +413,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "46.243.232.167",
+            "port": 20010,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "a443d7bf-f506-46ce-b64d-cf8891c0a9f7",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/service/events/e296aaa797ab/",
+          "headers": {
+            "Host": "vod3.rucdncomp.pro"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "chrome",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vod3.rucdncomp.pro",
+          "fingerprint": "chrome"
         }
       }
     },
@@ -465,36 +450,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "46.243.232.167",
+            "port": 20010,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "a443d7bf-f506-46ce-b64d-cf8891c0a9f7",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/service/events/e296aaa797ab/",
+          "headers": {
+            "Host": "vod3.rucdncomp.pro"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "edge",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vod3.rucdncomp.pro",
+          "fingerprint": "firefox"
         }
       }
     },
@@ -504,36 +487,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "46.243.232.167",
+            "port": 20010,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "a443d7bf-f506-46ce-b64d-cf8891c0a9f7",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/service/events/e296aaa797ab/",
+          "headers": {
+            "Host": "vod3.rucdncomp.pro"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "firefox",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vod3.rucdncomp.pro",
+          "fingerprint": "qq"
         }
       }
     },
@@ -543,36 +524,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
-            "port": 443,
+            "address": "46.243.232.167",
+            "port": 20010,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "a443d7bf-f506-46ce-b64d-cf8891c0a9f7",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/service/events/e296aaa797ab/",
+          "headers": {
+            "Host": "vod3.rucdncomp.pro"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "ios",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vod3.rucdncomp.pro",
+          "fingerprint": "safari"
         }
       }
     },
@@ -609,7 +588,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "qq",
+          "fingerprint": "chrome",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -648,7 +627,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "random",
+          "fingerprint": "edge",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -687,7 +666,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "safari",
+          "fingerprint": "firefox",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -726,7 +705,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "chrome",
+          "fingerprint": "ios",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -765,7 +744,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "edge",
+          "fingerprint": "qq",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -804,7 +783,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "firefox",
+          "fingerprint": "chrome",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -843,7 +822,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "ios",
+          "fingerprint": "edge",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -882,7 +861,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "safari",
+          "fingerprint": "firefox",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -921,7 +900,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "chrome",
+          "fingerprint": "qq",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -960,7 +939,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "edge",
+          "fingerprint": "random",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -999,7 +978,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "firefox",
+          "fingerprint": "safari",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -1038,7 +1017,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "qq",
+          "fingerprint": "chrome",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -1077,7 +1056,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "eh.vk.ru",
-          "fingerprint": "safari",
+          "fingerprint": "edge",
           "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "shortId": "db04ce8bdb8900f1"
         }
@@ -1089,32 +1068,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "heoleti.pro",
-            "port": 14443,
+            "address": "90.156.218.163",
+            "port": 443,
             "users": [
               {
-                "id": "a7bee730-ec9f-45fe-a23c-5568af0b202a",
-                "encryption": "none"
+                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "wsSettings": {
-          "path": "/n3ws",
-          "headers": {}
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "heoleti.pro",
-          "fingerprint": "android"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "eh.vk.ru",
+          "fingerprint": "safari",
+          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "shortId": "db04ce8bdb8900f1"
         }
       }
     },
@@ -1124,32 +1107,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "heoleti.pro",
-            "port": 14443,
+            "address": "90.156.218.163",
+            "port": 443,
             "users": [
               {
-                "id": "a7bee730-ec9f-45fe-a23c-5568af0b202a",
-                "encryption": "none"
+                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "wsSettings": {
-          "path": "/n3ws",
-          "headers": {}
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "heoleti.pro",
-          "fingerprint": "chrome"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "eh.vk.ru",
+          "fingerprint": "safari",
+          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "shortId": "db04ce8bdb8900f1"
         }
       }
     },
@@ -1159,32 +1146,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "heoleti.pro",
-            "port": 14443,
+            "address": "90.156.218.163",
+            "port": 443,
             "users": [
               {
-                "id": "a7bee730-ec9f-45fe-a23c-5568af0b202a",
-                "encryption": "none"
+                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "wsSettings": {
-          "path": "/n3ws",
-          "headers": {}
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "heoleti.pro",
-          "fingerprint": "edge"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "eh.vk.ru",
+          "fingerprint": "firefox",
+          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "shortId": "db04ce8bdb8900f1"
         }
       }
     },
@@ -1194,32 +1185,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "heoleti.pro",
-            "port": 14443,
+            "address": "90.156.218.163",
+            "port": 443,
             "users": [
               {
-                "id": "a7bee730-ec9f-45fe-a23c-5568af0b202a",
-                "encryption": "none"
+                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "wsSettings": {
-          "path": "/n3ws",
-          "headers": {}
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "heoleti.pro",
-          "fingerprint": "firefox"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "eh.vk.ru",
+          "fingerprint": "ios",
+          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "shortId": "db04ce8bdb8900f1"
         }
       }
     },
@@ -1229,11 +1224,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "heoleti.pro",
-            "port": 14443,
+            "address": "185.86.145.183",
+            "port": 443,
             "users": [
               {
-                "id": "a7bee730-ec9f-45fe-a23c-5568af0b202a",
+                "id": "bcf7fc76-83ad-419c-91c9-d192797ce7a4",
                 "encryption": "none"
               }
             ]
@@ -1248,167 +1243,273 @@
           "dialerProxy": "fragment"
         },
         "wsSettings": {
-          "path": "/n3ws",
-          "headers": {}
+          "path": "/nl7ws",
+          "headers": {
+            "Host": "api.wyre-file.ru"
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "heoleti.pro",
-          "fingerprint": "ios"
+          "serverName": "api.wyre-file.ru",
+          "fingerprint": "android"
         }
       }
     },
     {
       "tag": "igareck-node-023",
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "mts3.secured-by-tenzo.sbs",
-            "port": 2222,
-            "password": "-XQ6u4GG-Zs21HU7kya66G0kn3nF40u9"
+            "address": "185.86.145.183",
+            "port": 443,
+            "users": [
+              {
+                "id": "bcf7fc76-83ad-419c-91c9-d192797ce7a4",
+                "encryption": "none"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/nl7ws",
+          "headers": {
+            "Host": "api.wyre-file.ru"
           }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "vkc.secured-by-tenzo.sbs",
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-024",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "mts3.secured-by-tenzo.sbs",
-            "port": 2222,
-            "password": "-XQ6u4GG-Zs21HU7kya66G0kn3nF40u9"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "vkc.secured-by-tenzo.sbs",
+          "serverName": "api.wyre-file.ru",
           "fingerprint": "edge"
         }
       }
     },
     {
-      "tag": "igareck-node-025",
-      "protocol": "trojan",
+      "tag": "igareck-node-024",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "mts3.secured-by-tenzo.sbs",
-            "port": 2222,
-            "password": "-XQ6u4GG-Zs21HU7kya66G0kn3nF40u9"
+            "address": "185.86.145.183",
+            "port": 443,
+            "users": [
+              {
+                "id": "bcf7fc76-83ad-419c-91c9-d192797ce7a4",
+                "encryption": "none"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/nl7ws",
+          "headers": {
+            "Host": "api.wyre-file.ru"
           }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "vkc.secured-by-tenzo.sbs",
+          "serverName": "api.wyre-file.ru",
           "fingerprint": "firefox"
         }
       }
     },
     {
-      "tag": "igareck-node-026",
-      "protocol": "trojan",
+      "tag": "igareck-node-025",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "mts3.secured-by-tenzo.sbs",
-            "port": 2222,
-            "password": "-XQ6u4GG-Zs21HU7kya66G0kn3nF40u9"
+            "address": "185.86.145.183",
+            "port": 443,
+            "users": [
+              {
+                "id": "bcf7fc76-83ad-419c-91c9-d192797ce7a4",
+                "encryption": "none"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/nl7ws",
+          "headers": {
+            "Host": "api.wyre-file.ru"
           }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "vkc.secured-by-tenzo.sbs",
+          "serverName": "api.wyre-file.ru",
           "fingerprint": "qq"
         }
       }
     },
     {
-      "tag": "igareck-node-027",
-      "protocol": "trojan",
+      "tag": "igareck-node-026",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "mts3.secured-by-tenzo.sbs",
-            "port": 2222,
-            "password": "-XQ6u4GG-Zs21HU7kya66G0kn3nF40u9"
+            "address": "api.wyre-file.ru",
+            "port": 443,
+            "users": [
+              {
+                "id": "bcf7fc76-83ad-419c-91c9-d192797ce7a4",
+                "encryption": "none"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/nl7ws",
+          "headers": {
+            "Host": "api.wyre-file.ru"
           }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "vkc.secured-by-tenzo.sbs",
+          "serverName": "api.wyre-file.ru",
+          "fingerprint": "android"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-027",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "api.wyre-file.ru",
+            "port": 443,
+            "users": [
+              {
+                "id": "bcf7fc76-83ad-419c-91c9-d192797ce7a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/nl7ws",
+          "headers": {
+            "Host": "api.wyre-file.ru"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "api.wyre-file.ru",
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-028",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "api.wyre-file.ru",
+            "port": 443,
+            "users": [
+              {
+                "id": "bcf7fc76-83ad-419c-91c9-d192797ce7a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/nl7ws",
+          "headers": {
+            "Host": "api.wyre-file.ru"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "api.wyre-file.ru",
+          "fingerprint": "qq"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-029",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "api.wyre-file.ru",
+            "port": 443,
+            "users": [
+              {
+                "id": "bcf7fc76-83ad-419c-91c9-d192797ce7a4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/nl7ws",
+          "headers": {
+            "Host": "api.wyre-file.ru"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "api.wyre-file.ru",
           "fingerprint": "safari"
         }
       }
