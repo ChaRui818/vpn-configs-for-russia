@@ -3,12 +3,12 @@
     "name": "WHITE-SNI-RU-all — Happ Auto Select GLOBAL",
     "generator": "Igareck GitHub",
     "notes": [
-      "27 proxies",
+      "11 proxies",
       "Interval is 5 minutes + leastPing + routing GLOBAL."
     ],
     "client": "Happ",
     "source": "WHITE-SNI-RU-all.txt",
-    "source_datetime": "2026-10-18 06:11 Moscow"
+    "source_datetime": "2026-10-18 07:38 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -493,7 +493,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "www.rutube.ru",
-          "fingerprint": "edge",
+          "fingerprint": "ios",
           "publicKey": "KEwhHRW2YSUHYAKsyX0KE3uKkGVDMudZUhLKfmb8eR0",
           "shortId": "4b27271677fa6fde",
           "spiderX": "/"
@@ -533,10 +533,9 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "www.rutube.ru",
-          "fingerprint": "firefox",
+          "fingerprint": "edge",
           "publicKey": "KEwhHRW2YSUHYAKsyX0KE3uKkGVDMudZUhLKfmb8eR0",
-          "shortId": "4b27271677fa6fde",
-          "spiderX": "/"
+          "shortId": "4b27271677fa6fde"
         }
       }
     },
@@ -573,7 +572,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "www.rutube.ru",
-          "fingerprint": "ios",
+          "fingerprint": "firefox",
           "publicKey": "KEwhHRW2YSUHYAKsyX0KE3uKkGVDMudZUhLKfmb8eR0",
           "shortId": "4b27271677fa6fde",
           "spiderX": "/"
@@ -587,33 +586,30 @@
         "vnext": [
           {
             "address": "95.163.152.205",
-            "port": 2053,
+            "port": 443,
             "users": [
               {
                 "id": "a4b5dc53-2eee-4c5e-ac43-d8f0fdc36a40",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/updates",
+          "mode": "auto"
         },
         "security": "reality",
         "realitySettings": {
           "serverName": "www.rutube.ru",
-          "fingerprint": "qq",
+          "fingerprint": "edge",
           "publicKey": "KEwhHRW2YSUHYAKsyX0KE3uKkGVDMudZUhLKfmb8eR0",
           "shortId": "4b27271677fa6fde",
           "spiderX": "/"
@@ -650,7 +646,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "www.rutube.ru",
-          "fingerprint": "chrome",
+          "fingerprint": "firefox",
           "publicKey": "KEwhHRW2YSUHYAKsyX0KE3uKkGVDMudZUhLKfmb8eR0",
           "shortId": "4b27271677fa6fde",
           "spiderX": "/"
@@ -687,7 +683,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "www.rutube.ru",
-          "fingerprint": "edge",
+          "fingerprint": "ios",
           "publicKey": "KEwhHRW2YSUHYAKsyX0KE3uKkGVDMudZUhLKfmb8eR0",
           "shortId": "4b27271677fa6fde",
           "spiderX": "/"
@@ -718,16 +714,14 @@
           "tcpKeepAliveInterval": 60
         },
         "xhttpSettings": {
-          "path": "/api/v1/updates",
-          "mode": "auto"
+          "path": "/api/v1/updates"
         },
         "security": "reality",
         "realitySettings": {
           "serverName": "www.rutube.ru",
-          "fingerprint": "firefox",
+          "fingerprint": "chrome",
           "publicKey": "KEwhHRW2YSUHYAKsyX0KE3uKkGVDMudZUhLKfmb8eR0",
-          "shortId": "4b27271677fa6fde",
-          "spiderX": "/"
+          "shortId": "4b27271677fa6fde"
         }
       }
     },
@@ -761,7 +755,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "www.rutube.ru",
-          "fingerprint": "chrome",
+          "fingerprint": "ios",
           "publicKey": "-4Pl-pR8KrwgKJXXSeSqpIAhKgic55vhu3ll3MR75wY",
           "shortId": "44e753a7281b40d7",
           "spiderX": "/"
@@ -798,7 +792,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "www.rutube.ru",
-          "fingerprint": "edge",
+          "fingerprint": "qq",
           "publicKey": "-4Pl-pR8KrwgKJXXSeSqpIAhKgic55vhu3ll3MR75wY",
           "shortId": "44e753a7281b40d7",
           "spiderX": "/"
@@ -807,613 +801,6 @@
     },
     {
       "tag": "igareck-node-011",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "95.163.152.205",
-            "port": 8443,
-            "users": [
-              {
-                "id": "a4b5dc53-2eee-4c5e-ac43-d8f0fdc36a40",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "api.v1.Sync",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.rutube.ru",
-          "fingerprint": "firefox",
-          "publicKey": "-4Pl-pR8KrwgKJXXSeSqpIAhKgic55vhu3ll3MR75wY",
-          "shortId": "44e753a7281b40d7",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-012",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "95.163.152.205",
-            "port": 8443,
-            "users": [
-              {
-                "id": "a4b5dc53-2eee-4c5e-ac43-d8f0fdc36a40",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "api.v1.Sync",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.rutube.ru",
-          "fingerprint": "ios",
-          "publicKey": "-4Pl-pR8KrwgKJXXSeSqpIAhKgic55vhu3ll3MR75wY",
-          "shortId": "44e753a7281b40d7",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-013",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "95.163.152.205",
-            "port": 8443,
-            "users": [
-              {
-                "id": "a4b5dc53-2eee-4c5e-ac43-d8f0fdc36a40",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "api.v1.Sync",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.rutube.ru",
-          "fingerprint": "safari",
-          "publicKey": "-4Pl-pR8KrwgKJXXSeSqpIAhKgic55vhu3ll3MR75wY",
-          "shortId": "44e753a7281b40d7",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-014",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "95.163.152.205",
-            "port": 443,
-            "users": [
-              {
-                "id": "a4b5dc53-2eee-4c5e-ac43-d8f0fdc36a40",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/updates",
-          "mode": "auto"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.rutube.ru",
-          "fingerprint": "ios",
-          "publicKey": "KEwhHRW2YSUHYAKsyX0KE3uKkGVDMudZUhLKfmb8eR0",
-          "shortId": "4b27271677fa6fde",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-015",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "95.163.152.205",
-            "port": 8443,
-            "users": [
-              {
-                "id": "a4b5dc53-2eee-4c5e-ac43-d8f0fdc36a40",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "api.v1.Sync",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.rutube.ru",
-          "fingerprint": "qq",
-          "publicKey": "-4Pl-pR8KrwgKJXXSeSqpIAhKgic55vhu3ll3MR75wY",
-          "shortId": "44e753a7281b40d7",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-016",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.243.176.211",
-            "port": 2053,
-            "users": [
-              {
-                "id": "92f990cf-c974-4b82-9062-8a0db43fb71a",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.rutube.ru",
-          "fingerprint": "edge",
-          "publicKey": "kwDaVjBaLcvtr3PA-HzSpsYAeS1EtT9LF7w0tSeNbmU",
-          "shortId": "c2379adb2b237e50",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-017",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.243.176.211",
-            "port": 2053,
-            "users": [
-              {
-                "id": "92f990cf-c974-4b82-9062-8a0db43fb71a",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.rutube.ru",
-          "fingerprint": "firefox",
-          "publicKey": "kwDaVjBaLcvtr3PA-HzSpsYAeS1EtT9LF7w0tSeNbmU",
-          "shortId": "c2379adb2b237e50",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-018",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.243.176.211",
-            "port": 2053,
-            "users": [
-              {
-                "id": "92f990cf-c974-4b82-9062-8a0db43fb71a",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.rutube.ru",
-          "fingerprint": "qq",
-          "publicKey": "kwDaVjBaLcvtr3PA-HzSpsYAeS1EtT9LF7w0tSeNbmU",
-          "shortId": "c2379adb2b237e50",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-019",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.243.176.211",
-            "port": 443,
-            "users": [
-              {
-                "id": "92f990cf-c974-4b82-9062-8a0db43fb71a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/updates",
-          "mode": "auto"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.rutube.ru",
-          "fingerprint": "chrome",
-          "publicKey": "kwDaVjBaLcvtr3PA-HzSpsYAeS1EtT9LF7w0tSeNbmU",
-          "shortId": "c2379adb2b237e50",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-020",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.243.176.211",
-            "port": 443,
-            "users": [
-              {
-                "id": "92f990cf-c974-4b82-9062-8a0db43fb71a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/updates",
-          "mode": "auto"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.rutube.ru",
-          "fingerprint": "firefox",
-          "publicKey": "kwDaVjBaLcvtr3PA-HzSpsYAeS1EtT9LF7w0tSeNbmU",
-          "shortId": "c2379adb2b237e50",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-021",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.243.176.211",
-            "port": 443,
-            "users": [
-              {
-                "id": "92f990cf-c974-4b82-9062-8a0db43fb71a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/updates",
-          "mode": "auto"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.rutube.ru",
-          "fingerprint": "safari",
-          "publicKey": "kwDaVjBaLcvtr3PA-HzSpsYAeS1EtT9LF7w0tSeNbmU",
-          "shortId": "c2379adb2b237e50",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-022",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.243.176.211",
-            "port": 8443,
-            "users": [
-              {
-                "id": "92f990cf-c974-4b82-9062-8a0db43fb71a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "api.v1.Sync",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.rutube.ru",
-          "fingerprint": "chrome",
-          "publicKey": "wOlCK7E9U4Y4954Z5DKBLY_Hkh57ZakVJ19JSny0J0s",
-          "shortId": "c36c2d8b90e2162f",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-023",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.243.176.211",
-            "port": 8443,
-            "users": [
-              {
-                "id": "92f990cf-c974-4b82-9062-8a0db43fb71a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "api.v1.Sync",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.rutube.ru",
-          "fingerprint": "ios",
-          "publicKey": "wOlCK7E9U4Y4954Z5DKBLY_Hkh57ZakVJ19JSny0J0s",
-          "shortId": "c36c2d8b90e2162f",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-024",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.243.176.211",
-            "port": 2053,
-            "users": [
-              {
-                "id": "92f990cf-c974-4b82-9062-8a0db43fb71a",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.rutube.ru",
-          "fingerprint": "ios",
-          "publicKey": "kwDaVjBaLcvtr3PA-HzSpsYAeS1EtT9LF7w0tSeNbmU",
-          "shortId": "c2379adb2b237e50",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-025",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.243.176.211",
-            "port": 2053,
-            "users": [
-              {
-                "id": "92f990cf-c974-4b82-9062-8a0db43fb71a",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.rutube.ru",
-          "fingerprint": "safari",
-          "publicKey": "kwDaVjBaLcvtr3PA-HzSpsYAeS1EtT9LF7w0tSeNbmU",
-          "shortId": "c2379adb2b237e50",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-026",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "151.243.176.211",
-            "port": 443,
-            "users": [
-              {
-                "id": "92f990cf-c974-4b82-9062-8a0db43fb71a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/updates",
-          "mode": "auto"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.rutube.ru",
-          "fingerprint": "qq",
-          "publicKey": "kwDaVjBaLcvtr3PA-HzSpsYAeS1EtT9LF7w0tSeNbmU",
-          "shortId": "c2379adb2b237e50",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-027",
       "protocol": "vless",
       "settings": {
         "vnext": [
