@@ -2,8 +2,8 @@
 # Igareck Mihomo Subscription
 # Источник/Source: WHITE-CIDR-RU-checked.txt
 # 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
-# Количество/Quantity: 6
-# Date/Time: 2026-10-18 / 17:10 (Moscow)
+# Количество/Quantity: 8
+# Date/Time: 2026-10-18 / 18:40 (Moscow)
 #
 # Режим / Mode:
 # - Автоматический Выбор лучшего прокси / Igareck Auto Select;
@@ -159,7 +159,7 @@ proxies:
   udp: true
   tls: true
   servername: "\x61\x70\x69\x73\x2e\x68\x65\x6f\x6c\x65\x74\x69\x2e\x70\x72\x6f"
-  client-fingerprint: edge
+  client-fingerprint: android
   network: xhttp
   xhttp-opts:
     path: /chxh
@@ -172,7 +172,7 @@ proxies:
   udp: true
   tls: true
   servername: "\x61\x70\x69\x73\x2e\x68\x65\x6f\x6c\x65\x74\x69\x2e\x70\x72\x6f"
-  client-fingerprint: ios
+  client-fingerprint: firefox
   network: xhttp
   xhttp-opts:
     path: /chxh
@@ -185,7 +185,7 @@ proxies:
   udp: true
   tls: true
   servername: "\x61\x70\x69\x73\x2e\x68\x65\x6f\x6c\x65\x74\x69\x2e\x70\x72\x6f"
-  client-fingerprint: safari
+  client-fingerprint: ios
   network: xhttp
   xhttp-opts:
     path: /chxh
@@ -198,34 +198,67 @@ proxies:
   udp: true
   tls: true
   servername: "\x61\x70\x69\x73\x2e\x68\x65\x6f\x6c\x65\x74\x69\x2e\x70\x72\x6f"
+  client-fingerprint: safari
+  network: xhttp
+  xhttp-opts:
+    path: /chxh
+    host: apis.heoleti.pro
+- name: Igareck Node 005 | 🌐 Anycast-IP | 🇩🇪 🇰🇷 | [*CIDR] VK
+  type: vless
+  server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x32\x38"
+  port: 8443
+  uuid: "\x34\x63\x34\x34\x62\x38\x35\x61\x2d\x37\x31\x66\x38\x2d\x34\x31\x64\x38\x2d\x62\x36\x62\x63\x2d\x30\x31\x64\x34\x63\x32\x66\x30\x38\x64\x64\x30"
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x63\x69\x6e\x64\x65\x72\x72\x61\x63\x6b\x2e\x61\x70\x70"
   client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /chxh
-- name: Igareck Node 005 | 🇳🇱 The Netherlands | [*CIDR] VK
+  reality-opts:
+    public-key: NEaLMYvat0TO8YX1FuR1yt11UT5iUQmrUNRpSTvT0xA
+    short-id: "a0d140fa25f56be2"
+  network: tcp
+- name: Igareck Node 006 | 🌐 Anycast-IP | 🇩🇪 🇰🇷 | [*CIDR] VK
   type: vless
-  server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x34\x32"
-  port: 2096
-  uuid: "\x63\x31\x65\x61\x62\x66\x62\x65\x2d\x36\x32\x65\x66\x2d\x34\x36\x61\x32\x2d\x39\x38\x35\x37\x2d\x39\x61\x64\x33\x64\x36\x39\x65\x31\x37\x34\x61"
+  server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x32\x38"
+  port: 8443
+  uuid: "\x34\x63\x34\x34\x62\x38\x35\x61\x2d\x37\x31\x66\x38\x2d\x34\x31\x64\x38\x2d\x62\x36\x62\x63\x2d\x30\x31\x64\x34\x63\x32\x66\x30\x38\x64\x64\x30"
   udp: true
+  flow: xtls-rprx-vision
   tls: true
-  servername: "\x61\x70\x69\x73\x2e\x68\x65\x6f\x6c\x65\x74\x69\x2e\x70\x72\x6f"
-  client-fingerprint: edge
-  network: xhttp
-  xhttp-opts:
-    path: /chxh
-- name: Igareck Node 006 | 🇳🇱 The Netherlands | [*CIDR] VK
-  type: vless
-  server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x34\x32"
-  port: 2096
-  uuid: "\x63\x31\x65\x61\x62\x66\x62\x65\x2d\x36\x32\x65\x66\x2d\x34\x36\x61\x32\x2d\x39\x38\x35\x37\x2d\x39\x61\x64\x33\x64\x36\x39\x65\x31\x37\x34\x61"
-  udp: true
-  tls: true
-  servername: "\x61\x70\x69\x73\x2e\x68\x65\x6f\x6c\x65\x74\x69\x2e\x70\x72\x6f"
+  servername: "\x63\x69\x6e\x64\x65\x72\x72\x61\x63\x6b\x2e\x61\x70\x70"
   client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /chxh
+  reality-opts:
+    public-key: NEaLMYvat0TO8YX1FuR1yt11UT5iUQmrUNRpSTvT0xA
+    short-id: "a0d140fa25f56be2"
+  network: tcp
+- name: Igareck Node 007 | 🌐 Anycast-IP | 🇩🇪 🇰🇷 | [*CIDR] VK
+  type: vless
+  server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x32\x38"
+  port: 8443
+  uuid: "\x34\x63\x34\x34\x62\x38\x35\x61\x2d\x37\x31\x66\x38\x2d\x34\x31\x64\x38\x2d\x62\x36\x62\x63\x2d\x30\x31\x64\x34\x63\x32\x66\x30\x38\x64\x64\x30"
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x63\x69\x6e\x64\x65\x72\x72\x61\x63\x6b\x2e\x61\x70\x70"
+  client-fingerprint: ios
+  reality-opts:
+    public-key: NEaLMYvat0TO8YX1FuR1yt11UT5iUQmrUNRpSTvT0xA
+    short-id: "a0d140fa25f56be2"
+  network: tcp
+- name: Igareck Node 008 | 🌐 Anycast-IP | 🇩🇪 🇰🇷 | [*CIDR] VK
+  type: vless
+  server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x32\x38"
+  port: 8443
+  uuid: "\x34\x63\x34\x34\x62\x38\x35\x61\x2d\x37\x31\x66\x38\x2d\x34\x31\x64\x38\x2d\x62\x36\x62\x63\x2d\x30\x31\x64\x34\x63\x32\x66\x30\x38\x64\x64\x30"
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x63\x69\x6e\x64\x65\x72\x72\x61\x63\x6b\x2e\x61\x70\x70"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: NEaLMYvat0TO8YX1FuR1yt11UT5iUQmrUNRpSTvT0xA
+    short-id: "a0d140fa25f56be2"
+  network: tcp
 
 proxy-groups:
   - name: "Igareck Auto Select (Автоподключение)"
