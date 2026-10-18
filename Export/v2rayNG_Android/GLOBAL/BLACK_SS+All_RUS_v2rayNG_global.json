@@ -3,12 +3,12 @@
     "name": "BLACK_SS+All_RUS — v2rayNG Auto Select GLOBAL",
     "generator": "Igareck GitHub",
     "notes": [
-      "81 proxies",
+      "91 proxies",
       "Interval is 5 minutes + leastPing + routing GLOBAL."
     ],
     "client": "v2rayNG",
     "source": "BLACK_SS+All_RUS.txt",
-    "source_datetime": "2026-10-18 11:29 Moscow"
+    "source_datetime": "2026-10-18 12:27 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -344,6 +344,33 @@
       "protocol": "hysteria",
       "settings": {
         "version": 2,
+        "address": "189.74.114.41",
+        "port": 54183
+      },
+      "streamSettings": {
+        "network": "hysteria",
+        "security": "tls",
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "082f5694-9019-4110-b67b-8125dbb9bab8"
+        },
+        "tlsSettings": {
+          "serverName": "outh.yandex-cloud.org",
+          "alpn": [
+            "h3"
+          ]
+        },
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-002",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
         "address": "45.141.202.174",
         "port": 443
       },
@@ -367,7 +394,7 @@
       }
     },
     {
-      "tag": "igareck-node-002",
+      "tag": "igareck-node-003",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
@@ -394,46 +421,16 @@
       }
     },
     {
-      "tag": "igareck-node-003",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "168.113.215.6",
-            "port": 33736,
-            "users": [
-              {
-                "id": "1281acca-f21d-475c-bf04-eccbee7f8df2",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/vmess-ws",
-          "headers": {}
-        }
-      }
-    },
-    {
       "tag": "igareck-node-004",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "nl-2a972c8052.shamanapp.online",
-            "port": 33736,
+            "address": "de-d21e56c13c.shamanapp.online",
+            "port": 33744,
             "users": [
               {
-                "id": "1281acca-f21d-475c-bf04-eccbee7f8df2",
+                "id": "b3a11068-1a7e-4643-85de-7c82cce46943",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -448,8 +445,10 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/vmess-ws",
-          "headers": {}
+          "path": "/ShamanVMESS2026",
+          "headers": {
+            "Host": "de-d21e56c13c.shamanapp.online:33744"
+          }
         }
       }
     },
@@ -523,11 +522,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "de-d21e56c13c.shamanapp.online",
-            "port": 33744,
+            "address": "nl-2a972c8052.shamanapp.online",
+            "port": 33736,
             "users": [
               {
-                "id": "b3a11068-1a7e-4643-85de-7c82cce46943",
+                "id": "1281acca-f21d-475c-bf04-eccbee7f8df2",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -542,9 +541,9 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/ShamanVMESS2026",
+          "path": "/vmess-ws",
           "headers": {
-            "Host": "de-d21e56c13c.shamanapp.online:33744"
+            "Host": "nl-2a972c8052.shamanapp.online"
           }
         }
       }
@@ -611,19 +610,13 @@
     },
     {
       "tag": "igareck-node-010",
-      "protocol": "vmess",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "nl-2a972c8052.shamanapp.online",
-            "port": 33736,
-            "users": [
-              {
-                "id": "1281acca-f21d-475c-bf04-eccbee7f8df2",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
+            "address": "78.17.171.62",
+            "port": 443,
+            "password": "u93yPGuY2zgIsisJZKS2QzJzg"
           }
         ]
       },
@@ -631,13 +624,18 @@
         "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
-          "path": "/vmess-ws",
+          "path": "/f2fc2a1f",
           "headers": {
-            "Host": "nl-2a972c8052.shamanapp.online"
+            "Host": "freetoplay-2.tetris-game.world"
           }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "FREETOPLAY-2.TETRIS-GAME.WORLD"
         }
       }
     },
@@ -1263,7 +1261,8 @@
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "FREETOPLAY-2.TETRIS-GAME.WORLD"
+          "serverName": "FREETOPLAY-2.TETRIS-GAME.WORLD",
+          "fingerprint": "android"
         }
       }
     },
@@ -1295,7 +1294,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "FREETOPLAY-2.TETRIS-GAME.WORLD",
-          "fingerprint": "android"
+          "fingerprint": "chrome"
         }
       }
     },
@@ -1327,7 +1326,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "FREETOPLAY-2.TETRIS-GAME.WORLD",
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         }
       }
     },
@@ -1359,44 +1358,12 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "FREETOPLAY-2.TETRIS-GAME.WORLD",
-          "fingerprint": "ios"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-034",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "78.17.171.62",
-            "port": 443,
-            "password": "u93yPGuY2zgIsisJZKS2QzJzg"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/f2fc2a1f",
-          "headers": {
-            "Host": "freetoplay-2.tetris-game.world"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "FREETOPLAY-2.TETRIS-GAME.WORLD",
           "fingerprint": "qq"
         }
       }
     },
     {
-      "tag": "igareck-node-035",
+      "tag": "igareck-node-034",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1426,7 +1393,7 @@
       }
     },
     {
-      "tag": "igareck-node-036",
+      "tag": "igareck-node-035",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1457,7 +1424,7 @@
       }
     },
     {
-      "tag": "igareck-node-037",
+      "tag": "igareck-node-036",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1488,7 +1455,7 @@
       }
     },
     {
-      "tag": "igareck-node-038",
+      "tag": "igareck-node-037",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1519,7 +1486,7 @@
       }
     },
     {
-      "tag": "igareck-node-039",
+      "tag": "igareck-node-038",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1554,7 +1521,7 @@
       }
     },
     {
-      "tag": "igareck-node-040",
+      "tag": "igareck-node-039",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1587,7 +1554,7 @@
       }
     },
     {
-      "tag": "igareck-node-041",
+      "tag": "igareck-node-040",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1620,7 +1587,7 @@
       }
     },
     {
-      "tag": "igareck-node-042",
+      "tag": "igareck-node-041",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1655,7 +1622,7 @@
       }
     },
     {
-      "tag": "igareck-node-043",
+      "tag": "igareck-node-042",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1690,7 +1657,7 @@
       }
     },
     {
-      "tag": "igareck-node-044",
+      "tag": "igareck-node-043",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1725,7 +1692,7 @@
       }
     },
     {
-      "tag": "igareck-node-045",
+      "tag": "igareck-node-044",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1760,7 +1727,7 @@
       }
     },
     {
-      "tag": "igareck-node-046",
+      "tag": "igareck-node-045",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1790,6 +1757,41 @@
           "fingerprint": "qq",
           "alpn": [
             "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-046",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.42.145.180",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/assignment",
+          "headers": {
+            "Host": "www.volumeroot.com"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.volumeroot.com",
+          "fingerprint": "android",
+          "alpn": [
+            "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
           ]
         }
       }
@@ -1885,14 +1887,12 @@
         },
         "wsSettings": {
           "path": "/assignment",
-          "headers": {
-            "Host": "www.volumeroot.com"
-          }
+          "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.volumeroot.com",
-          "fingerprint": "android"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -1924,7 +1924,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.volumeroot.com",
-          "fingerprint": "edge"
+          "fingerprint": "android"
         }
       }
     },
@@ -1956,7 +1956,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.volumeroot.com",
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         }
       }
     },
@@ -1988,7 +1988,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.volumeroot.com",
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -2020,7 +2020,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.volumeroot.com",
-          "fingerprint": "qq"
+          "fingerprint": "ios"
         }
       }
     },
@@ -2045,12 +2045,14 @@
         },
         "wsSettings": {
           "path": "/assignment",
-          "headers": {}
+          "headers": {
+            "Host": "www.volumeroot.com"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.volumeroot.com",
-          "fingerprint": "android"
+          "fingerprint": "qq"
         }
       }
     },
@@ -2075,12 +2077,14 @@
         },
         "wsSettings": {
           "path": "/assignment",
-          "headers": {}
+          "headers": {
+            "Host": "www.volumeroot.com"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.volumeroot.com",
-          "fingerprint": "edge"
+          "fingerprint": "safari"
         }
       }
     },
@@ -2110,7 +2114,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.volumeroot.com",
-          "fingerprint": "ios"
+          "fingerprint": "android"
         }
       }
     },
@@ -2140,12 +2144,106 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.volumeroot.com",
-          "fingerprint": "qq"
+          "fingerprint": "edge"
         }
       }
     },
     {
       "tag": "igareck-node-058",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.42.145.180",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/assignment",
+          "headers": {}
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.volumeroot.com",
+          "fingerprint": "ios"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-059",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.42.145.180",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/assignment",
+          "headers": {}
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.volumeroot.com",
+          "fingerprint": "qq"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-060",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.42.145.180",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/assignment",
+          "headers": {
+            "Host": "www.volumeroot.com"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.volumeroot.com",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-061",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -2180,7 +2278,7 @@
       }
     },
     {
-      "tag": "igareck-node-059",
+      "tag": "igareck-node-062",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -2206,111 +2304,6 @@
         "tlsSettings": {
           "serverName": "www.volumeroot.com",
           "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-060",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "188.42.145.180",
-            "port": 443,
-            "password": "humanity"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/assignment",
-          "headers": {
-            "Host": "www.volumeroot.com"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.volumeroot.com",
-          "fingerprint": "firefox",
-          "alpn": [
-            "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-061",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "188.42.145.180",
-            "port": 443,
-            "password": "humanity"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/assignment",
-          "headers": {
-            "Host": "www.volumeroot.com"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.volumeroot.com",
-          "fingerprint": "ios",
-          "alpn": [
-            "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-062",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "188.42.145.180",
-            "port": 443,
-            "password": "humanity"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/assignment",
-          "headers": {
-            "Host": "www.volumeroot.com"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.volumeroot.com",
-          "fingerprint": "qq",
-          "alpn": [
-            "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
-          ]
         }
       }
     },
@@ -2342,12 +2335,281 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.volumeroot.com",
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         }
       }
     },
     {
       "tag": "igareck-node-064",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.42.145.180",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/assignment",
+          "headers": {
+            "Host": "www.volumerOot.coM."
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "wWw.Volumeroot.cOm."
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-065",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.42.145.180",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/assignment",
+          "headers": {
+            "Host": "www.volumeroot.com"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.volumeroot.com",
+          "fingerprint": "chrome",
+          "alpn": [
+            "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-066",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.42.145.180",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/assignment",
+          "headers": {
+            "Host": "www.volumeroot.com"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.volumeroot.com",
+          "fingerprint": "firefox",
+          "alpn": [
+            "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-067",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.42.145.180",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/assignment",
+          "headers": {
+            "Host": "www.volumeroot.com"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.volumeroot.com",
+          "fingerprint": "ios",
+          "alpn": [
+            "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-068",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.42.145.180",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/assignment",
+          "headers": {
+            "Host": "www.volumeroot.com"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.volumeroot.com",
+          "fingerprint": "qq",
+          "alpn": [
+            "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-069",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.42.145.180",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/assignment",
+          "headers": {
+            "Host": "www.volumeroot.com"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.volumeroot.com",
+          "fingerprint": "safari"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-070",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.42.145.180",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/assignment",
+          "headers": {}
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "wWw.Volumeroot.cOm.",
+          "fingerprint": "android",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-071",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.42.145.180",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/assignment",
+          "headers": {}
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "wWw.Volumeroot.cOm.",
+          "fingerprint": "firefox",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-072",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -2380,7 +2642,7 @@
       }
     },
     {
-      "tag": "igareck-node-065",
+      "tag": "igareck-node-073",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -2413,7 +2675,42 @@
       }
     },
     {
-      "tag": "igareck-node-066",
+      "tag": "igareck-node-074",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "45.131.4.38",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/assignment",
+          "headers": {
+            "Host": "www.pleadcourt.org"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.pleadcourt.org",
+          "fingerprint": "unsafe",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-075",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -2448,7 +2745,7 @@
       }
     },
     {
-      "tag": "igareck-node-067",
+      "tag": "igareck-node-076",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -2483,7 +2780,7 @@
       }
     },
     {
-      "tag": "igareck-node-068",
+      "tag": "igareck-node-077",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -2518,7 +2815,7 @@
       }
     },
     {
-      "tag": "igareck-node-069",
+      "tag": "igareck-node-078",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -2553,7 +2850,7 @@
       }
     },
     {
-      "tag": "igareck-node-070",
+      "tag": "igareck-node-079",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -2588,7 +2885,7 @@
       }
     },
     {
-      "tag": "igareck-node-071",
+      "tag": "igareck-node-080",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -2623,7 +2920,39 @@
       }
     },
     {
-      "tag": "igareck-node-072",
+      "tag": "igareck-node-081",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "8.47.69.0",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/assignment",
+          "headers": {
+            "Host": "www.pleadcourt.org"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.pleadcourt.org",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-082",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -2658,42 +2987,7 @@
       }
     },
     {
-      "tag": "igareck-node-073",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "8.47.69.0",
-            "port": 443,
-            "password": "humanity"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/assignment",
-          "headers": {
-            "Host": "www.pleadcourt.org"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.pleadcourt.org",
-          "fingerprint": "firefox",
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-074",
+      "tag": "igareck-node-083",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -2727,7 +3021,39 @@
       }
     },
     {
-      "tag": "igareck-node-075",
+      "tag": "igareck-node-084",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "8.47.69.0",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/assignment",
+          "headers": {
+            "Host": "www.pleadcourt.org"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.pleadcourt.org",
+          "fingerprint": "android"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-085",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -2759,7 +3085,7 @@
       }
     },
     {
-      "tag": "igareck-node-076",
+      "tag": "igareck-node-086",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -2791,7 +3117,7 @@
       }
     },
     {
-      "tag": "igareck-node-077",
+      "tag": "igareck-node-087",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -2823,7 +3149,7 @@
       }
     },
     {
-      "tag": "igareck-node-078",
+      "tag": "igareck-node-088",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -2855,7 +3181,7 @@
       }
     },
     {
-      "tag": "igareck-node-079",
+      "tag": "igareck-node-089",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -2887,7 +3213,7 @@
       }
     },
     {
-      "tag": "igareck-node-080",
+      "tag": "igareck-node-090",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -2918,7 +3244,7 @@
       }
     },
     {
-      "tag": "igareck-node-081",
+      "tag": "igareck-node-091",
       "protocol": "trojan",
       "settings": {
         "servers": [
