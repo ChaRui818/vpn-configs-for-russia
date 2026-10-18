@@ -2,8 +2,8 @@
 # Igareck Mihomo Subscription
 # Источник/Source: WHITE-CIDR-RU-checked.txt
 # 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
-# Количество/Quantity: 3
-# Date/Time: 2026-10-18 / 13:52 (Moscow)
+# Количество/Quantity: 4
+# Date/Time: 2026-10-18 / 15:27 (Moscow)
 #
 # Режим / Mode:
 # - Автоматический Выбор лучшего прокси / Igareck Auto Select;
@@ -151,7 +151,20 @@ sniffer:
       ports: [443, 8443]
 
 proxies:
-- name: Igareck Node 001 | 🇳🇱 The Netherlands [*CIDR] VK
+- name: Igareck Node 001 | 🇳🇱 The Netherlands | [*CIDR] VK
+  type: vless
+  server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x34\x32"
+  port: 2096
+  uuid: "\x63\x31\x65\x61\x62\x66\x62\x65\x2d\x36\x32\x65\x66\x2d\x34\x36\x61\x32\x2d\x39\x38\x35\x37\x2d\x39\x61\x64\x33\x64\x36\x39\x65\x31\x37\x34\x61"
+  udp: true
+  tls: true
+  servername: "\x61\x70\x69\x73\x2e\x68\x65\x6f\x6c\x65\x74\x69\x2e\x70\x72\x6f"
+  client-fingerprint: edge
+  network: xhttp
+  xhttp-opts:
+    path: /chxh
+    host: apis.heoleti.pro
+- name: Igareck Node 002 | 🇳🇱 The Netherlands | [*CIDR] VK
   type: vless
   server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x34\x32"
   port: 2096
@@ -164,7 +177,7 @@ proxies:
   xhttp-opts:
     path: /chxh
     host: apis.heoleti.pro
-- name: Igareck Node 002 | 🇳🇱 The Netherlands [*CIDR] VK
+- name: Igareck Node 003 | 🇳🇱 The Netherlands | [*CIDR] VK
   type: vless
   server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x34\x32"
   port: 2096
@@ -177,7 +190,7 @@ proxies:
   xhttp-opts:
     path: /chxh
     host: apis.heoleti.pro
-- name: Igareck Node 003 | 🇳🇱 The Netherlands [*CIDR] VK
+- name: Igareck Node 004 | 🇳🇱 The Netherlands | [*CIDR] VK
   type: vless
   server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x34\x32"
   port: 2096
