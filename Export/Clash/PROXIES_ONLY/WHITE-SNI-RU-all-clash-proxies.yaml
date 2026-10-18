@@ -2,28 +2,101 @@
 # Igareck Mihomo Subscription
 # Источник/Source: WHITE-SNI-RU-all.txt
 # 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | SNI-RU
-# Количество/Quantity: 4
-# Date/Time: 2026-10-18 / 21:38 (Moscow)
+# Количество/Quantity: 10
+# Date/Time: 2026-10-18 / 23:06 (Moscow)
 #
 # Не содержит никаких настроек, только список прокси / No settings, just proxies list;
 # ============================================================
 
 proxies:
-- name: Igareck Node 001 | 🇩🇪 Germany [SNI-RU] rutube.ru
+- name: Igareck Node 001 | 🇫🇷 France | [SNI-RU] www.rutube.ru
   type: vless
-  server: "\x31\x30\x33\x2e\x32\x34\x2e\x32\x30\x37\x2e\x38\x37"
-  port: 10000
-  uuid: "\x33\x32\x30\x62\x62\x38\x61\x32\x2d\x30\x62\x33\x37\x2d\x34\x64\x31\x61\x2d\x39\x62\x37\x65\x2d\x36\x31\x35\x66\x65\x36\x35\x33\x34\x65\x63\x66"
+  server: "\x39\x35\x2e\x31\x36\x33\x2e\x31\x35\x32\x2e\x32\x30\x35"
+  port: 2053
+  uuid: "\x61\x34\x62\x35\x64\x63\x35\x33\x2d\x32\x65\x65\x65\x2d\x34\x63\x35\x65\x2d\x61\x63\x34\x33\x2d\x64\x38\x66\x30\x66\x64\x63\x33\x36\x61\x34\x30"
   udp: true
   flow: xtls-rprx-vision
   tls: true
-  servername: "\x72\x75\x74\x75\x62\x65\x2e\x72\x75"
+  servername: "\x77\x77\x77\x2e\x72\x75\x74\x75\x62\x65\x2e\x72\x75"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: KEwhHRW2YSUHYAKsyX0KE3uKkGVDMudZUhLKfmb8eR0
+    short-id: "4b27271677fa6fde"
+  network: tcp
+- name: Igareck Node 002 | 🇫🇷 France | [SNI-RU] www.rutube.ru
+  type: vless
+  server: "\x39\x35\x2e\x31\x36\x33\x2e\x31\x35\x32\x2e\x32\x30\x35"
+  port: 2053
+  uuid: "\x61\x34\x62\x35\x64\x63\x35\x33\x2d\x32\x65\x65\x65\x2d\x34\x63\x35\x65\x2d\x61\x63\x34\x33\x2d\x64\x38\x66\x30\x66\x64\x63\x33\x36\x61\x34\x30"
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x77\x77\x77\x2e\x72\x75\x74\x75\x62\x65\x2e\x72\x75"
   client-fingerprint: edge
   reality-opts:
-    public-key: vqRiLDLgn_0PWMUvELC0C4JD-a2LUoM0iZ6wdvgMBmQ
-    short-id: "d0cd6a0b1a18092b"
+    public-key: KEwhHRW2YSUHYAKsyX0KE3uKkGVDMudZUhLKfmb8eR0
+    short-id: "4b27271677fa6fde"
   network: tcp
-- name: Igareck Node 002 | 🇩🇪 Germany [SNI-RU] rutube.ru
+- name: Igareck Node 003 | 🇫🇷 France | [SNI-RU] www.rutube.ru
+  type: vless
+  server: "\x39\x35\x2e\x31\x36\x33\x2e\x31\x35\x32\x2e\x32\x30\x35"
+  port: 443
+  uuid: "\x61\x34\x62\x35\x64\x63\x35\x33\x2d\x32\x65\x65\x65\x2d\x34\x63\x35\x65\x2d\x61\x63\x34\x33\x2d\x64\x38\x66\x30\x66\x64\x63\x33\x36\x61\x34\x30"
+  udp: true
+  tls: true
+  servername: "\x77\x77\x77\x2e\x72\x75\x74\x75\x62\x65\x2e\x72\x75"
+  client-fingerprint: edge
+  reality-opts:
+    public-key: KEwhHRW2YSUHYAKsyX0KE3uKkGVDMudZUhLKfmb8eR0
+    short-id: "4b27271677fa6fde"
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/updates
+- name: Igareck Node 004 | 🇫🇷 France | [SNI-RU] www.rutube.ru
+  type: vless
+  server: "\x39\x35\x2e\x31\x36\x33\x2e\x31\x35\x32\x2e\x32\x30\x35"
+  port: 443
+  uuid: "\x61\x34\x62\x35\x64\x63\x35\x33\x2d\x32\x65\x65\x65\x2d\x34\x63\x35\x65\x2d\x61\x63\x34\x33\x2d\x64\x38\x66\x30\x66\x64\x63\x33\x36\x61\x34\x30"
+  udp: true
+  tls: true
+  servername: "\x77\x77\x77\x2e\x72\x75\x74\x75\x62\x65\x2e\x72\x75"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: KEwhHRW2YSUHYAKsyX0KE3uKkGVDMudZUhLKfmb8eR0
+    short-id: "4b27271677fa6fde"
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/updates
+- name: Igareck Node 005 | 🇫🇷 France [SNI-RU] www.rutube.ru
+  type: vless
+  server: "\x39\x35\x2e\x31\x36\x33\x2e\x31\x35\x32\x2e\x32\x30\x35"
+  port: 2053
+  uuid: "\x61\x34\x62\x35\x64\x63\x35\x33\x2d\x32\x65\x65\x65\x2d\x34\x63\x35\x65\x2d\x61\x63\x34\x33\x2d\x64\x38\x66\x30\x66\x64\x63\x33\x36\x61\x34\x30"
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x77\x77\x77\x2e\x72\x75\x74\x75\x62\x65\x2e\x72\x75"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: KEwhHRW2YSUHYAKsyX0KE3uKkGVDMudZUhLKfmb8eR0
+    short-id: "4b27271677fa6fde"
+  network: tcp
+- name: Igareck Node 006 | 🇫🇷 France [SNI-RU] www.rutube.ru
+  type: vless
+  server: "\x39\x35\x2e\x31\x36\x33\x2e\x31\x35\x32\x2e\x32\x30\x35"
+  port: 443
+  uuid: "\x61\x34\x62\x35\x64\x63\x35\x33\x2d\x32\x65\x65\x65\x2d\x34\x63\x35\x65\x2d\x61\x63\x34\x33\x2d\x64\x38\x66\x30\x66\x64\x63\x33\x36\x61\x34\x30"
+  udp: true
+  tls: true
+  servername: "\x77\x77\x77\x2e\x72\x75\x74\x75\x62\x65\x2e\x72\x75"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: KEwhHRW2YSUHYAKsyX0KE3uKkGVDMudZUhLKfmb8eR0
+    short-id: "4b27271677fa6fde"
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/updates
+- name: Igareck Node 007 | 🇩🇪 Germany | [SNI-RU] rutube.ru
   type: vless
   server: "\x31\x30\x33\x2e\x32\x34\x2e\x32\x30\x37\x2e\x38\x37"
   port: 10000
@@ -37,7 +110,21 @@ proxies:
     public-key: vqRiLDLgn_0PWMUvELC0C4JD-a2LUoM0iZ6wdvgMBmQ
     short-id: "d0cd6a0b1a18092b"
   network: tcp
-- name: Igareck Node 003 | 🇩🇪 Germany [SNI-RU] rutube.ru
+- name: Igareck Node 008 | 🇩🇪 Germany [SNI-RU] rutube.ru
+  type: vless
+  server: "\x31\x30\x33\x2e\x32\x34\x2e\x32\x30\x37\x2e\x38\x37"
+  port: 10000
+  uuid: "\x33\x32\x30\x62\x62\x38\x61\x32\x2d\x30\x62\x33\x37\x2d\x34\x64\x31\x61\x2d\x39\x62\x37\x65\x2d\x36\x31\x35\x66\x65\x36\x35\x33\x34\x65\x63\x66"
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x72\x75\x74\x75\x62\x65\x2e\x72\x75"
+  client-fingerprint: edge
+  reality-opts:
+    public-key: vqRiLDLgn_0PWMUvELC0C4JD-a2LUoM0iZ6wdvgMBmQ
+    short-id: "d0cd6a0b1a18092b"
+  network: tcp
+- name: Igareck Node 009 | 🇩🇪 Germany [SNI-RU] rutube.ru
   type: vless
   server: "\x31\x30\x33\x2e\x32\x34\x2e\x32\x30\x37\x2e\x38\x37"
   port: 10000
@@ -51,7 +138,7 @@ proxies:
     public-key: vqRiLDLgn_0PWMUvELC0C4JD-a2LUoM0iZ6wdvgMBmQ
     short-id: "d0cd6a0b1a18092b"
   network: tcp
-- name: Igareck Node 004 | 🇩🇪 Germany [SNI-RU] rutube.ru
+- name: Igareck Node 010 | 🇩🇪 Germany [SNI-RU] rutube.ru
   type: vless
   server: "\x31\x30\x33\x2e\x32\x34\x2e\x32\x30\x37\x2e\x38\x37"
   port: 10000
