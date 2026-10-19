@@ -3,12 +3,12 @@
     "name": "WHITE-SNI-RU-all — Happ Auto Select GLOBAL",
     "generator": "Igareck GitHub",
     "notes": [
-      "7 proxies",
+      "4 proxies",
       "Interval is 5 minutes + leastPing + routing GLOBAL."
     ],
     "client": "Happ",
     "source": "WHITE-SNI-RU-all.txt",
-    "source_datetime": "2026-10-19 16:21 Moscow"
+    "source_datetime": "2026-10-19 17:54 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -68,8 +68,7 @@
           "full:localhost",
           "domain:local",
           "domain:lan",
-          "regexp:^[^.]+$",
-          "full:bs.90909.club"
+          "regexp:^[^.]+$"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -125,8 +124,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:bs.90909.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -146,8 +144,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:bs.90909.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -167,8 +164,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:bs.90909.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -188,8 +184,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:bs.90909.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -209,8 +204,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:bs.90909.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -230,8 +224,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:bs.90909.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -251,8 +244,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:bs.90909.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -272,8 +264,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:bs.90909.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -293,8 +284,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:bs.90909.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -314,8 +304,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:bs.90909.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -335,8 +324,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:bs.90909.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -356,8 +344,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:bs.90909.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -439,32 +426,37 @@
       "settings": {
         "vnext": [
           {
-            "address": "78.159.250.88",
-            "port": 2096,
+            "address": "109.120.150.245",
+            "port": 2053,
             "users": [
               {
-                "id": "e667f5c7-6b38-48ef-ab89-40519713afb0",
-                "encryption": "none"
+                "id": "b1097a54-29de-4014-962c-c835d96e8409",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "grpcSettings": {
-          "serviceName": "vless-grpc-reality",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "id.vk.com",
-          "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+          "serverName": "www.rutube.ru",
+          "fingerprint": "android",
+          "publicKey": "iywsgYk8P1mWMu9xBjwpJQnBNGSH43RKSaaRVVv75S0",
+          "shortId": "c342eb1745bbaefd",
+          "spiderX": "/"
         }
       }
     },
@@ -474,32 +466,37 @@
       "settings": {
         "vnext": [
           {
-            "address": "78.159.250.88",
-            "port": 2096,
+            "address": "109.120.150.245",
+            "port": 2053,
             "users": [
               {
-                "id": "e667f5c7-6b38-48ef-ab89-40519713afb0",
-                "encryption": "none"
+                "id": "b1097a54-29de-4014-962c-c835d96e8409",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "grpcSettings": {
-          "serviceName": "vless-grpc-reality",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "id.vk.com",
-          "fingerprint": "ios",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+          "serverName": "www.rutube.ru",
+          "fingerprint": "chrome",
+          "publicKey": "iywsgYk8P1mWMu9xBjwpJQnBNGSH43RKSaaRVVv75S0",
+          "shortId": "c342eb1745bbaefd",
+          "spiderX": "/"
         }
       }
     },
@@ -509,32 +506,37 @@
       "settings": {
         "vnext": [
           {
-            "address": "78.159.250.88",
-            "port": 2096,
+            "address": "109.120.150.245",
+            "port": 2053,
             "users": [
               {
-                "id": "e667f5c7-6b38-48ef-ab89-40519713afb0",
-                "encryption": "none"
+                "id": "b1097a54-29de-4014-962c-c835d96e8409",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "grpcSettings": {
-          "serviceName": "vless-grpc-reality",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "id.vk.com",
-          "fingerprint": "safari",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+          "serverName": "www.rutube.ru",
+          "fingerprint": "firefox",
+          "publicKey": "iywsgYk8P1mWMu9xBjwpJQnBNGSH43RKSaaRVVv75S0",
+          "shortId": "c342eb1745bbaefd",
+          "spiderX": "/"
         }
       }
     },
@@ -544,138 +546,57 @@
       "settings": {
         "vnext": [
           {
-            "address": "bs.90909.club",
-            "port": 2096,
+            "address": "109.120.150.245",
+            "port": 2053,
             "users": [
               {
-                "id": "e667f5c7-6b38-48ef-ab89-40519713afb0",
-                "encryption": "none"
+                "id": "b1097a54-29de-4014-962c-c835d96e8409",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "grpcSettings": {
-          "serviceName": "vless-grpc-reality",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "id.vk.com",
-          "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-005",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "bs.90909.club",
-            "port": 2096,
-            "users": [
-              {
-                "id": "e667f5c7-6b38-48ef-ab89-40519713afb0",
-                "encryption": "none"
-              }
-            ]
+        "rawSettings": {
+          "header": {
+            "type": "none"
           }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "vless-grpc-reality",
-          "multiMode": false
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "id.vk.com",
+          "serverName": "www.rutube.ru",
           "fingerprint": "safari",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+          "publicKey": "iywsgYk8P1mWMu9xBjwpJQnBNGSH43RKSaaRVVv75S0",
+          "shortId": "c342eb1745bbaefd",
+          "spiderX": "/"
         }
       }
     },
     {
-      "tag": "igareck-node-006",
-      "protocol": "vless",
+      "tag": "fragment",
+      "protocol": "freedom",
       "settings": {
-        "vnext": [
+        "fragment": {
+          "packets": "1-3",
+          "length": "50-100",
+          "interval": "10-20",
+          "maxSplit": "10"
+        },
+        "noises": [
           {
-            "address": "78.159.250.88",
-            "port": 2096,
-            "users": [
-              {
-                "id": "e667f5c7-6b38-48ef-ab89-40519713afb0",
-                "encryption": "none"
-              }
-            ]
+            "type": "rand",
+            "packet": "50-150",
+            "delay": "10-50"
           }
         ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "vless-grpc-reality",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "id.vk.com",
-          "fingerprint": "firefox",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-007",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "bs.90909.club",
-            "port": 2096,
-            "users": [
-              {
-                "id": "e667f5c7-6b38-48ef-ab89-40519713afb0",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "vless-grpc-reality",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "id.vk.com",
-          "fingerprint": "firefox",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-        }
       }
     },
     {
