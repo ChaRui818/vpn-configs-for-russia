@@ -59,7 +59,8 @@
           "domain:local",
           "domain:lan",
           "regexp:^[^.]+$",
-          "full:bridge.nurcloud.org"
+          "full:ap2.directly.chat",
+          "full:ru2.radiolumens.uk"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -116,7 +117,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:bridge.nurcloud.org"
+          "full:ap2.directly.chat",
+          "full:ru2.radiolumens.uk"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -137,7 +139,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:bridge.nurcloud.org"
+          "full:ap2.directly.chat",
+          "full:ru2.radiolumens.uk"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -158,7 +161,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:bridge.nurcloud.org"
+          "full:ap2.directly.chat",
+          "full:ru2.radiolumens.uk"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -179,7 +183,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:bridge.nurcloud.org"
+          "full:ap2.directly.chat",
+          "full:ru2.radiolumens.uk"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -200,7 +205,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:bridge.nurcloud.org"
+          "full:ap2.directly.chat",
+          "full:ru2.radiolumens.uk"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -221,7 +227,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:bridge.nurcloud.org"
+          "full:ap2.directly.chat",
+          "full:ru2.radiolumens.uk"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -242,7 +249,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:bridge.nurcloud.org"
+          "full:ap2.directly.chat",
+          "full:ru2.radiolumens.uk"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -263,7 +271,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:bridge.nurcloud.org"
+          "full:ap2.directly.chat",
+          "full:ru2.radiolumens.uk"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -284,7 +293,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:bridge.nurcloud.org"
+          "full:ap2.directly.chat",
+          "full:ru2.radiolumens.uk"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -305,7 +315,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:bridge.nurcloud.org"
+          "full:ap2.directly.chat",
+          "full:ru2.radiolumens.uk"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -326,7 +337,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:bridge.nurcloud.org"
+          "full:ap2.directly.chat",
+          "full:ru2.radiolumens.uk"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -347,7 +359,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:bridge.nurcloud.org"
+          "full:ap2.directly.chat",
+          "full:ru2.radiolumens.uk"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -437,37 +450,31 @@
       "settings": {
         "vnext": [
           {
-            "address": "bridge.nurcloud.org",
+            "address": "72.56.235.75",
             "port": 443,
             "users": [
               {
-                "id": "b91d8200-1b39-41d2-bca0-9ac1a079cd91",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "27653b37-603c-4c90-b1f5-25c4d23f8932",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "VideoRenderer",
+          "multiMode": false
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eg.api.nurcloud.org",
-          "fingerprint": "chrome",
-          "publicKey": "ds-unSW4f8mhJ5CVtkGQ-7GSPQJ3zoEs1qbXsU76I2c",
-          "shortId": "811f57d83ace01ec",
-          "spiderX": "/"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "renderer-bridge-2-121.mirra.now",
+          "fingerprint": "chrome"
         }
       }
     },
@@ -477,37 +484,31 @@
       "settings": {
         "vnext": [
           {
-            "address": "bridge.nurcloud.org",
+            "address": "72.56.235.75",
             "port": 443,
             "users": [
               {
-                "id": "b91d8200-1b39-41d2-bca0-9ac1a079cd91",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "27653b37-603c-4c90-b1f5-25c4d23f8932",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "VideoRenderer",
+          "multiMode": false
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eg.api.nurcloud.org",
-          "fingerprint": "firefox",
-          "publicKey": "ds-unSW4f8mhJ5CVtkGQ-7GSPQJ3zoEs1qbXsU76I2c",
-          "shortId": "811f57d83ace01ec",
-          "spiderX": "/"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "renderer-bridge-2-121.mirra.now",
+          "fingerprint": "firefox"
         }
       }
     },
@@ -517,37 +518,31 @@
       "settings": {
         "vnext": [
           {
-            "address": "bridge.nurcloud.org",
+            "address": "72.56.235.75",
             "port": 443,
             "users": [
               {
-                "id": "b91d8200-1b39-41d2-bca0-9ac1a079cd91",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "27653b37-603c-4c90-b1f5-25c4d23f8932",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "VideoRenderer",
+          "multiMode": false
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eg.api.nurcloud.org",
-          "fingerprint": "ios",
-          "publicKey": "ds-unSW4f8mhJ5CVtkGQ-7GSPQJ3zoEs1qbXsU76I2c",
-          "shortId": "811f57d83ace01ec",
-          "spiderX": "/"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "renderer-bridge-2-121.mirra.now",
+          "fingerprint": "ios"
         }
       }
     },
@@ -557,11 +552,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "bridge.nurcloud.org",
+            "address": "185.76.241.186",
             "port": 443,
             "users": [
               {
-                "id": "b91d8200-1b39-41d2-bca0-9ac1a079cd91",
+                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -583,11 +578,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eg.api.nurcloud.org",
-          "fingerprint": "safari",
-          "publicKey": "ds-unSW4f8mhJ5CVtkGQ-7GSPQJ3zoEs1qbXsU76I2c",
-          "shortId": "811f57d83ace01ec",
-          "spiderX": "/"
+          "serverName": "ru-in-ind-4vp.movietop24.site",
+          "fingerprint": "chrome",
+          "publicKey": "NUjWUMNrcZKkvXmnK--E7wn_YyhEH6c-YOqjDMHWAxA",
+          "shortId": "686b3e179573a80a"
         }
       }
     },
@@ -597,11 +591,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.151.182.163",
+            "address": "185.76.241.186",
             "port": 443,
             "users": [
               {
-                "id": "b91d8200-1b39-41d2-bca0-9ac1a079cd91",
+                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -623,10 +617,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eg.api.nurcloud.org",
-          "fingerprint": "android",
-          "publicKey": "ds-unSW4f8mhJ5CVtkGQ-7GSPQJ3zoEs1qbXsU76I2c",
-          "shortId": "811f57d83ace01ec"
+          "serverName": "ru-in-ind-4vp.movietop24.site",
+          "fingerprint": "ios",
+          "publicKey": "NUjWUMNrcZKkvXmnK--E7wn_YyhEH6c-YOqjDMHWAxA",
+          "shortId": "686b3e179573a80a"
         }
       }
     },
@@ -636,11 +630,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.151.182.163",
+            "address": "185.76.241.186",
             "port": 443,
             "users": [
               {
-                "id": "b91d8200-1b39-41d2-bca0-9ac1a079cd91",
+                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -662,10 +656,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eg.api.nurcloud.org",
-          "fingerprint": "chrome",
-          "publicKey": "ds-unSW4f8mhJ5CVtkGQ-7GSPQJ3zoEs1qbXsU76I2c",
-          "shortId": "811f57d83ace01ec"
+          "serverName": "ru-in-ind-4vp.movietop24.site",
+          "fingerprint": "safari",
+          "publicKey": "NUjWUMNrcZKkvXmnK--E7wn_YyhEH6c-YOqjDMHWAxA",
+          "shortId": "686b3e179573a80a"
         }
       }
     },
@@ -675,11 +669,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.151.182.163",
+            "address": "185.76.241.186",
             "port": 443,
             "users": [
               {
-                "id": "b91d8200-1b39-41d2-bca0-9ac1a079cd91",
+                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -701,10 +695,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eg.api.nurcloud.org",
-          "fingerprint": "edge",
-          "publicKey": "ds-unSW4f8mhJ5CVtkGQ-7GSPQJ3zoEs1qbXsU76I2c",
-          "shortId": "811f57d83ace01ec"
+          "serverName": "ru-in-ind-4vp.movietop24.site",
+          "fingerprint": "firefox",
+          "publicKey": "NUjWUMNrcZKkvXmnK--E7wn_YyhEH6c-YOqjDMHWAxA",
+          "shortId": "686b3e179573a80a"
         }
       }
     },
@@ -714,11 +708,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.151.182.163",
+            "address": "89.23.113.11",
             "port": 443,
             "users": [
               {
-                "id": "b91d8200-1b39-41d2-bca0-9ac1a079cd91",
+                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -740,10 +734,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eg.api.nurcloud.org",
-          "fingerprint": "firefox",
-          "publicKey": "ds-unSW4f8mhJ5CVtkGQ-7GSPQJ3zoEs1qbXsU76I2c",
-          "shortId": "811f57d83ace01ec"
+          "serverName": "ru-in-lt-4vp.movietop24.site",
+          "fingerprint": "ios",
+          "publicKey": "DP_8vX-l2ugAHn828ZGa4wHp4Y7YOZrhGKiTMaFoCDc",
+          "shortId": "4ea43db267b5fd8b"
         }
       }
     },
@@ -753,11 +747,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.151.182.163",
+            "address": "89.23.113.11",
             "port": 443,
             "users": [
               {
-                "id": "b91d8200-1b39-41d2-bca0-9ac1a079cd91",
+                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -779,10 +773,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eg.api.nurcloud.org",
-          "fingerprint": "ios",
-          "publicKey": "ds-unSW4f8mhJ5CVtkGQ-7GSPQJ3zoEs1qbXsU76I2c",
-          "shortId": "811f57d83ace01ec"
+          "serverName": "ru-in-lt-4vp.movietop24.site",
+          "fingerprint": "qq",
+          "publicKey": "DP_8vX-l2ugAHn828ZGa4wHp4Y7YOZrhGKiTMaFoCDc",
+          "shortId": "4ea43db267b5fd8b"
         }
       }
     },
@@ -792,11 +786,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "bridge.nurcloud.org",
+            "address": "89.23.113.11",
             "port": 443,
             "users": [
               {
-                "id": "b91d8200-1b39-41d2-bca0-9ac1a079cd91",
+                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -818,11 +812,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "eg.api.nurcloud.org",
-          "fingerprint": "edge",
-          "publicKey": "ds-unSW4f8mhJ5CVtkGQ-7GSPQJ3zoEs1qbXsU76I2c",
-          "shortId": "811f57d83ace01ec",
-          "spiderX": "/"
+          "serverName": "ru-in-lt-4vp.movietop24.site",
+          "fingerprint": "safari",
+          "publicKey": "DP_8vX-l2ugAHn828ZGa4wHp4Y7YOZrhGKiTMaFoCDc",
+          "shortId": "4ea43db267b5fd8b"
         }
       }
     },
@@ -832,36 +825,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.76.241.49",
+            "address": "87.228.71.195",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-est-4vp.movietop24.site",
-          "fingerprint": "android",
-          "publicKey": "-vbYsY2UQcGl7Z6eTc5KDhxOfo_OhsqFlI_SyeL4TSE",
-          "shortId": "b927c029ece94e02"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "android"
         }
       }
     },
@@ -871,36 +862,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.76.241.49",
+            "address": "87.228.71.195",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-est-4vp.movietop24.site",
-          "fingerprint": "edge",
-          "publicKey": "-vbYsY2UQcGl7Z6eTc5KDhxOfo_OhsqFlI_SyeL4TSE",
-          "shortId": "b927c029ece94e02"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "chrome"
         }
       }
     },
@@ -910,36 +899,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.76.241.49",
+            "address": "87.228.71.195",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-est-4vp.movietop24.site",
-          "fingerprint": "firefox",
-          "publicKey": "-vbYsY2UQcGl7Z6eTc5KDhxOfo_OhsqFlI_SyeL4TSE",
-          "shortId": "b927c029ece94e02"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "edge"
         }
       }
     },
@@ -949,36 +936,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.76.241.49",
+            "address": "87.228.71.195",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-est-4vp.movietop24.site",
-          "fingerprint": "qq",
-          "publicKey": "-vbYsY2UQcGl7Z6eTc5KDhxOfo_OhsqFlI_SyeL4TSE",
-          "shortId": "b927c029ece94e02"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "ios"
         }
       }
     },
@@ -988,36 +973,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.76.241.49",
+            "address": "87.228.71.195",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-est-4vp.movietop24.site",
-          "fingerprint": "safari",
-          "publicKey": "-vbYsY2UQcGl7Z6eTc5KDhxOfo_OhsqFlI_SyeL4TSE",
-          "shortId": "b927c029ece94e02"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "qq"
         }
       }
     },
@@ -1027,36 +1010,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.151.30.245",
+            "address": "87.228.71.195",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "cl-fn-in.movietop24.site",
-          "fingerprint": "ios",
-          "publicKey": "H0_ikooEh725UVXsMCoRPoRYMheLUL_L-xZA3fl_nS4",
-          "shortId": "ae641bd0ef87fbfa"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "random"
         }
       }
     },
@@ -1066,36 +1047,38 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.151.30.245",
+            "address": "87.228.71.195",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "cl-fn-in.movietop24.site",
-          "fingerprint": "qq",
-          "publicKey": "H0_ikooEh725UVXsMCoRPoRYMheLUL_L-xZA3fl_nS4",
-          "shortId": "ae641bd0ef87fbfa"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -1105,36 +1088,38 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.151.30.245",
+            "address": "87.228.71.195",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "cl-fn-in.movietop24.site",
-          "fingerprint": "chrome",
-          "publicKey": "H0_ikooEh725UVXsMCoRPoRYMheLUL_L-xZA3fl_nS4",
-          "shortId": "ae641bd0ef87fbfa"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "ios",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -1144,36 +1129,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.151.30.245",
+            "address": "87.228.71.196",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "cl-fn-in.movietop24.site",
-          "fingerprint": "edge",
-          "publicKey": "H0_ikooEh725UVXsMCoRPoRYMheLUL_L-xZA3fl_nS4",
-          "shortId": "ae641bd0ef87fbfa"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "android"
         }
       }
     },
@@ -1183,36 +1166,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.151.30.245",
+            "address": "87.228.71.196",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "cl-fn-in.movietop24.site",
-          "fingerprint": "firefox",
-          "publicKey": "H0_ikooEh725UVXsMCoRPoRYMheLUL_L-xZA3fl_nS4",
-          "shortId": "ae641bd0ef87fbfa"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "chrome"
         }
       }
     },
@@ -1222,36 +1203,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.76.241.99",
+            "address": "87.228.71.196",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-de-4vp.movietop24.site",
-          "fingerprint": "android",
-          "publicKey": "cRFU83ShR1JHDtNNiZfqGFyAKwWK5CR6vhuuBcoSRUE",
-          "shortId": "fda703d9b877e57f"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "ios"
         }
       }
     },
@@ -1261,36 +1240,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.76.241.99",
+            "address": "87.228.71.196",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-de-4vp.movietop24.site",
-          "fingerprint": "chrome",
-          "publicKey": "cRFU83ShR1JHDtNNiZfqGFyAKwWK5CR6vhuuBcoSRUE",
-          "shortId": "fda703d9b877e57f"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "qq"
         }
       }
     },
@@ -1300,36 +1277,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.76.241.99",
+            "address": "87.228.71.196",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-de-4vp.movietop24.site",
-          "fingerprint": "firefox",
-          "publicKey": "cRFU83ShR1JHDtNNiZfqGFyAKwWK5CR6vhuuBcoSRUE",
-          "shortId": "fda703d9b877e57f"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "random"
         }
       }
     },
@@ -1339,36 +1314,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.76.241.99",
+            "address": "87.228.71.196",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-de-4vp.movietop24.site",
-          "fingerprint": "ios",
-          "publicKey": "cRFU83ShR1JHDtNNiZfqGFyAKwWK5CR6vhuuBcoSRUE",
-          "shortId": "fda703d9b877e57f"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "safari"
         }
       }
     },
@@ -1378,36 +1351,38 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.76.241.99",
+            "address": "87.228.71.196",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-de-4vp.movietop24.site",
-          "fingerprint": "qq",
-          "publicKey": "cRFU83ShR1JHDtNNiZfqGFyAKwWK5CR6vhuuBcoSRUE",
-          "shortId": "fda703d9b877e57f"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -1417,36 +1392,38 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.233.48.89",
+            "address": "87.228.71.196",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-lv-4vp.movietop24.site",
-          "fingerprint": "edge",
-          "publicKey": "wEq2tZjBf-K4874ErnlupCaI24wDTB5elHB-ZXwjBio",
-          "shortId": "b629457828a7d4bf"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -1456,36 +1433,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.233.48.89",
+            "address": "87.228.71.197",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-lv-4vp.movietop24.site",
-          "fingerprint": "ios",
-          "publicKey": "wEq2tZjBf-K4874ErnlupCaI24wDTB5elHB-ZXwjBio",
-          "shortId": "b629457828a7d4bf"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "android"
         }
       }
     },
@@ -1495,36 +1470,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.233.48.89",
+            "address": "87.228.71.197",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-lv-4vp.movietop24.site",
-          "fingerprint": "qq",
-          "publicKey": "wEq2tZjBf-K4874ErnlupCaI24wDTB5elHB-ZXwjBio",
-          "shortId": "b629457828a7d4bf"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "edge"
         }
       }
     },
@@ -1534,36 +1507,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.233.48.89",
+            "address": "87.228.71.197",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-lv-4vp.movietop24.site",
-          "fingerprint": "android",
-          "publicKey": "wEq2tZjBf-K4874ErnlupCaI24wDTB5elHB-ZXwjBio",
-          "shortId": "b629457828a7d4bf"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "firefox"
         }
       }
     },
@@ -1573,36 +1544,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.233.48.89",
+            "address": "87.228.71.197",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-lv-4vp.movietop24.site",
-          "fingerprint": "firefox",
-          "publicKey": "wEq2tZjBf-K4874ErnlupCaI24wDTB5elHB-ZXwjBio",
-          "shortId": "b629457828a7d4bf"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "ios"
         }
       }
     },
@@ -1612,36 +1581,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.23.113.11",
+            "address": "87.228.71.197",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-lt-4vp.movietop24.site",
-          "fingerprint": "android",
-          "publicKey": "DP_8vX-l2ugAHn828ZGa4wHp4Y7YOZrhGKiTMaFoCDc",
-          "shortId": "4ea43db267b5fd8b"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "random"
         }
       }
     },
@@ -1651,36 +1618,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.23.113.11",
+            "address": "87.228.71.198",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-lt-4vp.movietop24.site",
-          "fingerprint": "chrome",
-          "publicKey": "DP_8vX-l2ugAHn828ZGa4wHp4Y7YOZrhGKiTMaFoCDc",
-          "shortId": "4ea43db267b5fd8b"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "android"
         }
       }
     },
@@ -1690,36 +1655,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.23.113.11",
+            "address": "87.228.71.198",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-lt-4vp.movietop24.site",
-          "fingerprint": "edge",
-          "publicKey": "DP_8vX-l2ugAHn828ZGa4wHp4Y7YOZrhGKiTMaFoCDc",
-          "shortId": "4ea43db267b5fd8b"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "chrome"
         }
       }
     },
@@ -1729,36 +1692,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.23.113.11",
+            "address": "87.228.71.198",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-lt-4vp.movietop24.site",
-          "fingerprint": "firefox",
-          "publicKey": "DP_8vX-l2ugAHn828ZGa4wHp4Y7YOZrhGKiTMaFoCDc",
-          "shortId": "4ea43db267b5fd8b"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "qq"
         }
       }
     },
@@ -1768,36 +1729,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.23.113.11",
+            "address": "87.228.71.198",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-lt-4vp.movietop24.site",
-          "fingerprint": "qq",
-          "publicKey": "DP_8vX-l2ugAHn828ZGa4wHp4Y7YOZrhGKiTMaFoCDc",
-          "shortId": "4ea43db267b5fd8b"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "safari"
         }
       }
     },
@@ -1807,11 +1766,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "46.243.232.167",
+            "address": "87.228.71.198",
             "port": 443,
             "users": [
               {
-                "id": "37253a6a-2a9b-42bb-992c-b5f1b1ef1791",
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
                 "encryption": "none"
               }
             ]
@@ -1826,15 +1785,19 @@
           "dialerProxy": "fragment"
         },
         "wsSettings": {
-          "path": "/service/telemetry/e6dc0bd08cb1/",
+          "path": "/md/1",
           "headers": {
-            "Host": "uzs9w3bg6u.rucdncomp.pro"
+            "Host": "ap2.directly.chat"
           }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "uzs9w3bg6u.rucdncomp.pro",
-          "fingerprint": "edge"
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -1844,11 +1807,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "46.243.232.167",
+            "address": "87.228.71.198",
             "port": 443,
             "users": [
               {
-                "id": "37253a6a-2a9b-42bb-992c-b5f1b1ef1791",
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
                 "encryption": "none"
               }
             ]
@@ -1863,15 +1826,19 @@
           "dialerProxy": "fragment"
         },
         "wsSettings": {
-          "path": "/service/telemetry/e6dc0bd08cb1/",
+          "path": "/md/1",
           "headers": {
-            "Host": "uzs9w3bg6u.rucdncomp.pro"
+            "Host": "ap2.directly.chat"
           }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "uzs9w3bg6u.rucdncomp.pro",
-          "fingerprint": "firefox"
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -1881,11 +1848,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "46.243.232.167",
+            "address": "87.228.71.198",
             "port": 443,
             "users": [
               {
-                "id": "37253a6a-2a9b-42bb-992c-b5f1b1ef1791",
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
                 "encryption": "none"
               }
             ]
@@ -1900,15 +1867,19 @@
           "dialerProxy": "fragment"
         },
         "wsSettings": {
-          "path": "/service/telemetry/e6dc0bd08cb1/",
+          "path": "/md/1",
           "headers": {
-            "Host": "uzs9w3bg6u.rucdncomp.pro"
+            "Host": "ap2.directly.chat"
           }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "uzs9w3bg6u.rucdncomp.pro",
-          "fingerprint": "ios"
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "qq",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -1918,11 +1889,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "46.243.232.167",
+            "address": "ap2.directly.chat",
             "port": 443,
             "users": [
               {
-                "id": "37253a6a-2a9b-42bb-992c-b5f1b1ef1791",
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
                 "encryption": "none"
               }
             ]
@@ -1937,15 +1908,19 @@
           "dialerProxy": "fragment"
         },
         "wsSettings": {
-          "path": "/service/telemetry/e6dc0bd08cb1/",
+          "path": "/md/1",
           "headers": {
-            "Host": "uzs9w3bg6u.rucdncomp.pro"
+            "Host": "ap2.directly.chat"
           }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "uzs9w3bg6u.rucdncomp.pro",
-          "fingerprint": "qq"
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "ios",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -1955,11 +1930,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "46.243.232.167",
+            "address": "ap2.directly.chat",
             "port": 443,
             "users": [
               {
-                "id": "37253a6a-2a9b-42bb-992c-b5f1b1ef1791",
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
                 "encryption": "none"
               }
             ]
@@ -1974,15 +1949,16 @@
           "dialerProxy": "fragment"
         },
         "wsSettings": {
-          "path": "/service/telemetry/e6dc0bd08cb1/",
-          "headers": {
-            "Host": "uzs9w3bg6u.rucdncomp.pro"
-          }
+          "path": "/md/1",
+          "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "uzs9w3bg6u.rucdncomp.pro",
-          "fingerprint": "safari"
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -1992,36 +1968,38 @@
       "settings": {
         "vnext": [
           {
-            "address": "213.165.60.99",
+            "address": "87.228.71.195",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-uk-4vp.movietop24.site",
-          "fingerprint": "android",
-          "publicKey": "Nu5Tn3Qf0iC8tog-mxqNjl9ckjHgwU0xSOSET605tw0",
-          "shortId": "17e8f4e38e421c68"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -2031,36 +2009,38 @@
       "settings": {
         "vnext": [
           {
-            "address": "213.165.60.99",
+            "address": "87.228.71.196",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-uk-4vp.movietop24.site",
-          "fingerprint": "edge",
-          "publicKey": "Nu5Tn3Qf0iC8tog-mxqNjl9ckjHgwU0xSOSET605tw0",
-          "shortId": "17e8f4e38e421c68"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "ios",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -2070,36 +2050,38 @@
       "settings": {
         "vnext": [
           {
-            "address": "213.165.60.99",
+            "address": "ap2.directly.chat",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-uk-4vp.movietop24.site",
-          "fingerprint": "firefox",
-          "publicKey": "Nu5Tn3Qf0iC8tog-mxqNjl9ckjHgwU0xSOSET605tw0",
-          "shortId": "17e8f4e38e421c68"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "android",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -2109,36 +2091,38 @@
       "settings": {
         "vnext": [
           {
-            "address": "213.165.60.99",
+            "address": "ap2.directly.chat",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {
+            "Host": "ap2.directly.chat"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-uk-4vp.movietop24.site",
-          "fingerprint": "ios",
-          "publicKey": "Nu5Tn3Qf0iC8tog-mxqNjl9ckjHgwU0xSOSET605tw0",
-          "shortId": "17e8f4e38e421c68"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ap2.directly.chat",
+          "fingerprint": "qq",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -2148,36 +2132,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "213.165.60.99",
+            "address": "ap2.directly.chat",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {}
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-uk-4vp.movietop24.site",
-          "fingerprint": "safari",
-          "publicKey": "Nu5Tn3Qf0iC8tog-mxqNjl9ckjHgwU0xSOSET605tw0",
-          "shortId": "17e8f4e38e421c68"
+        "security": "tls",
+        "tlsSettings": {
+          "fingerprint": "edge",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -2187,35 +2170,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "103.24.207.40",
-            "port": 8443,
+            "address": "ap2.directly.chat",
+            "port": 443,
             "users": [
               {
-                "id": "258d8fc5-206c-48fd-88df-169dbbe44d3f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "wsSettings": {
+          "path": "/md/1",
+          "headers": {}
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "edge-fr.extazy.net",
-          "fingerprint": "android",
-          "publicKey": "ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY"
+        "security": "tls",
+        "tlsSettings": {
+          "fingerprint": "ios",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -2225,11 +2208,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "103.24.207.40",
-            "port": 8443,
+            "address": "185.76.241.87",
+            "port": 443,
             "users": [
               {
-                "id": "258d8fc5-206c-48fd-88df-169dbbe44d3f",
+                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -2251,9 +2234,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "edge-fr.extazy.net",
+          "serverName": "ru-in-es-4vp.movietop24.site",
           "fingerprint": "chrome",
-          "publicKey": "ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY"
+          "publicKey": "DcdLu5TEodox9cSq7WLfV-47vURmKkRc1BO19KJvgkM",
+          "shortId": "861215e33e8dba4f"
         }
       }
     },
@@ -2263,11 +2247,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "103.24.207.40",
-            "port": 8443,
+            "address": "185.76.241.87",
+            "port": 443,
             "users": [
               {
-                "id": "258d8fc5-206c-48fd-88df-169dbbe44d3f",
+                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -2289,9 +2273,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "edge-fr.extazy.net",
-          "fingerprint": "edge",
-          "publicKey": "ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY"
+          "serverName": "ru-in-es-4vp.movietop24.site",
+          "fingerprint": "ios",
+          "publicKey": "DcdLu5TEodox9cSq7WLfV-47vURmKkRc1BO19KJvgkM",
+          "shortId": "861215e33e8dba4f"
         }
       }
     },
@@ -2301,11 +2286,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "103.24.207.40",
-            "port": 8443,
+            "address": "185.76.241.87",
+            "port": 443,
             "users": [
               {
-                "id": "258d8fc5-206c-48fd-88df-169dbbe44d3f",
+                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -2327,9 +2312,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "edge-fr.extazy.net",
-          "fingerprint": "firefox",
-          "publicKey": "ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY"
+          "serverName": "ru-in-es-4vp.movietop24.site",
+          "fingerprint": "safari",
+          "publicKey": "DcdLu5TEodox9cSq7WLfV-47vURmKkRc1BO19KJvgkM",
+          "shortId": "861215e33e8dba4f"
         }
       }
     },
@@ -2339,7 +2325,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.129.255.169",
+            "address": "185.76.241.87",
             "port": 443,
             "users": [
               {
@@ -2365,10 +2351,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ru-in-yt-tw.movietop24.site",
-          "fingerprint": "ios",
-          "publicKey": "niV4WMTlvC1GGfEv5CqdgQCLXfAHeRA6y_K3ADYqrUc",
-          "shortId": "79fbb8c2e64269d7"
+          "serverName": "ru-in-es-4vp.movietop24.site",
+          "fingerprint": "firefox",
+          "publicKey": "DcdLu5TEodox9cSq7WLfV-47vURmKkRc1BO19KJvgkM",
+          "shortId": "861215e33e8dba4f"
         }
       }
     },
@@ -2378,36 +2364,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.129.255.169",
+            "address": "84.201.146.8",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/",
+          "host": "max.ru"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ru-in-yt-tw.movietop24.site",
-          "fingerprint": "safari",
-          "publicKey": "niV4WMTlvC1GGfEv5CqdgQCLXfAHeRA6y_K3ADYqrUc",
-          "shortId": "79fbb8c2e64269d7"
+          "serverName": "max.ru",
+          "fingerprint": "ios",
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
     },
@@ -2417,36 +2399,31 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.129.255.169",
+            "address": "84.201.146.8",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ru-in-yt-tw.movietop24.site",
-          "fingerprint": "android",
-          "publicKey": "niV4WMTlvC1GGfEv5CqdgQCLXfAHeRA6y_K3ADYqrUc",
-          "shortId": "79fbb8c2e64269d7"
+          "serverName": "max.ru",
+          "fingerprint": "edge",
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
     },
@@ -2456,36 +2433,31 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.129.255.169",
+            "address": "84.201.146.8",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ru-in-yt-tw.movietop24.site",
-          "fingerprint": "chrome",
-          "publicKey": "niV4WMTlvC1GGfEv5CqdgQCLXfAHeRA6y_K3ADYqrUc",
-          "shortId": "79fbb8c2e64269d7"
+          "serverName": "max.ru",
+          "fingerprint": "qq",
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
     },
@@ -2495,36 +2467,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.129.255.169",
+            "address": "84.201.146.8",
             "port": 443,
             "users": [
               {
-                "id": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/",
+          "host": "max.ru"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ru-in-yt-tw.movietop24.site",
-          "fingerprint": "edge",
-          "publicKey": "niV4WMTlvC1GGfEv5CqdgQCLXfAHeRA6y_K3ADYqrUc",
-          "shortId": "79fbb8c2e64269d7"
+          "serverName": "max.ru",
+          "fingerprint": "chrome",
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
     },
@@ -2534,35 +2502,290 @@
       "settings": {
         "vnext": [
           {
-            "address": "103.24.207.40",
-            "port": 8443,
+            "address": "84.201.146.8",
+            "port": 443,
             "users": [
               {
-                "id": "258d8fc5-206c-48fd-88df-169dbbe44d3f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/",
+          "host": "max.ru"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "edge-fr.extazy.net",
+          "serverName": "max.ru",
+          "fingerprint": "qq",
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-056",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "84.201.146.8",
+            "port": 443,
+            "users": [
+              {
+                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "max.ru",
+          "fingerprint": "firefox",
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-057",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "84.201.146.8",
+            "port": 443,
+            "users": [
+              {
+                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "max.ru",
+          "fingerprint": "ios",
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-058",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ru2.radiolumens.uk",
+            "port": 9444,
+            "users": [
+              {
+                "id": "36cf792c-f07d-4500-97ea-a395e5178deb",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/beru-uk",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ru2.radiolumens.uk",
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-059",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ru2.radiolumens.uk",
+            "port": 9444,
+            "users": [
+              {
+                "id": "36cf792c-f07d-4500-97ea-a395e5178deb",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/beru-uk",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ru2.radiolumens.uk",
+          "fingerprint": "edge",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-060",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ru2.radiolumens.uk",
+            "port": 9444,
+            "users": [
+              {
+                "id": "36cf792c-f07d-4500-97ea-a395e5178deb",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/beru-uk",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ru2.radiolumens.uk",
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-061",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ru2.radiolumens.uk",
+            "port": 9444,
+            "users": [
+              {
+                "id": "36cf792c-f07d-4500-97ea-a395e5178deb",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/beru-uk",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ru2.radiolumens.uk",
+          "fingerprint": "ios",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-062",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ru2.radiolumens.uk",
+            "port": 9444,
+            "users": [
+              {
+                "id": "36cf792c-f07d-4500-97ea-a395e5178deb",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/beru-uk",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ru2.radiolumens.uk",
           "fingerprint": "safari",
-          "publicKey": "ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY"
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
