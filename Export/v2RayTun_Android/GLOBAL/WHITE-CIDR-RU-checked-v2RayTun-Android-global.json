@@ -501,7 +501,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "firefox",
+          "fingerprint": "chrome",
           "alpn": [
             "http/1.1",
             "h2"
@@ -579,7 +579,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "ios",
+          "fingerprint": "firefox",
           "alpn": [
             "http/1.1",
             "h2"
@@ -657,7 +657,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "chrome",
+          "fingerprint": "edge",
           "alpn": [
             "http/1.1",
             "h2"
@@ -735,7 +735,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "edge",
+          "fingerprint": "ios",
           "alpn": [
             "http/1.1",
             "h2"
@@ -749,7 +749,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "summerculture.net",
+            "address": "37.18.14.43",
             "port": 2053,
             "users": [
               {
@@ -774,7 +774,11 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "chrome"
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "+http/1.1"
+          ]
         }
       }
     },
@@ -784,7 +788,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "summerculture.net",
+            "address": "37.18.14.43",
             "port": 2053,
             "users": [
               {
@@ -809,7 +813,11 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "edge"
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2",
+            "+http/1.1"
+          ]
         }
       }
     },
@@ -819,7 +827,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "summerculture.net",
+            "address": "37.18.14.43",
             "port": 2053,
             "users": [
               {
@@ -844,47 +852,16 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "firefox"
+          "fingerprint": "ios",
+          "alpn": [
+            "h2",
+            "+http/1.1"
+          ]
         }
       }
     },
     {
       "tag": "igareck-node-008",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "summerculture.net",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "summerculture.net",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "summerculture.net",
-          "fingerprint": "ios"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-009",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -923,7 +900,7 @@
       }
     },
     {
-      "tag": "igareck-node-010",
+      "tag": "igareck-node-009",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -962,7 +939,7 @@
       }
     },
     {
-      "tag": "igareck-node-011",
+      "tag": "igareck-node-010",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -992,16 +969,16 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "safari",
+          "fingerprint": "ios",
           "alpn": [
             "h2",
-            "+http/1.1"
+            "http/1.1"
           ]
         }
       }
     },
     {
-      "tag": "igareck-node-012",
+      "tag": "igareck-node-011",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1036,7 +1013,7 @@
       }
     },
     {
-      "tag": "igareck-node-013",
+      "tag": "igareck-node-012",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1071,7 +1048,7 @@
       }
     },
     {
-      "tag": "igareck-node-014",
+      "tag": "igareck-node-013",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1106,12 +1083,47 @@
       }
     },
     {
-      "tag": "igareck-node-015",
+      "tag": "igareck-node-014",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
             "address": "37.18.14.43",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "safari"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-015",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "summerculture.net",
             "port": 2053,
             "users": [
               {
@@ -1165,6 +1177,181 @@
         },
         "xhttpSettings": {
           "path": "/api/v1/upload",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-017",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "summerculture.net",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "ios"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-018",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "summerculture.net",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "qq"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-019",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "summerculture.net",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "safari"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-020",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "37.18.14.43",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-021",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "37.18.14.43",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
           "host": "summerculture.net",
           "mode": "auto"
         },
@@ -1180,7 +1367,373 @@
       }
     },
     {
-      "tag": "igareck-node-017",
+      "tag": "igareck-node-022",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "37.18.14.43",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "qq",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-023",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "37.18.14.43",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-024",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "37.18.14.43",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "qq"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-025",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "summerculture.net",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-026",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "summerculture.net",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "edge"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-027",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "summerculture.net",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-028",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "summerculture.net",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "ios"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-029",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "summerculture.net",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-030",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "summerculture.net",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "edge",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-031",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "summerculture.net",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-032",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1219,408 +1772,7 @@
       }
     },
     {
-      "tag": "igareck-node-018",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "summerculture.net",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "summerculture.net",
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-019",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "summerculture.net",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "summerculture.net",
-          "fingerprint": "ios"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-020",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "summerculture.net",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "summerculture.net",
-          "fingerprint": "qq"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-021",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "summerculture.net",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "summerculture.net",
-          "fingerprint": "safari"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-022",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.43",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "summerculture.net",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "summerculture.net",
-          "fingerprint": "chrome",
-          "alpn": [
-            "h2",
-            "+http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-023",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.43",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "summerculture.net",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "summerculture.net",
-          "fingerprint": "firefox",
-          "alpn": [
-            "h2",
-            "+http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-024",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.43",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "summerculture.net",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "summerculture.net",
-          "fingerprint": "ios",
-          "alpn": [
-            "h2",
-            "+http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-025",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.43",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "summerculture.net",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "summerculture.net",
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-026",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.43",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "summerculture.net",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "summerculture.net",
-          "fingerprint": "qq"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-027",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "summerculture.net",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "summerculture.net",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "summerculture.net",
-          "fingerprint": "chrome",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-028",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "summerculture.net",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "summerculture.net",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "summerculture.net",
-          "fingerprint": "firefox",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-029",
+      "tag": "igareck-node-033",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1654,6 +1806,45 @@
           "alpn": [
             "h2",
             "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-034",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "37.18.14.43",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "safari",
+          "alpn": [
+            "h2",
+            "+http/1.1"
           ]
         }
       }
