@@ -3,12 +3,12 @@
     "name": "WHITE-CIDR-RU-all — v2rayNG Auto Select GLOBAL",
     "generator": "Igareck GitHub",
     "notes": [
-      "37 proxies",
+      "42 proxies",
       "Interval is 5 minutes + leastPing + routing GLOBAL."
     ],
     "client": "v2rayNG",
     "source": "WHITE-CIDR-RU-all.txt",
-    "source_datetime": "2026-10-21 18:01 Moscow"
+    "source_datetime": "2026-10-21 19:38 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -446,36 +446,75 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.76.241.186",
-            "port": 443,
+            "address": "37.18.14.43",
+            "port": 8443,
             "users": [
               {
-                "id": "5c8950a3-2142-42c9-b414-fa34526ff25f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "6a2aff19-ff1f-4a13-96c8-a4d8986a9699",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto",
+          "extra": {
+            "host": "",
+            "path": "",
+            "mode": "",
+            "headers": null,
+            "xPaddingBytes": "100-1000",
+            "xPaddingObfsMode": false,
+            "xPaddingKey": "",
+            "xPaddingHeader": "",
+            "xPaddingPlacement": "",
+            "xPaddingMethod": "",
+            "uplinkHTTPMethod": "",
+            "sessionIDPlacement": "",
+            "sessionIDKey": "",
+            "sessionIDTable": "",
+            "sessionIDLength": "0",
+            "seqPlacement": "",
+            "seqKey": "",
+            "uplinkDataPlacement": "",
+            "uplinkDataKey": "",
+            "uplinkChunkSize": "0",
+            "noGRPCHeader": false,
+            "noSSEHeader": false,
+            "scMaxEachPostBytes": "1000000",
+            "scMinPostsIntervalMs": "30",
+            "scMaxBufferedPosts": 0,
+            "scStreamUpServerSecs": "0",
+            "serverMaxHeaderBytes": 0,
+            "xmux": {
+              "maxConcurrency": "16-32",
+              "maxConnections": "0",
+              "cMaxReuseTimes": "64-128",
+              "hMaxRequestTimes": "0",
+              "hMaxReusableSecs": "0",
+              "hKeepAlivePeriod": 0
+            },
+            "downloadSettings": null,
+            "extra": null
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-ind-4vp.movietop24.site",
-          "fingerprint": "ios",
-          "publicKey": "NUjWUMNrcZKkvXmnK--E7wn_YyhEH6c-YOqjDMHWAxA",
-          "shortId": "686b3e179573a80a"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "chrome",
+          "alpn": [
+            "http/1.1",
+            "h2"
+          ]
         }
       }
     },
@@ -485,36 +524,75 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.76.241.186",
-            "port": 443,
+            "address": "37.18.14.43",
+            "port": 8443,
             "users": [
               {
-                "id": "5c8950a3-2142-42c9-b414-fa34526ff25f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "6a2aff19-ff1f-4a13-96c8-a4d8986a9699",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto",
+          "extra": {
+            "host": "",
+            "path": "",
+            "mode": "",
+            "headers": null,
+            "xPaddingBytes": "100-1000",
+            "xPaddingObfsMode": false,
+            "xPaddingKey": "",
+            "xPaddingHeader": "",
+            "xPaddingPlacement": "",
+            "xPaddingMethod": "",
+            "uplinkHTTPMethod": "",
+            "sessionIDPlacement": "",
+            "sessionIDKey": "",
+            "sessionIDTable": "",
+            "sessionIDLength": "0",
+            "seqPlacement": "",
+            "seqKey": "",
+            "uplinkDataPlacement": "",
+            "uplinkDataKey": "",
+            "uplinkChunkSize": "0",
+            "noGRPCHeader": false,
+            "noSSEHeader": false,
+            "scMaxEachPostBytes": "1000000",
+            "scMinPostsIntervalMs": "30",
+            "scMaxBufferedPosts": 0,
+            "scStreamUpServerSecs": "0",
+            "serverMaxHeaderBytes": 0,
+            "xmux": {
+              "maxConcurrency": "16-32",
+              "maxConnections": "0",
+              "cMaxReuseTimes": "64-128",
+              "hMaxRequestTimes": "0",
+              "hMaxReusableSecs": "0",
+              "hKeepAlivePeriod": 0
+            },
+            "downloadSettings": null,
+            "extra": null
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-ind-4vp.movietop24.site",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
           "fingerprint": "firefox",
-          "publicKey": "NUjWUMNrcZKkvXmnK--E7wn_YyhEH6c-YOqjDMHWAxA",
-          "shortId": "686b3e179573a80a"
+          "alpn": [
+            "http/1.1",
+            "h2"
+          ]
         }
       }
     },
@@ -524,36 +602,75 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.76.241.186",
-            "port": 443,
+            "address": "37.18.14.43",
+            "port": 8443,
             "users": [
               {
-                "id": "5c8950a3-2142-42c9-b414-fa34526ff25f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "6a2aff19-ff1f-4a13-96c8-a4d8986a9699",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto",
+          "extra": {
+            "host": "",
+            "path": "",
+            "mode": "",
+            "headers": null,
+            "xPaddingBytes": "100-1000",
+            "xPaddingObfsMode": false,
+            "xPaddingKey": "",
+            "xPaddingHeader": "",
+            "xPaddingPlacement": "",
+            "xPaddingMethod": "",
+            "uplinkHTTPMethod": "",
+            "sessionIDPlacement": "",
+            "sessionIDKey": "",
+            "sessionIDTable": "",
+            "sessionIDLength": "0",
+            "seqPlacement": "",
+            "seqKey": "",
+            "uplinkDataPlacement": "",
+            "uplinkDataKey": "",
+            "uplinkChunkSize": "0",
+            "noGRPCHeader": false,
+            "noSSEHeader": false,
+            "scMaxEachPostBytes": "1000000",
+            "scMinPostsIntervalMs": "30",
+            "scMaxBufferedPosts": 0,
+            "scStreamUpServerSecs": "0",
+            "serverMaxHeaderBytes": 0,
+            "xmux": {
+              "maxConcurrency": "16-32",
+              "maxConnections": "0",
+              "cMaxReuseTimes": "64-128",
+              "hMaxRequestTimes": "0",
+              "hMaxReusableSecs": "0",
+              "hKeepAlivePeriod": 0
+            },
+            "downloadSettings": null,
+            "extra": null
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-ind-4vp.movietop24.site",
-          "fingerprint": "qq",
-          "publicKey": "NUjWUMNrcZKkvXmnK--E7wn_YyhEH6c-YOqjDMHWAxA",
-          "shortId": "686b3e179573a80a"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "ios",
+          "alpn": [
+            "http/1.1",
+            "h2"
+          ]
         }
       }
     },
@@ -563,36 +680,75 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.76.241.186",
-            "port": 443,
+            "address": "37.18.14.43",
+            "port": 8443,
             "users": [
               {
-                "id": "5c8950a3-2142-42c9-b414-fa34526ff25f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "6a2aff19-ff1f-4a13-96c8-a4d8986a9699",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto",
+          "extra": {
+            "host": "",
+            "path": "",
+            "mode": "",
+            "headers": null,
+            "xPaddingBytes": "100-1000",
+            "xPaddingObfsMode": false,
+            "xPaddingKey": "",
+            "xPaddingHeader": "",
+            "xPaddingPlacement": "",
+            "xPaddingMethod": "",
+            "uplinkHTTPMethod": "",
+            "sessionIDPlacement": "",
+            "sessionIDKey": "",
+            "sessionIDTable": "",
+            "sessionIDLength": "0",
+            "seqPlacement": "",
+            "seqKey": "",
+            "uplinkDataPlacement": "",
+            "uplinkDataKey": "",
+            "uplinkChunkSize": "0",
+            "noGRPCHeader": false,
+            "noSSEHeader": false,
+            "scMaxEachPostBytes": "1000000",
+            "scMinPostsIntervalMs": "30",
+            "scMaxBufferedPosts": 0,
+            "scStreamUpServerSecs": "0",
+            "serverMaxHeaderBytes": 0,
+            "xmux": {
+              "maxConcurrency": "16-32",
+              "maxConnections": "0",
+              "cMaxReuseTimes": "64-128",
+              "hMaxRequestTimes": "0",
+              "hMaxReusableSecs": "0",
+              "hKeepAlivePeriod": 0
+            },
+            "downloadSettings": null,
+            "extra": null
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ru-in-ind-4vp.movietop24.site",
-          "fingerprint": "safari",
-          "publicKey": "NUjWUMNrcZKkvXmnK--E7wn_YyhEH6c-YOqjDMHWAxA",
-          "shortId": "686b3e179573a80a"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "edge",
+          "alpn": [
+            "http/1.1",
+            "h2"
+          ]
         }
       }
     },
@@ -602,11 +758,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.23.113.11",
-            "port": 443,
+            "address": "213.171.24.54",
+            "port": 8643,
             "users": [
               {
-                "id": "5c8950a3-2142-42c9-b414-fa34526ff25f",
+                "id": "0d55ea1d-5587-4c17-9e85-3ee9b279aa8f",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -628,10 +784,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ru-in-lt-4vp.movietop24.site",
-          "fingerprint": "chrome",
-          "publicKey": "DP_8vX-l2ugAHn828ZGa4wHp4Y7YOZrhGKiTMaFoCDc",
-          "shortId": "4ea43db267b5fd8b"
+          "serverName": "travel.yandex.ru",
+          "fingerprint": "android",
+          "publicKey": "kmLlM6u12bptp7icPOL3fkUJucwvYTRVMkXz2AGAN2A",
+          "shortId": "ca6703afd42cadcd"
         }
       }
     },
@@ -641,11 +797,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.23.113.11",
-            "port": 443,
+            "address": "213.171.24.54",
+            "port": 8643,
             "users": [
               {
-                "id": "5c8950a3-2142-42c9-b414-fa34526ff25f",
+                "id": "0d55ea1d-5587-4c17-9e85-3ee9b279aa8f",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -667,10 +823,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ru-in-lt-4vp.movietop24.site",
+          "serverName": "travel.yandex.ru",
           "fingerprint": "edge",
-          "publicKey": "DP_8vX-l2ugAHn828ZGa4wHp4Y7YOZrhGKiTMaFoCDc",
-          "shortId": "4ea43db267b5fd8b"
+          "publicKey": "kmLlM6u12bptp7icPOL3fkUJucwvYTRVMkXz2AGAN2A",
+          "shortId": "ca6703afd42cadcd"
         }
       }
     },
@@ -680,11 +836,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.23.113.11",
-            "port": 443,
+            "address": "213.171.24.54",
+            "port": 8643,
             "users": [
               {
-                "id": "5c8950a3-2142-42c9-b414-fa34526ff25f",
+                "id": "0d55ea1d-5587-4c17-9e85-3ee9b279aa8f",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -706,10 +862,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ru-in-lt-4vp.movietop24.site",
-          "fingerprint": "firefox",
-          "publicKey": "DP_8vX-l2ugAHn828ZGa4wHp4Y7YOZrhGKiTMaFoCDc",
-          "shortId": "4ea43db267b5fd8b"
+          "serverName": "travel.yandex.ru",
+          "fingerprint": "qq",
+          "publicKey": "kmLlM6u12bptp7icPOL3fkUJucwvYTRVMkXz2AGAN2A",
+          "shortId": "ca6703afd42cadcd"
         }
       }
     },
@@ -719,11 +875,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.23.113.11",
-            "port": 443,
+            "address": "213.171.24.54",
+            "port": 8643,
             "users": [
               {
-                "id": "5c8950a3-2142-42c9-b414-fa34526ff25f",
+                "id": "0d55ea1d-5587-4c17-9e85-3ee9b279aa8f",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -745,10 +901,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ru-in-lt-4vp.movietop24.site",
+          "serverName": "travel.yandex.ru",
           "fingerprint": "safari",
-          "publicKey": "DP_8vX-l2ugAHn828ZGa4wHp4Y7YOZrhGKiTMaFoCDc",
-          "shortId": "4ea43db267b5fd8b"
+          "publicKey": "kmLlM6u12bptp7icPOL3fkUJucwvYTRVMkXz2AGAN2A",
+          "shortId": "ca6703afd42cadcd"
         }
       }
     },
@@ -785,7 +941,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "ru-in-es-4vp.movietop24.site",
-          "fingerprint": "chrome",
+          "fingerprint": "edge",
           "publicKey": "DcdLu5TEodox9cSq7WLfV-47vURmKkRc1BO19KJvgkM",
           "shortId": "861215e33e8dba4f"
         }
@@ -824,7 +980,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "ru-in-es-4vp.movietop24.site",
-          "fingerprint": "edge",
+          "fingerprint": "firefox",
           "publicKey": "DcdLu5TEodox9cSq7WLfV-47vURmKkRc1BO19KJvgkM",
           "shortId": "861215e33e8dba4f"
         }
@@ -863,7 +1019,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "ru-in-es-4vp.movietop24.site",
-          "fingerprint": "firefox",
+          "fingerprint": "chrome",
           "publicKey": "DcdLu5TEodox9cSq7WLfV-47vURmKkRc1BO19KJvgkM",
           "shortId": "861215e33e8dba4f"
         }
@@ -914,36 +1070,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.18.14.43",
-            "port": 2053,
+            "address": "213.165.60.99",
+            "port": 443,
             "users": [
               {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
+                "id": "5c8950a3-2142-42c9-b414-fa34526ff25f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "summerculture.net",
-          "mode": "auto"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "summerculture.net",
-          "fingerprint": "chrome",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ru-in-uk-4vp.movietop24.site",
+          "fingerprint": "edge",
+          "publicKey": "Nu5Tn3Qf0iC8tog-mxqNjl9ckjHgwU0xSOSET605tw0",
+          "shortId": "17e8f4e38e421c68"
         }
       }
     },
@@ -953,36 +1109,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.18.14.43",
-            "port": 2053,
+            "address": "213.165.60.99",
+            "port": 443,
             "users": [
               {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
+                "id": "5c8950a3-2142-42c9-b414-fa34526ff25f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "summerculture.net",
-          "mode": "auto"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "summerculture.net",
-          "fingerprint": "edge",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ru-in-uk-4vp.movietop24.site",
+          "fingerprint": "firefox",
+          "publicKey": "Nu5Tn3Qf0iC8tog-mxqNjl9ckjHgwU0xSOSET605tw0",
+          "shortId": "17e8f4e38e421c68"
         }
       }
     },
@@ -992,36 +1148,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.18.14.43",
-            "port": 2053,
+            "address": "213.165.60.99",
+            "port": 443,
             "users": [
               {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
+                "id": "5c8950a3-2142-42c9-b414-fa34526ff25f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "summerculture.net",
-          "mode": "auto"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "summerculture.net",
-          "fingerprint": "firefox",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ru-in-uk-4vp.movietop24.site",
+          "fingerprint": "android",
+          "publicKey": "Nu5Tn3Qf0iC8tog-mxqNjl9ckjHgwU0xSOSET605tw0",
+          "shortId": "17e8f4e38e421c68"
         }
       }
     },
@@ -1031,36 +1187,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.18.14.43",
-            "port": 2053,
+            "address": "213.165.60.99",
+            "port": 443,
             "users": [
               {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
+                "id": "5c8950a3-2142-42c9-b414-fa34526ff25f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "summerculture.net",
-          "mode": "auto"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "summerculture.net",
-          "fingerprint": "ios",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ru-in-uk-4vp.movietop24.site",
+          "fingerprint": "chrome",
+          "publicKey": "Nu5Tn3Qf0iC8tog-mxqNjl9ckjHgwU0xSOSET605tw0",
+          "shortId": "17e8f4e38e421c68"
         }
       }
     },
@@ -1095,11 +1251,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "safari",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
+          "fingerprint": "edge"
         }
       }
     },
@@ -1109,7 +1261,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "summerculture.net",
+            "address": "37.18.14.43",
             "port": 2053,
             "users": [
               {
@@ -1134,11 +1286,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "chrome",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
+          "fingerprint": "firefox"
         }
       }
     },
@@ -1148,7 +1296,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "summerculture.net",
+            "address": "37.18.14.43",
             "port": 2053,
             "users": [
               {
@@ -1173,10 +1321,10 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "edge",
+          "fingerprint": "ios",
           "alpn": [
             "h2",
-            "http/1.1"
+            "+http/1.1"
           ]
         }
       }
@@ -1187,7 +1335,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "summerculture.net",
+            "address": "37.18.14.43",
             "port": 2053,
             "users": [
               {
@@ -1212,10 +1360,10 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "firefox",
+          "fingerprint": "qq",
           "alpn": [
             "h2",
-            "http/1.1"
+            "+http/1.1"
           ]
         }
       }
@@ -1226,7 +1374,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "summerculture.net",
+            "address": "37.18.14.43",
             "port": 2053,
             "users": [
               {
@@ -1254,7 +1402,7 @@
           "fingerprint": "safari",
           "alpn": [
             "h2",
-            "http/1.1"
+            "+http/1.1"
           ]
         }
       }
@@ -1290,7 +1438,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "edge"
+          "fingerprint": "ios"
         }
       }
     },
@@ -1325,7 +1473,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "ios"
+          "fingerprint": "qq"
         }
       }
     },
@@ -1360,7 +1508,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "qq"
+          "fingerprint": "safari"
         }
       }
     },
@@ -1395,11 +1543,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "qq",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
+          "fingerprint": "edge"
         }
       }
     },
@@ -1433,7 +1577,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         }
       }
     },
@@ -1467,7 +1611,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "ios"
+          "fingerprint": "qq"
         }
       }
     },
@@ -1501,7 +1645,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "qq"
+          "fingerprint": "safari"
         }
       }
     },
@@ -1511,7 +1655,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "summerculture.net",
+            "address": "37.18.14.43",
             "port": 2053,
             "users": [
               {
@@ -1530,12 +1674,17 @@
         },
         "xhttpSettings": {
           "path": "/api/v1/upload",
+          "host": "summerculture.net",
           "mode": "auto"
         },
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "safari"
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "+http/1.1"
+          ]
         }
       }
     },
@@ -1570,7 +1719,11 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "chrome"
+          "fingerprint": "edge",
+          "alpn": [
+            "h2",
+            "+http/1.1"
+          ]
         }
       }
     },
@@ -1605,7 +1758,11 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "firefox"
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2",
+            "+http/1.1"
+          ]
         }
       }
     },
@@ -1615,7 +1772,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.18.14.43",
+            "address": "summerculture.net",
             "port": 2053,
             "users": [
               {
@@ -1640,7 +1797,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         }
       }
     },
@@ -1675,7 +1832,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -1710,7 +1867,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         }
       }
     },
@@ -1745,7 +1902,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "ios"
+          "fingerprint": "safari"
         }
       }
     },
@@ -1780,7 +1937,11 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "summerculture.net",
-          "fingerprint": "safari"
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
@@ -1790,7 +1951,85 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.18.14.43",
+            "address": "summerculture.net",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "edge",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-038",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "summerculture.net",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-039",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "summerculture.net",
             "port": 2053,
             "users": [
               {
@@ -1820,6 +2059,114 @@
             "h2",
             "http/1.1"
           ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-040",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "summerculture.net",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "safari",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-041",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "summerculture.net",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-042",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "37.18.14.43",
+            "port": 2053,
+            "users": [
+              {
+                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "summerculture.net",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "summerculture.net",
+          "fingerprint": "chrome"
         }
       }
     },
