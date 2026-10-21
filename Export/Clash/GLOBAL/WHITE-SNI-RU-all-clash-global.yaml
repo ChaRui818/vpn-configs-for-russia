@@ -2,8 +2,8 @@
 # Igareck Mihomo Subscription
 # Источник/Source: WHITE-SNI-RU-all.txt
 # 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | SNI-RU
-# Количество/Quantity: 6
-# Date/Time: 2026-10-22 / 00:49 (Moscow)
+# Количество/Quantity: 9
+# Date/Time: 2026-10-22 / 02:37 (Moscow)
 #
 # Режим / Mode:
 # - Автоматический Выбор лучшего прокси / Igareck Auto Select;
@@ -151,7 +151,7 @@ sniffer:
       ports: [443, 8443]
 
 proxies:
-- name: Igareck Node 001 | 🇩🇪 Germany | [SNI-RU] ozon.ru
+- name: Igareck Node 001 | 🇩🇪 Germany [SNI-RU] ozon.ru
   type: vless
   server: "\x34\x35\x2e\x31\x32\x38\x2e\x37\x38\x2e\x31\x37\x31"
   port: 443
@@ -164,20 +164,20 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   network: tcp
-- name: Igareck Node 002 | 🇩🇪 Germany | [SNI-RU] ozon.ru
+- name: Igareck Node 002 | 🇩🇪 Germany [SNI-RU] ozon.ru
   type: vless
-  server: "\x34\x35\x2e\x31\x32\x38\x2e\x37\x38\x2e\x31\x37\x38"
+  server: "\x34\x35\x2e\x31\x32\x38\x2e\x37\x38\x2e\x31\x37\x31"
   port: 443
   uuid: "\x32\x36\x31\x31\x36\x30\x64\x35\x2d\x30\x33\x34\x33\x2d\x34\x62\x38\x35\x2d\x38\x63\x32\x38\x2d\x33\x64\x34\x30\x64\x64\x36\x38\x31\x35\x35\x39"
   udp: true
   flow: xtls-rprx-vision
   tls: true
   servername: "\x6f\x7a\x6f\x6e\x2e\x72\x75"
-  client-fingerprint: ios
+  client-fingerprint: firefox
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   network: tcp
-- name: Igareck Node 003 | 🇩🇪 Germany | [SNI-RU] www.vk.com
+- name: Igareck Node 003 | 🇩🇪 Germany [SNI-RU] www.vk.com
   type: vless
   server: "\x39\x32\x2e\x31\x31\x38\x2e\x39\x2e\x31\x36\x36"
   port: 27439
@@ -185,49 +185,94 @@ proxies:
   udp: true
   tls: true
   servername: "\x77\x77\x77\x2e\x76\x6b\x2e\x63\x6f\x6d"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Re0aWbYgk775QZ2eiIzh9fwPANq8HfLlrp9vbTC8vXQ
+    short-id: "60e64f9f8724c0"
+  network: tcp
+- name: Igareck Node 004 | 🇺🇸 United States [SNI-RU] ya.ru
+  type: vless
+  server: "\x65\x31\x2d\x75\x73\x2e\x65\x64\x67\x65\x6d\x65\x64\x69\x61\x2e\x6c\x6f\x6c"
+  port: 21443
+  uuid: "\x39\x65\x62\x66\x34\x66\x64\x61\x2d\x37\x33\x39\x35\x2d\x34\x38\x30\x30\x2d\x62\x34\x32\x66\x2d\x62\x32\x64\x64\x61\x36\x34\x39\x38\x38\x30\x61"
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x79\x61\x2e\x72\x75"
+  reality-opts:
+    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
+    short-id: "d2061bb1"
+  network: tcp
+  skip-cert-verify: true
+- name: Igareck Node 005 | 🇺🇸 United States [SNI-RU] ya.ru
+  type: vless
+  server: "\x65\x31\x2d\x75\x73\x2e\x65\x64\x67\x65\x6d\x65\x64\x69\x61\x2e\x6c\x6f\x6c"
+  port: 21443
+  uuid: "\x39\x65\x62\x66\x34\x66\x64\x61\x2d\x37\x33\x39\x35\x2d\x34\x38\x30\x30\x2d\x62\x34\x32\x66\x2d\x62\x32\x64\x64\x61\x36\x34\x39\x38\x38\x30\x61"
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x79\x61\x2e\x72\x75"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
+    short-id: "d2061bb1"
+  network: tcp
+- name: Igareck Node 006 | 🇺🇸 United States [SNI-RU] ya.ru
+  type: vless
+  server: "\x65\x31\x2d\x75\x73\x2e\x65\x64\x67\x65\x6d\x65\x64\x69\x61\x2e\x6c\x6f\x6c"
+  port: 21443
+  uuid: "\x39\x65\x62\x66\x34\x66\x64\x61\x2d\x37\x33\x39\x35\x2d\x34\x38\x30\x30\x2d\x62\x34\x32\x66\x2d\x62\x32\x64\x64\x61\x36\x34\x39\x38\x38\x30\x61"
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x79\x61\x2e\x72\x75"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
+    short-id: "d2061bb1"
+  network: tcp
+- name: Igareck Node 007 | 🇺🇸 United States [SNI-RU] ya.ru
+  type: vless
+  server: "\x65\x31\x2d\x75\x73\x2e\x65\x64\x67\x65\x6d\x65\x64\x69\x61\x2e\x6c\x6f\x6c"
+  port: 21443
+  uuid: "\x39\x65\x62\x66\x34\x66\x64\x61\x2d\x37\x33\x39\x35\x2d\x34\x38\x30\x30\x2d\x62\x34\x32\x66\x2d\x62\x32\x64\x64\x61\x36\x34\x39\x38\x38\x30\x61"
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x79\x61\x2e\x72\x75"
   client-fingerprint: safari
   reality-opts:
-    public-key: Re0aWbYgk775QZ2eiIzh9fwPANq8HfLlrp9vbTC8vXQ
-    short-id: "60e64f9f8724c0"
+    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
+    short-id: "d2061bb1"
   network: tcp
-- name: Igareck Node 004 | 🇩🇪 Germany [SNI-RU] ozon.ru
+- name: Igareck Node 008 | 🇺🇸 United States [SNI-RU] ya.ru
   type: vless
-  server: "\x34\x35\x2e\x31\x32\x38\x2e\x37\x38\x2e\x31\x37\x31"
-  port: 443
-  uuid: "\x32\x36\x31\x31\x36\x30\x64\x35\x2d\x30\x33\x34\x33\x2d\x34\x62\x38\x35\x2d\x38\x63\x32\x38\x2d\x33\x64\x34\x30\x64\x64\x36\x38\x31\x35\x35\x39"
+  server: "\x65\x31\x2d\x75\x73\x2e\x65\x64\x67\x65\x6d\x65\x64\x69\x61\x2e\x6c\x6f\x6c"
+  port: 21443
+  uuid: "\x39\x65\x62\x66\x34\x66\x64\x61\x2d\x37\x33\x39\x35\x2d\x34\x38\x30\x30\x2d\x62\x34\x32\x66\x2d\x62\x32\x64\x64\x61\x36\x34\x39\x38\x38\x30\x61"
   udp: true
   flow: xtls-rprx-vision
   tls: true
-  servername: "\x6f\x7a\x6f\x6e\x2e\x72\x75"
-  client-fingerprint: firefox
+  servername: "\x79\x61\x2e\x72\x75"
+  client-fingerprint: random
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
+    short-id: "d2061bb1"
   network: tcp
-- name: Igareck Node 005 | 🇩🇪 Germany [SNI-RU] ozon.ru
+- name: Igareck Node 009 | 🇺🇸 United States [SNI-RU] ya.ru
   type: vless
-  server: "\x34\x35\x2e\x31\x32\x38\x2e\x37\x38\x2e\x31\x37\x38"
-  port: 443
-  uuid: "\x32\x36\x31\x31\x36\x30\x64\x35\x2d\x30\x33\x34\x33\x2d\x34\x62\x38\x35\x2d\x38\x63\x32\x38\x2d\x33\x64\x34\x30\x64\x64\x36\x38\x31\x35\x35\x39"
+  server: "\x65\x31\x2d\x75\x73\x2e\x65\x64\x67\x65\x6d\x65\x64\x69\x61\x2e\x6c\x6f\x6c"
+  port: 21443
+  uuid: "\x39\x65\x62\x66\x34\x66\x64\x61\x2d\x37\x33\x39\x35\x2d\x34\x38\x30\x30\x2d\x62\x34\x32\x66\x2d\x62\x32\x64\x64\x61\x36\x34\x39\x38\x38\x30\x61"
   udp: true
   flow: xtls-rprx-vision
   tls: true
-  servername: "\x6f\x7a\x6f\x6e\x2e\x72\x75"
-  client-fingerprint: firefox
+  servername: "\x79\x61\x2e\x72\x75"
+  client-fingerprint: ios
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  network: tcp
-- name: Igareck Node 006 | 🇩🇪 Germany [SNI-RU] www.vk.com
-  type: vless
-  server: "\x39\x32\x2e\x31\x31\x38\x2e\x39\x2e\x31\x36\x36"
-  port: 27439
-  uuid: "\x33\x36\x37\x39\x62\x61\x66\x63\x2d\x62\x37\x31\x62\x2d\x34\x31\x32\x39\x2d\x61\x31\x39\x36\x2d\x33\x33\x64\x66\x63\x39\x32\x38\x39\x38\x61\x36"
-  udp: true
-  tls: true
-  servername: "\x77\x77\x77\x2e\x76\x6b\x2e\x63\x6f\x6d"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Re0aWbYgk775QZ2eiIzh9fwPANq8HfLlrp9vbTC8vXQ
-    short-id: "60e64f9f8724c0"
+    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
+    short-id: "d2061bb1"
   network: tcp
 
 proxy-groups:
