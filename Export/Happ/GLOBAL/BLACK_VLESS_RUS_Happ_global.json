@@ -3,12 +3,12 @@
     "name": "BLACK_VLESS_RUS — Happ Auto Select GLOBAL",
     "generator": "Igareck GitHub",
     "notes": [
-      "50 proxies",
+      "55 proxies",
       "Interval is 5 minutes + leastPing + routing GLOBAL."
     ],
     "client": "Happ",
     "source": "BLACK_VLESS_RUS.txt",
-    "source_datetime": "2026-10-21 19:37 Moscow"
+    "source_datetime": "2026-10-21 21:07 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -365,10 +365,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "ssl.fastly.com",
-          "fingerprint": "android",
-          "alpn": [
-            "http/1.1"
-          ]
+          "fingerprint": "android"
         }
       }
     },
@@ -405,10 +402,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "ssl.fastly.com",
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ]
+          "fingerprint": "firefox"
         }
       }
     },
@@ -445,10 +439,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "ssl.fastly.com",
-          "fingerprint": "qq",
-          "alpn": [
-            "http/1.1"
-          ]
+          "fingerprint": "ios"
         }
       }
     },
@@ -485,10 +476,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "ssl.fastly.com",
-          "fingerprint": "safari",
-          "alpn": [
-            "http/1.1"
-          ]
+          "fingerprint": "qq"
         }
       }
     },
@@ -498,7 +486,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "199.232.78.170",
+            "address": "140.248.186.45",
             "port": 443,
             "users": [
               {
@@ -538,7 +526,47 @@
       "settings": {
         "vnext": [
           {
-            "address": "199.232.78.170",
+            "address": "140.248.186.45",
+            "port": 443,
+            "users": [
+              {
+                "id": "XpnTeam-32",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "Appxdn.global.ssl.fastly.net"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ssl.fastly.com",
+          "fingerprint": "edge",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-007",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "140.248.186.45",
             "port": 443,
             "users": [
               {
@@ -573,52 +601,12 @@
       }
     },
     {
-      "tag": "igareck-node-007",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.170",
-            "port": 443,
-            "users": [
-              {
-                "id": "XpnTeam-32",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "Appxdn.global.ssl.fastly.net"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ssl.fastly.com",
-          "fingerprint": "ios",
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
       "tag": "igareck-node-008",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "199.232.78.170",
+            "address": "140.248.186.45",
             "port": 443,
             "users": [
               {
@@ -645,7 +633,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "ssl.fastly.com",
-          "fingerprint": "safari",
+          "fingerprint": "qq",
           "alpn": [
             "http/1.1"
           ]
@@ -658,277 +646,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "199.232.78.160",
-            "port": 443,
-            "users": [
-              {
-                "id": "6a2f8573-66dd-5f60-884c-16e02f3a5acb",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "Appxdn.global.ssl.fastly.net"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ssl.fastly.com",
-          "fingerprint": "android",
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-010",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.160",
-            "port": 443,
-            "users": [
-              {
-                "id": "6a2f8573-66dd-5f60-884c-16e02f3a5acb",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "Appxdn.global.ssl.fastly.net"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ssl.fastly.com",
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-011",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.160",
-            "port": 443,
-            "users": [
-              {
-                "id": "XpnTeam-31",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "Appxdn.global.ssl.fastly.net"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ssl.fastly.com",
-          "fingerprint": "ios",
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-012",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.160",
-            "port": 443,
-            "users": [
-              {
-                "id": "XpnTeam-31",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "Appxdn.global.ssl.fastly.net"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ssl.fastly.com",
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-013",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.160",
-            "port": 443,
-            "users": [
-              {
-                "id": "XpnTeam-31",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "Appxdn.global.ssl.fastly.net"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ssl.fastly.com",
-          "fingerprint": "ios"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-014",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "199.232.78.160",
-            "port": 443,
-            "users": [
-              {
-                "id": "XpnTeam-31",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "Appxdn.global.ssl.fastly.net"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ssl.fastly.com",
-          "fingerprint": "qq"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-015",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "140.248.186.45",
-            "port": 443,
-            "users": [
-              {
-                "id": "XpnTeam-32",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "Appxdn.global.ssl.fastly.net"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ssl.fastly.com",
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-016",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "140.248.186.45",
             "port": 443,
             "users": [
@@ -964,16 +681,16 @@
       }
     },
     {
-      "tag": "igareck-node-017",
+      "tag": "igareck-node-010",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "199.232.78.170",
-            "port": 443,
+            "address": "e90846b20d1dd39b.tunvi.w-ert.org",
+            "port": 448,
             "users": [
               {
-                "id": "XpnTeam-32",
+                "id": "3e16033f-71d8-417b-abea-7756253f3c3d",
                 "encryption": "none"
               }
             ]
@@ -981,25 +698,292 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "Appxdn.global.ssl.fastly.net"
+        "rawSettings": {
+          "header": {
+            "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ssl.fastly.com",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.aparat.com",
+          "fingerprint": "android",
+          "publicKey": "woId47r1U8pEuDwHoC026bJHVWha2RHjufq1Kw3QoRU",
+          "shortId": "ca4134a0ed2592b6"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-011",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "e90846b20d1dd39b.tunvi.w-ert.org",
+            "port": 448,
+            "users": [
+              {
+                "id": "3e16033f-71d8-417b-abea-7756253f3c3d",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.aparat.com",
+          "fingerprint": "chrome",
+          "publicKey": "woId47r1U8pEuDwHoC026bJHVWha2RHjufq1Kw3QoRU",
+          "shortId": "ca4134a0ed2592b6"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-012",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "e90846b20d1dd39b.tunvi.w-ert.org",
+            "port": 448,
+            "users": [
+              {
+                "id": "3e16033f-71d8-417b-abea-7756253f3c3d",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.aparat.com",
+          "fingerprint": "firefox",
+          "publicKey": "woId47r1U8pEuDwHoC026bJHVWha2RHjufq1Kw3QoRU",
+          "shortId": "ca4134a0ed2592b6"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-013",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "e90846b20d1dd39b.tunvi.w-ert.org",
+            "port": 448,
+            "users": [
+              {
+                "id": "3e16033f-71d8-417b-abea-7756253f3c3d",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.aparat.com",
+          "fingerprint": "ios",
+          "publicKey": "woId47r1U8pEuDwHoC026bJHVWha2RHjufq1Kw3QoRU",
+          "shortId": "ca4134a0ed2592b6"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-014",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "e90846b20d1dd39b.tunvi.w-ert.org",
+            "port": 448,
+            "users": [
+              {
+                "id": "3e16033f-71d8-417b-abea-7756253f3c3d",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.aparat.com",
+          "fingerprint": "random",
+          "publicKey": "woId47r1U8pEuDwHoC026bJHVWha2RHjufq1Kw3QoRU",
+          "shortId": "ca4134a0ed2592b6"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-015",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "hu3.aiage.work",
+            "port": 443,
+            "users": [
+              {
+                "id": "d0d08709-093d-45dc-ac6f-fd18890fa2c5",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "hu3.aiage.work",
+          "fingerprint": "android",
+          "publicKey": "M67-jEVPxSEjAhdBgL-lFgzQt_FloM7tL092KC7LTFE",
+          "shortId": "a09ef132e6a308ae"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-016",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "hu3.aiage.work",
+            "port": 443,
+            "users": [
+              {
+                "id": "d0d08709-093d-45dc-ac6f-fd18890fa2c5",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "hu3.aiage.work",
+          "fingerprint": "chrome",
+          "publicKey": "M67-jEVPxSEjAhdBgL-lFgzQt_FloM7tL092KC7LTFE",
+          "shortId": "a09ef132e6a308ae"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-017",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "hu3.aiage.work",
+            "port": 443,
+            "users": [
+              {
+                "id": "d0d08709-093d-45dc-ac6f-fd18890fa2c5",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "hu3.aiage.work",
           "fingerprint": "edge",
-          "alpn": [
-            "http/1.1"
-          ]
+          "publicKey": "M67-jEVPxSEjAhdBgL-lFgzQt_FloM7tL092KC7LTFE",
+          "shortId": "a09ef132e6a308ae"
         }
       }
     },
@@ -1036,7 +1020,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "hu3.aiage.work",
-          "fingerprint": "chrome",
+          "fingerprint": "firefox",
           "publicKey": "M67-jEVPxSEjAhdBgL-lFgzQt_FloM7tL092KC7LTFE",
           "shortId": "a09ef132e6a308ae"
         }
@@ -1075,7 +1059,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "hu3.aiage.work",
-          "fingerprint": "edge",
+          "fingerprint": "ios",
           "publicKey": "M67-jEVPxSEjAhdBgL-lFgzQt_FloM7tL092KC7LTFE",
           "shortId": "a09ef132e6a308ae"
         }
@@ -1087,11 +1071,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "hu3.aiage.work",
+            "address": "165.99.222.161",
             "port": 443,
             "users": [
               {
-                "id": "d0d08709-093d-45dc-ac6f-fd18890fa2c5",
+                "id": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -1113,10 +1097,9 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "hu3.aiage.work",
-          "fingerprint": "firefox",
-          "publicKey": "M67-jEVPxSEjAhdBgL-lFgzQt_FloM7tL092KC7LTFE",
-          "shortId": "a09ef132e6a308ae"
+          "serverName": "in1.vkusnews.com",
+          "fingerprint": "android",
+          "publicKey": "SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4"
         }
       }
     },
@@ -1126,11 +1109,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "hu3.aiage.work",
+            "address": "165.99.222.161",
             "port": 443,
             "users": [
               {
-                "id": "d0d08709-093d-45dc-ac6f-fd18890fa2c5",
+                "id": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -1152,10 +1135,9 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "hu3.aiage.work",
-          "fingerprint": "ios",
-          "publicKey": "M67-jEVPxSEjAhdBgL-lFgzQt_FloM7tL092KC7LTFE",
-          "shortId": "a09ef132e6a308ae"
+          "serverName": "in1.vkusnews.com",
+          "fingerprint": "chrome",
+          "publicKey": "SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4"
         }
       }
     },
@@ -1192,7 +1174,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "in1.vkusnews.com",
-          "fingerprint": "android",
+          "fingerprint": "firefox",
           "publicKey": "SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4"
         }
       }
@@ -1230,7 +1212,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "in1.vkusnews.com",
-          "fingerprint": "chrome",
+          "fingerprint": "ios",
           "publicKey": "SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4"
         }
       }
@@ -1268,7 +1250,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "in1.vkusnews.com",
-          "fingerprint": "firefox",
+          "fingerprint": "qq",
           "publicKey": "SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4"
         }
       }
@@ -1279,11 +1261,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "165.99.222.161",
+            "address": "netherlands02.azotvpn.xyz",
             "port": 443,
             "users": [
               {
-                "id": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
+                "id": "a500be68-4ff6-433b-9968-472be69fab14",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -1305,9 +1287,11 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "in1.vkusnews.com",
-          "fingerprint": "qq",
-          "publicKey": "SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4"
+          "serverName": "netherlands02.azotvpn.xyz",
+          "fingerprint": "android",
+          "publicKey": "ui9MLRYZIz7S6_1E4fZgoamwTypfQAMwJ1olxGcWomE",
+          "shortId": "fc70174007a393b4",
+          "spiderX": "/"
         }
       }
     },
@@ -1317,11 +1301,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "206.223.248.70",
+            "address": "netherlands02.azotvpn.xyz",
             "port": 443,
             "users": [
               {
-                "id": "5c8950a3-2142-42c9-b414-fa34526ff25f",
+                "id": "a500be68-4ff6-433b-9968-472be69fab14",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -1343,10 +1327,11 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "kz-2.movietop24.site",
-          "fingerprint": "android",
-          "publicKey": "2s0TPUB7_4neB6YLk1EnGvPiZidCKkikat7xLp30FwQ",
-          "shortId": "aba1b7bfa1fdbb10"
+          "serverName": "netherlands02.azotvpn.xyz",
+          "fingerprint": "chrome",
+          "publicKey": "ui9MLRYZIz7S6_1E4fZgoamwTypfQAMwJ1olxGcWomE",
+          "shortId": "fc70174007a393b4",
+          "spiderX": "/"
         }
       }
     },
@@ -1356,11 +1341,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "206.223.248.70",
+            "address": "netherlands02.azotvpn.xyz",
             "port": 443,
             "users": [
               {
-                "id": "5c8950a3-2142-42c9-b414-fa34526ff25f",
+                "id": "a500be68-4ff6-433b-9968-472be69fab14",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -1382,10 +1367,11 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "kz-2.movietop24.site",
+          "serverName": "netherlands02.azotvpn.xyz",
           "fingerprint": "firefox",
-          "publicKey": "2s0TPUB7_4neB6YLk1EnGvPiZidCKkikat7xLp30FwQ",
-          "shortId": "aba1b7bfa1fdbb10"
+          "publicKey": "ui9MLRYZIz7S6_1E4fZgoamwTypfQAMwJ1olxGcWomE",
+          "shortId": "fc70174007a393b4",
+          "spiderX": "/"
         }
       }
     },
@@ -1395,11 +1381,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "206.223.248.70",
+            "address": "netherlands02.azotvpn.xyz",
             "port": 443,
             "users": [
               {
-                "id": "5c8950a3-2142-42c9-b414-fa34526ff25f",
+                "id": "a500be68-4ff6-433b-9968-472be69fab14",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -1421,10 +1407,11 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "kz-2.movietop24.site",
+          "serverName": "netherlands02.azotvpn.xyz",
           "fingerprint": "ios",
-          "publicKey": "2s0TPUB7_4neB6YLk1EnGvPiZidCKkikat7xLp30FwQ",
-          "shortId": "aba1b7bfa1fdbb10"
+          "publicKey": "ui9MLRYZIz7S6_1E4fZgoamwTypfQAMwJ1olxGcWomE",
+          "shortId": "fc70174007a393b4",
+          "spiderX": "/"
         }
       }
     },
@@ -1434,11 +1421,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "206.223.248.70",
+            "address": "netherlands02.azotvpn.xyz",
             "port": 443,
             "users": [
               {
-                "id": "5c8950a3-2142-42c9-b414-fa34526ff25f",
+                "id": "a500be68-4ff6-433b-9968-472be69fab14",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -1460,10 +1447,11 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "kz-2.movietop24.site",
+          "serverName": "netherlands02.azotvpn.xyz",
           "fingerprint": "qq",
-          "publicKey": "2s0TPUB7_4neB6YLk1EnGvPiZidCKkikat7xLp30FwQ",
-          "shortId": "aba1b7bfa1fdbb10"
+          "publicKey": "ui9MLRYZIz7S6_1E4fZgoamwTypfQAMwJ1olxGcWomE",
+          "shortId": "fc70174007a393b4",
+          "spiderX": "/"
         }
       }
     },
@@ -1473,13 +1461,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "netherlands02.azotvpn.xyz",
+            "address": "66.154.101.36",
             "port": 443,
             "users": [
               {
-                "id": "a500be68-4ff6-433b-9968-472be69fab14",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "c166ca49-4af0-416d-8411-2100f7bde9fe",
+                "encryption": "none"
               }
             ]
           }
@@ -1499,11 +1486,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "netherlands02.azotvpn.xyz",
-          "fingerprint": "android",
-          "publicKey": "ui9MLRYZIz7S6_1E4fZgoamwTypfQAMwJ1olxGcWomE",
-          "shortId": "fc70174007a393b4",
-          "spiderX": "/"
+          "serverName": "www.tesla.com",
+          "fingerprint": "chrome",
+          "publicKey": "t_aj99mkcVXDY_7xI9RhWyEY3khupiGiDsGKEJ7EajM",
+          "shortId": "5590a9bae52e0586"
         }
       }
     },
@@ -1513,13 +1499,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "netherlands02.azotvpn.xyz",
+            "address": "66.154.101.36",
             "port": 443,
             "users": [
               {
-                "id": "a500be68-4ff6-433b-9968-472be69fab14",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "c166ca49-4af0-416d-8411-2100f7bde9fe",
+                "encryption": "none"
               }
             ]
           }
@@ -1539,11 +1524,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "netherlands02.azotvpn.xyz",
-          "fingerprint": "chrome",
-          "publicKey": "ui9MLRYZIz7S6_1E4fZgoamwTypfQAMwJ1olxGcWomE",
-          "shortId": "fc70174007a393b4",
-          "spiderX": "/"
+          "serverName": "www.tesla.com",
+          "fingerprint": "edge",
+          "publicKey": "t_aj99mkcVXDY_7xI9RhWyEY3khupiGiDsGKEJ7EajM",
+          "shortId": "5590a9bae52e0586"
         }
       }
     },
@@ -1553,13 +1537,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "netherlands02.azotvpn.xyz",
+            "address": "66.154.101.36",
             "port": 443,
             "users": [
               {
-                "id": "a500be68-4ff6-433b-9968-472be69fab14",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "c166ca49-4af0-416d-8411-2100f7bde9fe",
+                "encryption": "none"
               }
             ]
           }
@@ -1579,11 +1562,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "netherlands02.azotvpn.xyz",
+          "serverName": "www.tesla.com",
           "fingerprint": "firefox",
-          "publicKey": "ui9MLRYZIz7S6_1E4fZgoamwTypfQAMwJ1olxGcWomE",
-          "shortId": "fc70174007a393b4",
-          "spiderX": "/"
+          "publicKey": "t_aj99mkcVXDY_7xI9RhWyEY3khupiGiDsGKEJ7EajM",
+          "shortId": "5590a9bae52e0586"
         }
       }
     },
@@ -1593,13 +1575,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "netherlands02.azotvpn.xyz",
+            "address": "66.154.101.36",
             "port": 443,
             "users": [
               {
-                "id": "a500be68-4ff6-433b-9968-472be69fab14",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "c166ca49-4af0-416d-8411-2100f7bde9fe",
+                "encryption": "none"
               }
             ]
           }
@@ -1619,11 +1600,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "netherlands02.azotvpn.xyz",
-          "fingerprint": "ios",
-          "publicKey": "ui9MLRYZIz7S6_1E4fZgoamwTypfQAMwJ1olxGcWomE",
-          "shortId": "fc70174007a393b4",
-          "spiderX": "/"
+          "serverName": "www.tesla.com",
+          "fingerprint": "qq",
+          "publicKey": "t_aj99mkcVXDY_7xI9RhWyEY3khupiGiDsGKEJ7EajM",
+          "shortId": "5590a9bae52e0586"
         }
       }
     },
@@ -1633,11 +1613,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "grimness-backlogs.cdn-content.com",
+            "address": "66.154.101.36",
             "port": 443,
             "users": [
               {
-                "id": "1263d819-9089-4b14-ab52-09a747817ebc",
+                "id": "c166ca49-4af0-416d-8411-2100f7bde9fe",
                 "encryption": "none"
               }
             ]
@@ -1645,25 +1625,23 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "wsSettings": {
-          "path": "/ws",
-          "headers": {
-            "Host": "grimness-backlogs.cdn-content.com"
+        "rawSettings": {
+          "header": {
+            "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "grimness-backlogs.cdn-content.com",
-          "fingerprint": "android",
-          "alpn": [
-            "http/1.1"
-          ]
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.tesla.com",
+          "fingerprint": "safari",
+          "publicKey": "t_aj99mkcVXDY_7xI9RhWyEY3khupiGiDsGKEJ7EajM",
+          "shortId": "5590a9bae52e0586"
         }
       }
     },
@@ -1673,37 +1651,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "grimness-backlogs.cdn-content.com",
-            "port": 443,
+            "address": "174.136.204.23",
+            "port": 34539,
             "users": [
               {
-                "id": "1263d819-9089-4b14-ab52-09a747817ebc",
-                "encryption": "none"
+                "id": "6877f68f-2443-445d-8c11-16c77a2699a5",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "wsSettings": {
-          "path": "/ws",
-          "headers": {
-            "Host": "grimness-backlogs.cdn-content.com"
+        "rawSettings": {
+          "header": {
+            "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "grimness-backlogs.cdn-content.com",
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ]
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "apple.com",
+          "fingerprint": "edge",
+          "publicKey": "KZ95U9GVT36nb3EPuraPI2BwyikGlQv8sIyRvgECt2E",
+          "shortId": "ab400d5a"
         }
       }
     },
@@ -1713,37 +1690,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "grimness-backlogs.cdn-content.com",
-            "port": 443,
+            "address": "174.136.204.23",
+            "port": 34539,
             "users": [
               {
-                "id": "1263d819-9089-4b14-ab52-09a747817ebc",
-                "encryption": "none"
+                "id": "6877f68f-2443-445d-8c11-16c77a2699a5",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "wsSettings": {
-          "path": "/ws",
-          "headers": {
-            "Host": "grimness-backlogs.cdn-content.com"
+        "rawSettings": {
+          "header": {
+            "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "grimness-backlogs.cdn-content.com",
-          "fingerprint": "edge",
-          "alpn": [
-            "http/1.1"
-          ]
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "apple.com",
+          "fingerprint": "firefox",
+          "publicKey": "KZ95U9GVT36nb3EPuraPI2BwyikGlQv8sIyRvgECt2E",
+          "shortId": "ab400d5a"
         }
       }
     },
@@ -1753,11 +1729,323 @@
       "settings": {
         "vnext": [
           {
-            "address": "grimness-backlogs.cdn-content.com",
+            "address": "174.136.204.23",
+            "port": 34539,
+            "users": [
+              {
+                "id": "6877f68f-2443-445d-8c11-16c77a2699a5",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "apple.com",
+          "fingerprint": "ios",
+          "publicKey": "KZ95U9GVT36nb3EPuraPI2BwyikGlQv8sIyRvgECt2E",
+          "shortId": "ab400d5a"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-038",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "174.136.204.23",
+            "port": 34539,
+            "users": [
+              {
+                "id": "6877f68f-2443-445d-8c11-16c77a2699a5",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "apple.com",
+          "fingerprint": "qq",
+          "publicKey": "KZ95U9GVT36nb3EPuraPI2BwyikGlQv8sIyRvgECt2E",
+          "shortId": "ab400d5a"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-039",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "174.136.204.23",
+            "port": 34539,
+            "users": [
+              {
+                "id": "6877f68f-2443-445d-8c11-16c77a2699a5",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "apple.com",
+          "fingerprint": "safari",
+          "publicKey": "KZ95U9GVT36nb3EPuraPI2BwyikGlQv8sIyRvgECt2E",
+          "shortId": "ab400d5a"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-040",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.122.158.11",
             "port": 443,
             "users": [
               {
-                "id": "1263d819-9089-4b14-ab52-09a747817ebc",
+                "id": "154c54e0-028d-4c8a-9512-7ad1588cce2a",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.cloudflare.com",
+          "fingerprint": "android",
+          "publicKey": "dV6-Xn1FCpiYvbJ1o79HjMr0IJg29xacSQcaD4jeKAM",
+          "shortId": "f8d85e1a92219c3c"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-041",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.122.158.11",
+            "port": 443,
+            "users": [
+              {
+                "id": "154c54e0-028d-4c8a-9512-7ad1588cce2a",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.cloudflare.com",
+          "fingerprint": "edge",
+          "publicKey": "dV6-Xn1FCpiYvbJ1o79HjMr0IJg29xacSQcaD4jeKAM",
+          "shortId": "f8d85e1a92219c3c"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-042",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.122.158.11",
+            "port": 443,
+            "users": [
+              {
+                "id": "154c54e0-028d-4c8a-9512-7ad1588cce2a",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.cloudflare.com",
+          "fingerprint": "ios",
+          "publicKey": "dV6-Xn1FCpiYvbJ1o79HjMr0IJg29xacSQcaD4jeKAM",
+          "shortId": "f8d85e1a92219c3c"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-043",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.122.158.11",
+            "port": 443,
+            "users": [
+              {
+                "id": "154c54e0-028d-4c8a-9512-7ad1588cce2a",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.cloudflare.com",
+          "fingerprint": "qq",
+          "publicKey": "dV6-Xn1FCpiYvbJ1o79HjMr0IJg29xacSQcaD4jeKAM",
+          "shortId": "f8d85e1a92219c3c"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-044",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.122.158.11",
+            "port": 443,
+            "users": [
+              {
+                "id": "154c54e0-028d-4c8a-9512-7ad1588cce2a",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.cloudflare.com",
+          "fingerprint": "safari",
+          "publicKey": "dV6-Xn1FCpiYvbJ1o79HjMr0IJg29xacSQcaD4jeKAM",
+          "shortId": "f8d85e1a92219c3c"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-045",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.170",
+            "port": 443,
+            "users": [
+              {
+                "id": "XpnTeam-32",
                 "encryption": "none"
               }
             ]
@@ -1772,14 +2060,134 @@
           "dialerProxy": "fragment"
         },
         "wsSettings": {
-          "path": "/ws",
+          "path": "/",
           "headers": {
-            "Host": "grimness-backlogs.cdn-content.com"
+            "Host": "Appxdn.global.ssl.fastly.net"
           }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "grimness-backlogs.cdn-content.com",
+          "serverName": "ssl.fastly.com",
+          "fingerprint": "android",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-046",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.170",
+            "port": 443,
+            "users": [
+              {
+                "id": "XpnTeam-32",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "Appxdn.global.ssl.fastly.net"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ssl.fastly.com",
+          "fingerprint": "chrome",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-047",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.170",
+            "port": 443,
+            "users": [
+              {
+                "id": "XpnTeam-32",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "Appxdn.global.ssl.fastly.net"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ssl.fastly.com",
+          "fingerprint": "firefox",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-048",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.170",
+            "port": 443,
+            "users": [
+              {
+                "id": "XpnTeam-32",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "Appxdn.global.ssl.fastly.net"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ssl.fastly.com",
           "fingerprint": "ios",
           "alpn": [
             "http/1.1"
@@ -1788,16 +2196,16 @@
       }
     },
     {
-      "tag": "igareck-node-038",
+      "tag": "igareck-node-049",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "172.96.192.167",
-            "port": 8443,
+            "address": "199.232.78.170",
+            "port": 443,
             "users": [
               {
-                "id": "38a9c88a-14c7-49e4-841d-bdb78fbb9529",
+                "id": "XpnTeam-32",
                 "encryption": "none"
               }
             ]
@@ -1805,298 +2213,70 @@
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "Appxdn.global.ssl.fastly.net"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.cloudflare.com",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ssl.fastly.com",
+          "fingerprint": "safari",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-050",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.160",
+            "port": 443,
+            "users": [
+              {
+                "id": "6a2f8573-66dd-5f60-884c-16e02f3a5acb",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "Appxdn.global.ssl.fastly.net"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ssl.fastly.com",
           "fingerprint": "android",
-          "publicKey": "8-tz1FBA5y6CcLp0NogIY4-x6pxkFBZ_HWSOXEioWho",
-          "shortId": "dc286495"
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
     {
-      "tag": "igareck-node-039",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.96.192.167",
-            "port": 8443,
-            "users": [
-              {
-                "id": "38a9c88a-14c7-49e4-841d-bdb78fbb9529",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.cloudflare.com",
-          "fingerprint": "chrome",
-          "publicKey": "8-tz1FBA5y6CcLp0NogIY4-x6pxkFBZ_HWSOXEioWho",
-          "shortId": "dc286495"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-040",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.96.192.167",
-            "port": 8443,
-            "users": [
-              {
-                "id": "38a9c88a-14c7-49e4-841d-bdb78fbb9529",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.cloudflare.com",
-          "fingerprint": "firefox",
-          "publicKey": "8-tz1FBA5y6CcLp0NogIY4-x6pxkFBZ_HWSOXEioWho",
-          "shortId": "dc286495"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-041",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.96.192.167",
-            "port": 8443,
-            "users": [
-              {
-                "id": "38a9c88a-14c7-49e4-841d-bdb78fbb9529",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.cloudflare.com",
-          "fingerprint": "ios",
-          "publicKey": "8-tz1FBA5y6CcLp0NogIY4-x6pxkFBZ_HWSOXEioWho",
-          "shortId": "dc286495"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-042",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "174.136.204.23",
-            "port": 34539,
-            "users": [
-              {
-                "id": "6877f68f-2443-445d-8c11-16c77a2699a5",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "apple.com",
-          "fingerprint": "android",
-          "publicKey": "KZ95U9GVT36nb3EPuraPI2BwyikGlQv8sIyRvgECt2E",
-          "shortId": "ab400d5a"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-043",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "174.136.204.23",
-            "port": 34539,
-            "users": [
-              {
-                "id": "6877f68f-2443-445d-8c11-16c77a2699a5",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "apple.com",
-          "fingerprint": "chrome",
-          "publicKey": "KZ95U9GVT36nb3EPuraPI2BwyikGlQv8sIyRvgECt2E",
-          "shortId": "ab400d5a"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-044",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "174.136.204.23",
-            "port": 34539,
-            "users": [
-              {
-                "id": "6877f68f-2443-445d-8c11-16c77a2699a5",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "apple.com",
-          "fingerprint": "edge",
-          "publicKey": "KZ95U9GVT36nb3EPuraPI2BwyikGlQv8sIyRvgECt2E",
-          "shortId": "ab400d5a"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-045",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "174.136.204.23",
-            "port": 34539,
-            "users": [
-              {
-                "id": "6877f68f-2443-445d-8c11-16c77a2699a5",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "apple.com",
-          "fingerprint": "firefox",
-          "publicKey": "KZ95U9GVT36nb3EPuraPI2BwyikGlQv8sIyRvgECt2E",
-          "shortId": "ab400d5a"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-046",
+      "tag": "igareck-node-051",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -2136,7 +2316,87 @@
       }
     },
     {
-      "tag": "igareck-node-047",
+      "tag": "igareck-node-052",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.160",
+            "port": 443,
+            "users": [
+              {
+                "id": "6a2f8573-66dd-5f60-884c-16e02f3a5acb",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "Appxdn.global.ssl.fastly.net"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ssl.fastly.com",
+          "fingerprint": "firefox",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-053",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "199.232.78.160",
+            "port": 443,
+            "users": [
+              {
+                "id": "6a2f8573-66dd-5f60-884c-16e02f3a5acb",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "Appxdn.global.ssl.fastly.net"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ssl.fastly.com",
+          "fingerprint": "qq",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-054",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -2173,47 +2433,7 @@
       }
     },
     {
-      "tag": "igareck-node-048",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "140.248.186.45",
-            "port": 443,
-            "users": [
-              {
-                "id": "XpnTeam-32",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "Appxdn.global.ssl.fastly.net"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ssl.fastly.com",
-          "fingerprint": "firefox",
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-049",
+      "tag": "igareck-node-055",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -2246,46 +2466,6 @@
         "tlsSettings": {
           "serverName": "ssl.fastly.com",
           "fingerprint": "ios",
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-050",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "140.248.186.45",
-            "port": 443,
-            "users": [
-              {
-                "id": "XpnTeam-32",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "Appxdn.global.ssl.fastly.net"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ssl.fastly.com",
-          "fingerprint": "edge",
           "alpn": [
             "http/1.1"
           ]
