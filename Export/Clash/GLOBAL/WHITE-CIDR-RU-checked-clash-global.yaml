@@ -2,8 +2,8 @@
 # Igareck Mihomo Subscription
 # Источник/Source: WHITE-CIDR-RU-checked.txt
 # 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
-# Количество/Quantity: 45
-# Date/Time: 2026-10-22 / 05:58 (Moscow)
+# Количество/Quantity: 48
+# Date/Time: 2026-10-22 / 07:52 (Moscow)
 #
 # Режим / Mode:
 # - Автоматический Выбор лучшего прокси / Igareck Auto Select;
@@ -151,91 +151,72 @@ sniffer:
       ports: [443, 8443]
 
 proxies:
-- name: Igareck Node 001 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
+- name: Igareck Node 001 | 🇳🇱 The Netherlands [*CIDR] YA
   type: vless
-  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
-  port: 2053
-  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
+  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x38\x30\x2e\x31\x33"
+  port: 443
+  uuid: "\x31\x65\x32\x62\x39\x63\x30\x63\x2d\x34\x66\x39\x62\x2d\x35\x36\x66\x35\x2d\x61\x30\x36\x32\x2d\x31\x63\x34\x66\x32\x64\x32\x61\x61\x32\x30\x30"
   udp: true
   tls: true
-  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/upload
-    host: summerculture.net
-    mode: auto
-- name: Igareck Node 002 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
-  type: vless
-  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
-  port: 2053
-  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
-  udp: true
-  tls: true
-  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  alpn:
-  - h2
-  - http/1.1
+  servername: "\x61\x70\x69\x2d\x6d\x61\x70\x73\x2e\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
   client-fingerprint: edge
+  reality-opts:
+    public-key: DuxQy3KWEZTU_sBhXSfeo_1Q0-0lMcSnx21bWvUi5hQ
   network: xhttp
   xhttp-opts:
-    path: /api/v1/upload
-    host: summerculture.net
-    mode: auto
-- name: Igareck Node 003 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
+    host: api-maps.yandex.ru
+- name: Igareck Node 002 | 🇳🇱 The Netherlands [*CIDR] YA
   type: vless
-  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
-  port: 2053
-  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
+  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x38\x30\x2e\x31\x33"
+  port: 443
+  uuid: "\x31\x65\x32\x62\x39\x63\x30\x63\x2d\x34\x66\x39\x62\x2d\x35\x36\x66\x35\x2d\x61\x30\x36\x32\x2d\x31\x63\x34\x66\x32\x64\x32\x61\x61\x32\x30\x30"
   udp: true
   tls: true
-  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: ios
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/upload
-    host: summerculture.net
-    mode: auto
-- name: Igareck Node 004 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
-  type: vless
-  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
-  port: 2053
-  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
-  udp: true
-  tls: true
-  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: qq
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/upload
-    host: summerculture.net
-    mode: auto
-- name: Igareck Node 005 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
-  type: vless
-  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
-  port: 2053
-  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
-  udp: true
-  tls: true
-  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  alpn:
-  - h2
-  - http/1.1
+  servername: "\x61\x70\x69\x2d\x6d\x61\x70\x73\x2e\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
   client-fingerprint: safari
+  reality-opts:
+    public-key: DuxQy3KWEZTU_sBhXSfeo_1Q0-0lMcSnx21bWvUi5hQ
   network: xhttp
   xhttp-opts:
-    path: /api/v1/upload
-    host: summerculture.net
-    mode: auto
+    host: api-maps.yandex.ru
+- name: Igareck Node 003 | 🇳🇱 The Netherlands [*CIDR] YA
+  type: vless
+  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x38\x30\x2e\x31\x33"
+  port: 443
+  uuid: "\x31\x65\x32\x62\x39\x63\x30\x63\x2d\x34\x66\x39\x62\x2d\x35\x36\x66\x35\x2d\x61\x30\x36\x32\x2d\x31\x63\x34\x66\x32\x64\x32\x61\x61\x32\x30\x30"
+  udp: true
+  tls: true
+  servername: "\x61\x70\x69\x2d\x6d\x61\x70\x73\x2e\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: DuxQy3KWEZTU_sBhXSfeo_1Q0-0lMcSnx21bWvUi5hQ
+  network: xhttp
+  xhttp-opts:
+    host: api-maps.yandex.ru
+- name: Igareck Node 004 | 🇳🇱 The Netherlands [*CIDR] YA
+  type: vless
+  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x38\x30\x2e\x31\x33"
+  port: 443
+  uuid: "\x31\x65\x32\x62\x39\x63\x30\x63\x2d\x34\x66\x39\x62\x2d\x35\x36\x66\x35\x2d\x61\x30\x36\x32\x2d\x31\x63\x34\x66\x32\x64\x32\x61\x61\x32\x30\x30"
+  udp: true
+  tls: true
+  servername: "\x61\x70\x69\x2d\x6d\x61\x70\x73\x2e\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
+  client-fingerprint: ios
+  reality-opts:
+    public-key: DuxQy3KWEZTU_sBhXSfeo_1Q0-0lMcSnx21bWvUi5hQ
+  network: xhttp
+- name: Igareck Node 005 | 🇳🇱 The Netherlands [*CIDR] YA
+  type: vless
+  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x38\x30\x2e\x31\x33"
+  port: 443
+  uuid: "\x31\x65\x32\x62\x39\x63\x30\x63\x2d\x34\x66\x39\x62\x2d\x35\x36\x66\x35\x2d\x61\x30\x36\x32\x2d\x31\x63\x34\x66\x32\x64\x32\x61\x61\x32\x30\x30"
+  udp: true
+  tls: true
+  servername: "\x61\x70\x69\x2d\x6d\x61\x70\x73\x2e\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: DuxQy3KWEZTU_sBhXSfeo_1Q0-0lMcSnx21bWvUi5hQ
+  network: xhttp
 - name: Igareck Node 006 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
   server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
@@ -246,8 +227,8 @@ proxies:
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
   alpn:
   - h2
-  - http/1.1
-  client-fingerprint: firefox
+  - +http/1.1
+  client-fingerprint: ios
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
@@ -261,7 +242,10 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  client-fingerprint: safari
+  alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
@@ -275,11 +259,84 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: edge
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
+    host: summerculture.net
     mode: auto
 - name: Igareck Node 009 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
+  type: vless
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
+  port: 2053
+  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
+  udp: true
+  tls: true
+  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: ios
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: summerculture.net
+    mode: auto
+- name: Igareck Node 010 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
+  type: vless
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
+  port: 2053
+  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
+  udp: true
+  tls: true
+  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: qq
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: summerculture.net
+    mode: auto
+- name: Igareck Node 011 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
+  type: vless
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
+  port: 2053
+  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
+  udp: true
+  tls: true
+  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: safari
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: summerculture.net
+    mode: auto
+- name: Igareck Node 012 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
+  type: vless
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
+  port: 2053
+  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
+  udp: true
+  tls: true
+  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: summerculture.net
+    mode: auto
+- name: Igareck Node 013 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
   server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
   port: 2053
@@ -291,8 +348,9 @@ proxies:
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
+    host: summerculture.net
     mode: auto
-- name: Igareck Node 010 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
+- name: Igareck Node 014 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
   server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
   port: 2053
@@ -305,7 +363,7 @@ proxies:
   xhttp-opts:
     path: /api/v1/upload
     mode: auto
-- name: Igareck Node 011 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
+- name: Igareck Node 015 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
   server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
   port: 2053
@@ -317,67 +375,6 @@ proxies:
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
-    mode: auto
-- name: Igareck Node 012 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
-  type: vless
-  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
-  port: 2053
-  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
-  udp: true
-  tls: true
-  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  client-fingerprint: qq
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/upload
-    mode: auto
-- name: Igareck Node 013 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
-  type: vless
-  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
-  port: 2053
-  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
-  udp: true
-  tls: true
-  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  client-fingerprint: safari
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/upload
-    mode: auto
-- name: Igareck Node 014 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
-  type: vless
-  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
-  port: 2053
-  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
-  udp: true
-  tls: true
-  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  alpn:
-  - h2
-  - +http/1.1
-  client-fingerprint: edge
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/upload
-    host: summerculture.net
-    mode: auto
-- name: Igareck Node 015 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
-  type: vless
-  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
-  port: 2053
-  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
-  udp: true
-  tls: true
-  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  alpn:
-  - h2
-  - +http/1.1
-  client-fingerprint: ios
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/upload
-    host: summerculture.net
-    mode: auto
 - name: Igareck Node 016 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
   server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
@@ -386,14 +383,10 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  alpn:
-  - h2
-  - +http/1.1
-  client-fingerprint: qq
+  client-fingerprint: ios
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
-    host: summerculture.net
     mode: auto
 - name: Igareck Node 017 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
@@ -403,9 +396,6 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  alpn:
-  - h2
-  - +http/1.1
   client-fingerprint: safari
   network: xhttp
   xhttp-opts:
@@ -420,13 +410,9 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  alpn:
-  - h2
-  - http/1.1
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
-    host: summerculture.net
     mode: auto
 - name: Igareck Node 019 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
@@ -436,14 +422,10 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  alpn:
-  - h2
-  - +http/1.1
   client-fingerprint: chrome
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
-    host: summerculture.net
     mode: auto
 - name: Igareck Node 020 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
@@ -453,14 +435,10 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  alpn:
-  - h2
-  - +http/1.1
-  client-fingerprint: firefox
+  client-fingerprint: qq
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
-    host: summerculture.net
     mode: auto
 - name: Igareck Node 021 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
@@ -470,11 +448,10 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  client-fingerprint: firefox
+  client-fingerprint: safari
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
-    host: summerculture.net
     mode: auto
 - name: Igareck Node 022 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
@@ -484,7 +461,10 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  client-fingerprint: ios
+  alpn:
+  - h2
+  - +http/1.1
+  client-fingerprint: edge
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
@@ -498,6 +478,10 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  alpn:
+  - h2
+  - +http/1.1
+  client-fingerprint: qq
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
@@ -511,7 +495,10 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  client-fingerprint: chrome
+  alpn:
+  - h2
+  - +http/1.1
+  client-fingerprint: safari
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
@@ -525,7 +512,9 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  client-fingerprint: edge
+  alpn:
+  - h2
+  - http/1.1
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
@@ -539,7 +528,10 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  client-fingerprint: qq
+  alpn:
+  - h2
+  - +http/1.1
+  client-fingerprint: chrome
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
@@ -547,49 +539,7 @@ proxies:
     mode: auto
 - name: Igareck Node 027 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
-  server: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  port: 2053
-  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
-  udp: true
-  tls: true
-  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/upload
-    host: summerculture.net
-    mode: auto
-- name: Igareck Node 028 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
-  type: vless
-  server: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  port: 2053
-  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
-  udp: true
-  tls: true
-  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/upload
-    host: summerculture.net
-    mode: auto
-- name: Igareck Node 029 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
-  type: vless
-  server: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  port: 2053
-  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
-  udp: true
-  tls: true
-  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  client-fingerprint: edge
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/upload
-    host: summerculture.net
-    mode: auto
-- name: Igareck Node 030 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
-  type: vless
-  server: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
   port: 2053
   uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
   udp: true
@@ -597,7 +547,48 @@ proxies:
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
   alpn:
   - h2
-  - http/1.1
+  - +http/1.1
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: summerculture.net
+    mode: auto
+- name: Igareck Node 028 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
+  type: vless
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
+  port: 2053
+  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
+  udp: true
+  tls: true
+  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  client-fingerprint: ios
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: summerculture.net
+    mode: auto
+- name: Igareck Node 029 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
+  type: vless
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
+  port: 2053
+  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
+  udp: true
+  tls: true
+  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: summerculture.net
+    mode: auto
+- name: Igareck Node 030 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
+  type: vless
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
+  port: 2053
+  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
+  udp: true
+  tls: true
+  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
   client-fingerprint: edge
   network: xhttp
   xhttp-opts:
@@ -606,16 +597,13 @@ proxies:
     mode: auto
 - name: Igareck Node 031 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
-  server: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
   port: 2053
   uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
+  client-fingerprint: qq
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
@@ -629,10 +617,7 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: qq
+  client-fingerprint: chrome
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
@@ -646,10 +631,7 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: safari
+  client-fingerprint: firefox
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
@@ -666,6 +648,7 @@ proxies:
   alpn:
   - h2
   - http/1.1
+  client-fingerprint: chrome
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
@@ -679,6 +662,10 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: edge
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
@@ -692,9 +679,14 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
+    host: summerculture.net
     mode: auto
 - name: Igareck Node 037 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
@@ -704,7 +696,10 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  client-fingerprint: ios
+  alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: qq
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
@@ -718,6 +713,9 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  alpn:
+  - h2
+  - http/1.1
   client-fingerprint: safari
   network: xhttp
   xhttp-opts:
@@ -732,10 +730,13 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  client-fingerprint: firefox
+  alpn:
+  - h2
+  - http/1.1
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
+    host: summerculture.net
     mode: auto
 - name: Igareck Node 040 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
@@ -745,10 +746,10 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  client-fingerprint: ios
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
+    host: summerculture.net
     mode: auto
 - name: Igareck Node 041 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
@@ -758,7 +759,6 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  client-fingerprint: qq
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
@@ -771,10 +771,11 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  client-fingerprint: safari
+  client-fingerprint: edge
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
+    host: summerculture.net
     mode: auto
 - name: Igareck Node 043 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
@@ -784,48 +785,77 @@ proxies:
   udp: true
   tls: true
   servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
-  alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
+  client-fingerprint: ios
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
     host: summerculture.net
     mode: auto
-- name: Igareck Node 044 | 🇷🇺 Russia | 🌐 [*CIDR] VK
+- name: Igareck Node 044 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
-  server: "\x74\x65\x72\x72\x61\x61\x76\x65\x6e\x75\x65\x2e\x6e\x65\x74"
-  port: 443
+  server: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  port: 2053
   uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
   udp: true
   tls: true
-  servername: "\x74\x65\x72\x72\x61\x61\x76\x65\x6e\x75\x65\x2e\x6e\x65\x74"
-  alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: qq
+  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  client-fingerprint: safari
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
-    host: terraavenue.net
+    host: summerculture.net
     mode: auto
-- name: Igareck Node 045 | 🇷🇺 Russia | 🌐 [*CIDR] VK
+- name: Igareck Node 045 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
-  server: "\x74\x65\x72\x72\x61\x61\x76\x65\x6e\x75\x65\x2e\x6e\x65\x74"
-  port: 443
+  server: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  port: 2053
   uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
   udp: true
   tls: true
-  servername: "\x74\x65\x72\x72\x61\x61\x76\x65\x6e\x75\x65\x2e\x6e\x65\x74"
-  alpn:
-  - h2
-  - http/1.1
+  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
   client-fingerprint: firefox
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
-    host: terraavenue.net
+    mode: auto
+- name: Igareck Node 046 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
+  type: vless
+  server: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  port: 2053
+  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
+  udp: true
+  tls: true
+  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  client-fingerprint: ios
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    mode: auto
+- name: Igareck Node 047 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
+  type: vless
+  server: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  port: 2053
+  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
+  udp: true
+  tls: true
+  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  client-fingerprint: qq
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    mode: auto
+- name: Igareck Node 048 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
+  type: vless
+  server: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  port: 2053
+  uuid: "\x32\x63\x36\x33\x34\x39\x37\x37\x2d\x35\x38\x34\x65\x2d\x34\x65\x31\x66\x2d\x62\x35\x30\x31\x2d\x31\x62\x37\x30\x63\x37\x37\x61\x36\x37\x34\x33"
+  udp: true
+  tls: true
+  servername: "\x73\x75\x6d\x6d\x65\x72\x63\x75\x6c\x74\x75\x72\x65\x2e\x6e\x65\x74"
+  client-fingerprint: safari
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
     mode: auto
 
 proxy-groups:
