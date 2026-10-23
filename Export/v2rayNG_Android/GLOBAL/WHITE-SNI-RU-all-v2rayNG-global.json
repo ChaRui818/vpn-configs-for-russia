@@ -8,7 +8,7 @@
     ],
     "client": "v2rayNG",
     "source": "WHITE-SNI-RU-all.txt",
-    "source_datetime": "2026-10-23 11:08 Moscow"
+    "source_datetime": "2026-10-23 18:57 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -69,7 +69,8 @@
           "full:localhost",
           "domain:local",
           "domain:lan",
-          "regexp:^[^.]+$"
+          "regexp:^[^.]+$",
+          "full:vd2.outlinevpn.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -125,7 +126,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd2.outlinevpn.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -145,7 +147,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd2.outlinevpn.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -165,7 +168,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd2.outlinevpn.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -185,7 +189,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd2.outlinevpn.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -205,7 +210,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd2.outlinevpn.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -225,7 +231,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd2.outlinevpn.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -245,7 +252,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd2.outlinevpn.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -265,7 +273,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd2.outlinevpn.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -285,7 +294,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd2.outlinevpn.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -305,7 +315,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd2.outlinevpn.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -325,7 +336,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd2.outlinevpn.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -345,7 +357,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd2.outlinevpn.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -433,33 +446,37 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.168.140.237",
-            "port": 443,
+            "address": "vd2.outlinevpn.cc",
+            "port": 12213,
             "users": [
               {
-                "id": "9c54d883-97a8-4b49-af23-fe052eff2c3a",
-                "encryption": "none"
+                "id": "7c464358-6c89-4623-bd20-7c7bcd51bc55",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "grpcSettings": {
-          "serviceName": "",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ads.x5.ru",
-          "fingerprint": "chrome",
-          "publicKey": "byjOBWoaPgKQoy7yj91s7Uavs9VNpBns773wt-UeRxM",
-          "shortId": "3e0c480d"
+          "serverName": "music.yandex.ru",
+          "fingerprint": "android",
+          "publicKey": "kTKM-s7XF0s878Ydmq1KeZFiGT6k1Bw_rLE79s1l1jI",
+          "shortId": "6a29a03b21",
+          "spiderX": "/"
         }
       }
     },
@@ -469,33 +486,37 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.168.140.237",
-            "port": 443,
+            "address": "vd2.outlinevpn.cc",
+            "port": 12213,
             "users": [
               {
-                "id": "9c54d883-97a8-4b49-af23-fe052eff2c3a",
-                "encryption": "none"
+                "id": "7c464358-6c89-4623-bd20-7c7bcd51bc55",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "grpcSettings": {
-          "serviceName": "",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ads.x5.ru",
-          "fingerprint": "safari",
-          "publicKey": "byjOBWoaPgKQoy7yj91s7Uavs9VNpBns773wt-UeRxM",
-          "shortId": "3e0c480d"
+          "serverName": "music.yandex.ru",
+          "fingerprint": "chrome",
+          "publicKey": "kTKM-s7XF0s878Ydmq1KeZFiGT6k1Bw_rLE79s1l1jI",
+          "shortId": "6a29a03b21",
+          "spiderX": "/"
         }
       }
     },
@@ -505,33 +526,37 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.168.140.237",
-            "port": 443,
+            "address": "vd2.outlinevpn.cc",
+            "port": 12213,
             "users": [
               {
-                "id": "9c54d883-97a8-4b49-af23-fe052eff2c3a",
-                "encryption": "none"
+                "id": "7c464358-6c89-4623-bd20-7c7bcd51bc55",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "grpcSettings": {
-          "serviceName": "",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ads.x5.ru",
-          "fingerprint": "edge",
-          "publicKey": "byjOBWoaPgKQoy7yj91s7Uavs9VNpBns773wt-UeRxM",
-          "shortId": "3e0c480d"
+          "serverName": "music.yandex.ru",
+          "fingerprint": "firefox",
+          "publicKey": "kTKM-s7XF0s878Ydmq1KeZFiGT6k1Bw_rLE79s1l1jI",
+          "shortId": "6a29a03b21",
+          "spiderX": "/"
         }
       }
     },
@@ -541,33 +566,37 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.168.140.237",
-            "port": 443,
+            "address": "vd2.outlinevpn.cc",
+            "port": 12213,
             "users": [
               {
-                "id": "9c54d883-97a8-4b49-af23-fe052eff2c3a",
-                "encryption": "none"
+                "id": "7c464358-6c89-4623-bd20-7c7bcd51bc55",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "grpcSettings": {
-          "serviceName": "",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ads.x5.ru",
-          "fingerprint": "firefox",
-          "publicKey": "byjOBWoaPgKQoy7yj91s7Uavs9VNpBns773wt-UeRxM",
-          "shortId": "3e0c480d"
+          "serverName": "music.yandex.ru",
+          "fingerprint": "ios",
+          "publicKey": "kTKM-s7XF0s878Ydmq1KeZFiGT6k1Bw_rLE79s1l1jI",
+          "shortId": "6a29a03b21",
+          "spiderX": "/"
         }
       }
     },
@@ -577,34 +606,57 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.168.140.237",
-            "port": 443,
+            "address": "vd2.outlinevpn.cc",
+            "port": 12213,
             "users": [
               {
-                "id": "9c54d883-97a8-4b49-af23-fe052eff2c3a",
-                "encryption": "none"
+                "id": "7c464358-6c89-4623-bd20-7c7bcd51bc55",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "grpcSettings": {
-          "serviceName": "",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ads.x5.ru",
+          "serverName": "music.yandex.ru",
           "fingerprint": "qq",
-          "publicKey": "byjOBWoaPgKQoy7yj91s7Uavs9VNpBns773wt-UeRxM",
-          "shortId": "3e0c480d"
+          "publicKey": "kTKM-s7XF0s878Ydmq1KeZFiGT6k1Bw_rLE79s1l1jI",
+          "shortId": "6a29a03b21",
+          "spiderX": "/"
         }
+      }
+    },
+    {
+      "tag": "fragment",
+      "protocol": "freedom",
+      "settings": {
+        "fragment": {
+          "packets": "1-3",
+          "length": "50-100",
+          "interval": "10-20",
+          "maxSplit": "10"
+        },
+        "noises": [
+          {
+            "type": "rand",
+            "packet": "50-150",
+            "delay": "10-50"
+          }
+        ]
       }
     },
     {
