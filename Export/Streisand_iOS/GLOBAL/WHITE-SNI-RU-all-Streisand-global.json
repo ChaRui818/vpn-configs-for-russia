@@ -58,8 +58,7 @@
           "full:localhost",
           "domain:local",
           "domain:lan",
-          "regexp:^[^.]+$",
-          "full:cdnhaven.com"
+          "regexp:^[^.]+$"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -115,8 +114,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:cdnhaven.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -136,8 +134,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:cdnhaven.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -157,8 +154,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:cdnhaven.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -178,8 +174,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:cdnhaven.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -199,8 +194,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:cdnhaven.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -220,8 +214,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:cdnhaven.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -241,8 +234,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:cdnhaven.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -262,8 +254,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:cdnhaven.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -283,8 +274,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:cdnhaven.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -304,8 +294,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:cdnhaven.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -325,8 +314,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:cdnhaven.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -346,8 +334,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:cdnhaven.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -437,36 +424,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdnhaven.com",
-            "port": 1443,
+            "address": "193.168.140.237",
+            "port": 443,
             "users": [
               {
-                "id": "917a186b-ffa1-4af4-a473-1a8d95f2e37c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "9c54d883-97a8-4b49-af23-fe052eff2c3a",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "",
+          "multiMode": false
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "sun6-21.userapi.com",
-          "fingerprint": "android",
-          "publicKey": "_yfkAlX_g-2LBB3CpNqI9sDKz-1OyqwyvbDwD7F8gRo",
-          "shortId": "c2d3e4f5a6b7c8d9"
+          "serverName": "ads.x5.ru",
+          "fingerprint": "chrome",
+          "publicKey": "byjOBWoaPgKQoy7yj91s7Uavs9VNpBns773wt-UeRxM",
+          "shortId": "3e0c480d"
         }
       }
     },
@@ -476,36 +460,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdnhaven.com",
-            "port": 1443,
+            "address": "193.168.140.237",
+            "port": 443,
             "users": [
               {
-                "id": "917a186b-ffa1-4af4-a473-1a8d95f2e37c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "9c54d883-97a8-4b49-af23-fe052eff2c3a",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "",
+          "multiMode": false
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "sun6-21.userapi.com",
-          "fingerprint": "chrome",
-          "publicKey": "_yfkAlX_g-2LBB3CpNqI9sDKz-1OyqwyvbDwD7F8gRo",
-          "shortId": "c2d3e4f5a6b7c8d9"
+          "serverName": "ads.x5.ru",
+          "fingerprint": "edge",
+          "publicKey": "byjOBWoaPgKQoy7yj91s7Uavs9VNpBns773wt-UeRxM",
+          "shortId": "3e0c480d"
         }
       }
     },
@@ -515,11 +496,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdnhaven.com",
-            "port": 3443,
+            "address": "193.168.140.237",
+            "port": 443,
             "users": [
               {
-                "id": "917a186b-ffa1-4af4-a473-1a8d95f2e37c",
+                "id": "9c54d883-97a8-4b49-af23-fe052eff2c3a",
                 "encryption": "none"
               }
             ]
@@ -533,15 +514,15 @@
           "tcpKeepAliveInterval": 60
         },
         "grpcSettings": {
-          "serviceName": "grpc",
+          "serviceName": "",
           "multiMode": false
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "stats.vk-portal.net",
-          "fingerprint": "edge",
-          "publicKey": "Q1Fjb64H0fakerSZHytJ7WQkuKeMs13l9kQJ0nywoFo",
-          "shortId": "d3e4f5a6b7c8d9e0"
+          "serverName": "ads.x5.ru",
+          "fingerprint": "firefox",
+          "publicKey": "byjOBWoaPgKQoy7yj91s7Uavs9VNpBns773wt-UeRxM",
+          "shortId": "3e0c480d"
         }
       }
     },
@@ -551,11 +532,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "cdnhaven.com",
-            "port": 3443,
+            "address": "193.168.140.237",
+            "port": 443,
             "users": [
               {
-                "id": "917a186b-ffa1-4af4-a473-1a8d95f2e37c",
+                "id": "9c54d883-97a8-4b49-af23-fe052eff2c3a",
                 "encryption": "none"
               }
             ]
@@ -569,191 +550,16 @@
           "tcpKeepAliveInterval": 60
         },
         "grpcSettings": {
-          "serviceName": "grpc",
+          "serviceName": "",
           "multiMode": false
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "stats.vk-portal.net",
-          "fingerprint": "firefox",
-          "publicKey": "Q1Fjb64H0fakerSZHytJ7WQkuKeMs13l9kQJ0nywoFo",
-          "shortId": "d3e4f5a6b7c8d9e0"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-005",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cdnhaven.com",
-            "port": 2853,
-            "users": [
-              {
-                "id": "917a186b-ffa1-4af4-a473-1a8d95f2e37c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "yastatic.net",
-          "fingerprint": "edge",
-          "publicKey": "Q1Fjb64H0fakerSZHytJ7WQkuKeMs13l9kQJ0nywoFo",
-          "shortId": "d3e4f5a6b7c8d9e0"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-006",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cdnhaven.com",
-            "port": 2853,
-            "users": [
-              {
-                "id": "917a186b-ffa1-4af4-a473-1a8d95f2e37c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "yastatic.net",
-          "fingerprint": "ios",
-          "publicKey": "Q1Fjb64H0fakerSZHytJ7WQkuKeMs13l9kQJ0nywoFo",
-          "shortId": "d3e4f5a6b7c8d9e0"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-007",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cdnhaven.com",
-            "port": 443,
-            "users": [
-              {
-                "id": "917a186b-ffa1-4af4-a473-1a8d95f2e37c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "yastatic.net",
-          "fingerprint": "edge",
-          "publicKey": "Q1Fjb64H0fakerSZHytJ7WQkuKeMs13l9kQJ0nywoFo",
-          "shortId": "d3e4f5a6b7c8d9e0"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-008",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cdnhaven.com",
-            "port": 443,
-            "users": [
-              {
-                "id": "917a186b-ffa1-4af4-a473-1a8d95f2e37c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "yastatic.net",
+          "serverName": "ads.x5.ru",
           "fingerprint": "safari",
-          "publicKey": "Q1Fjb64H0fakerSZHytJ7WQkuKeMs13l9kQJ0nywoFo",
-          "shortId": "d3e4f5a6b7c8d9e0"
+          "publicKey": "byjOBWoaPgKQoy7yj91s7Uavs9VNpBns773wt-UeRxM",
+          "shortId": "3e0c480d"
         }
-      }
-    },
-    {
-      "tag": "fragment",
-      "protocol": "freedom",
-      "settings": {
-        "fragment": {
-          "packets": "1-3",
-          "length": "50-100",
-          "interval": "10-20",
-          "maxSplit": "10"
-        },
-        "noises": [
-          {
-            "type": "rand",
-            "packet": "50-150",
-            "delay": "10-50"
-          }
-        ]
       }
     },
     {
