@@ -413,7 +413,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "online.wyre-file.ru",
+            "address": "185.86.145.183",
             "port": 443,
             "users": [
               {
@@ -449,6 +449,86 @@
     },
     {
       "tag": "igareck-node-002",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.86.145.183",
+            "port": 443,
+            "users": [
+              {
+                "id": "80f7b6c7-2b3c-4937-af9e-49404d926e7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/nl7ws",
+          "headers": {
+            "Host": "online.wyre-file.ru"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "online.wyre-file.ru",
+          "fingerprint": "qq",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-003",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "online.wyre-file.ru",
+            "port": 443,
+            "users": [
+              {
+                "id": "80f7b6c7-2b3c-4937-af9e-49404d926e7c",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/nl7ws",
+          "headers": {
+            "Host": "online.wyre-file.ru"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "online.wyre-file.ru",
+          "fingerprint": "edge",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-004",
       "protocol": "vless",
       "settings": {
         "vnext": [
