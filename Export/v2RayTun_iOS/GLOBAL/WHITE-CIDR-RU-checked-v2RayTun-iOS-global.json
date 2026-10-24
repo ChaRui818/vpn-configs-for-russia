@@ -58,7 +58,7 @@
           "domain:local",
           "domain:lan",
           "regexp:^[^.]+$",
-          "full:95sub.ghost-lan.com"
+          "full:deliverya.online"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -115,7 +115,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:95sub.ghost-lan.com"
+          "full:deliverya.online"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -136,7 +136,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:95sub.ghost-lan.com"
+          "full:deliverya.online"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -157,7 +157,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:95sub.ghost-lan.com"
+          "full:deliverya.online"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -178,7 +178,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:95sub.ghost-lan.com"
+          "full:deliverya.online"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -199,7 +199,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:95sub.ghost-lan.com"
+          "full:deliverya.online"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -220,7 +220,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:95sub.ghost-lan.com"
+          "full:deliverya.online"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -241,7 +241,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:95sub.ghost-lan.com"
+          "full:deliverya.online"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -262,7 +262,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:95sub.ghost-lan.com"
+          "full:deliverya.online"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -283,7 +283,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:95sub.ghost-lan.com"
+          "full:deliverya.online"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -304,7 +304,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:95sub.ghost-lan.com"
+          "full:deliverya.online"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -325,7 +325,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:95sub.ghost-lan.com"
+          "full:deliverya.online"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -346,7 +346,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:95sub.ghost-lan.com"
+          "full:deliverya.online"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -413,36 +413,37 @@
       "settings": {
         "vnext": [
           {
-            "address": "95sub.ghost-lan.com",
-            "port": 8444,
+            "address": "deliverya.online",
+            "port": 443,
             "users": [
               {
-                "id": "5af23e36-62b7-4765-b27d-ed070f0535ed",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "c8b3c1d7-4294-4f30-9e5b-e4693b64d518",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/adrws",
+          "headers": {
+            "Host": "deliverya.online"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "qq",
-          "publicKey": "bqLr1d3mbuP10WAYxWj8OEdSuZlVvrywrKq2U6ACw2w",
-          "shortId": "12b9ecabbf3a3b88"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "deliverya.online",
+          "fingerprint": "android",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -452,36 +453,37 @@
       "settings": {
         "vnext": [
           {
-            "address": "95sub.ghost-lan.com",
-            "port": 8444,
+            "address": "deliverya.online",
+            "port": 443,
             "users": [
               {
-                "id": "5af23e36-62b7-4765-b27d-ed070f0535ed",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "c8b3c1d7-4294-4f30-9e5b-e4693b64d518",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/adrws",
+          "headers": {
+            "Host": "deliverya.online"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "deliverya.online",
           "fingerprint": "chrome",
-          "publicKey": "bqLr1d3mbuP10WAYxWj8OEdSuZlVvrywrKq2U6ACw2w",
-          "shortId": "12b9ecabbf3a3b88"
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -491,36 +493,37 @@
       "settings": {
         "vnext": [
           {
-            "address": "95sub.ghost-lan.com",
-            "port": 8444,
+            "address": "deliverya.online",
+            "port": 443,
             "users": [
               {
-                "id": "5af23e36-62b7-4765-b27d-ed070f0535ed",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "c8b3c1d7-4294-4f30-9e5b-e4693b64d518",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/adrws",
+          "headers": {
+            "Host": "deliverya.online"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "deliverya.online",
           "fingerprint": "edge",
-          "publicKey": "bqLr1d3mbuP10WAYxWj8OEdSuZlVvrywrKq2U6ACw2w",
-          "shortId": "12b9ecabbf3a3b88"
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -530,36 +533,37 @@
       "settings": {
         "vnext": [
           {
-            "address": "95sub.ghost-lan.com",
-            "port": 8444,
+            "address": "deliverya.online",
+            "port": 443,
             "users": [
               {
-                "id": "5af23e36-62b7-4765-b27d-ed070f0535ed",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "c8b3c1d7-4294-4f30-9e5b-e4693b64d518",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/adrws",
+          "headers": {
+            "Host": "deliverya.online"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "deliverya.online",
           "fingerprint": "ios",
-          "publicKey": "bqLr1d3mbuP10WAYxWj8OEdSuZlVvrywrKq2U6ACw2w",
-          "shortId": "12b9ecabbf3a3b88"
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
