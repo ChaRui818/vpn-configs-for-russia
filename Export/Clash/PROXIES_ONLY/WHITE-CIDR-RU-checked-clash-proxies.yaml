@@ -2,8 +2,8 @@
 # Igareck Mihomo Subscription
 # Источник/Source: WHITE-CIDR-RU-checked.txt
 # 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
-# Количество/Quantity: 14
-# Date/Time: 2026-10-24 / 07:22 (Moscow)
+# Количество/Quantity: 12
+# Date/Time: 2026-10-24 / 09:38 (Moscow)
 #
 # Не содержит никаких настроек, только список прокси / No settings, just proxies list;
 # ============================================================
@@ -17,10 +17,12 @@ proxies:
   udp: true
   tls: true
   servername: "\x61\x70\x69\x2d\x6d\x61\x70\x73\x2e\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
-  client-fingerprint: edge
+  client-fingerprint: android
   reality-opts:
     public-key: DuxQy3KWEZTU_sBhXSfeo_1Q0-0lMcSnx21bWvUi5hQ
   network: xhttp
+  xhttp-opts:
+    host: api-maps.yandex.ru
 - name: Igareck Node 002 | .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] YA
   type: vless
   server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x38\x30\x2e\x31\x33"
@@ -33,6 +35,8 @@ proxies:
   reality-opts:
     public-key: DuxQy3KWEZTU_sBhXSfeo_1Q0-0lMcSnx21bWvUi5hQ
   network: xhttp
+  xhttp-opts:
+    host: api-maps.yandex.ru
 - name: Igareck Node 003 | .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] YA
   type: vless
   server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x38\x30\x2e\x31\x33"
@@ -45,19 +49,9 @@ proxies:
   reality-opts:
     public-key: DuxQy3KWEZTU_sBhXSfeo_1Q0-0lMcSnx21bWvUi5hQ
   network: xhttp
+  xhttp-opts:
+    host: api-maps.yandex.ru
 - name: Igareck Node 004 | .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] YA
-  type: vless
-  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x38\x30\x2e\x31\x33"
-  port: 443
-  uuid: "\x31\x65\x32\x62\x39\x63\x30\x63\x2d\x34\x66\x39\x62\x2d\x35\x36\x66\x35\x2d\x61\x30\x36\x32\x2d\x31\x63\x34\x66\x32\x64\x32\x61\x61\x32\x30\x30"
-  udp: true
-  tls: true
-  servername: "\x61\x70\x69\x2d\x6d\x61\x70\x73\x2e\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: DuxQy3KWEZTU_sBhXSfeo_1Q0-0lMcSnx21bWvUi5hQ
-  network: xhttp
-- name: Igareck Node 005 | .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] YA
   type: vless
   server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x38\x30\x2e\x31\x33"
   port: 443
@@ -69,55 +63,21 @@ proxies:
   reality-opts:
     public-key: DuxQy3KWEZTU_sBhXSfeo_1Q0-0lMcSnx21bWvUi5hQ
   network: xhttp
-- name: Igareck Node 006 | 🇳🇱 The Netherlands | [*CIDR] VK
+  xhttp-opts:
+    host: api-maps.yandex.ru
+- name: Igareck Node 005 | 🇳🇱 The Netherlands | [*CIDR] YA
   type: vless
-  server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x38\x33"
+  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x38\x30\x2e\x31\x33"
   port: 443
-  uuid: "\x38\x30\x66\x37\x62\x36\x63\x37\x2d\x32\x62\x33\x63\x2d\x34\x39\x33\x37\x2d\x61\x66\x39\x65\x2d\x34\x39\x34\x30\x34\x64\x39\x32\x36\x65\x37\x63"
+  uuid: "\x31\x65\x32\x62\x39\x63\x30\x63\x2d\x34\x66\x39\x62\x2d\x35\x36\x66\x35\x2d\x61\x30\x36\x32\x2d\x31\x63\x34\x66\x32\x64\x32\x61\x61\x32\x30\x30"
   udp: true
   tls: true
-  servername: "\x6f\x6e\x6c\x69\x6e\x65\x2e\x77\x79\x72\x65\x2d\x66\x69\x6c\x65\x2e\x72\x75"
-  alpn:
-  - http/1.1
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /nl7ws
-    headers:
-      Host: online.wyre-file.ru
-- name: Igareck Node 007 | 🇳🇱 The Netherlands | [*CIDR] VK
-  type: vless
-  server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x38\x33"
-  port: 443
-  uuid: "\x38\x30\x66\x37\x62\x36\x63\x37\x2d\x32\x62\x33\x63\x2d\x34\x39\x33\x37\x2d\x61\x66\x39\x65\x2d\x34\x39\x34\x30\x34\x64\x39\x32\x36\x65\x37\x63"
-  udp: true
-  tls: true
-  servername: "\x6f\x6e\x6c\x69\x6e\x65\x2e\x77\x79\x72\x65\x2d\x66\x69\x6c\x65\x2e\x72\x75"
-  alpn:
-  - http/1.1
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /nl7ws
-    headers:
-      Host: online.wyre-file.ru
-- name: Igareck Node 008 | 🇳🇱 The Netherlands | [*CIDR] VK
-  type: vless
-  server: "\x6f\x6e\x6c\x69\x6e\x65\x2e\x77\x79\x72\x65\x2d\x66\x69\x6c\x65\x2e\x72\x75"
-  port: 443
-  uuid: "\x38\x30\x66\x37\x62\x36\x63\x37\x2d\x32\x62\x33\x63\x2d\x34\x39\x33\x37\x2d\x61\x66\x39\x65\x2d\x34\x39\x34\x30\x34\x64\x39\x32\x36\x65\x37\x63"
-  udp: true
-  tls: true
-  servername: "\x6f\x6e\x6c\x69\x6e\x65\x2e\x77\x79\x72\x65\x2d\x66\x69\x6c\x65\x2e\x72\x75"
-  alpn:
-  - http/1.1
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /nl7ws
-    headers:
-      Host: online.wyre-file.ru
-- name: Igareck Node 009 | 🇳🇱 The Netherlands | [*CIDR] YA
+  servername: "\x61\x70\x69\x2d\x6d\x61\x70\x73\x2e\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: DuxQy3KWEZTU_sBhXSfeo_1Q0-0lMcSnx21bWvUi5hQ
+  network: xhttp
+- name: Igareck Node 006 | 🇳🇱 The Netherlands | [*CIDR] YA
   type: vless
   server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x38\x30\x2e\x31\x33"
   port: 443
@@ -129,9 +89,7 @@ proxies:
   reality-opts:
     public-key: DuxQy3KWEZTU_sBhXSfeo_1Q0-0lMcSnx21bWvUi5hQ
   network: xhttp
-  xhttp-opts:
-    host: api-maps.yandex.ru
-- name: Igareck Node 010 | 🇳🇱 The Netherlands | [*CIDR] YA
+- name: Igareck Node 007 | 🇳🇱 The Netherlands | [*CIDR] YA
   type: vless
   server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x38\x30\x2e\x31\x33"
   port: 443
@@ -143,9 +101,7 @@ proxies:
   reality-opts:
     public-key: DuxQy3KWEZTU_sBhXSfeo_1Q0-0lMcSnx21bWvUi5hQ
   network: xhttp
-  xhttp-opts:
-    host: api-maps.yandex.ru
-- name: Igareck Node 011 | 🇳🇱 The Netherlands | [*CIDR] YA
+- name: Igareck Node 008 | 🇳🇱 The Netherlands | [*CIDR] YA
   type: vless
   server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x38\x30\x2e\x31\x33"
   port: 443
@@ -153,48 +109,63 @@ proxies:
   udp: true
   tls: true
   servername: "\x61\x70\x69\x2d\x6d\x61\x70\x73\x2e\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
-  client-fingerprint: safari
+  client-fingerprint: qq
   reality-opts:
     public-key: DuxQy3KWEZTU_sBhXSfeo_1Q0-0lMcSnx21bWvUi5hQ
   network: xhttp
-  xhttp-opts:
-    host: api-maps.yandex.ru
-- name: Igareck Node 012 | 🇳🇱 The Netherlands [*CIDR] VK
+- name: Igareck Node 009 | 🇳🇱 The Netherlands | 🌐 [*CIDR] VK
   type: vless
-  server: "\x6f\x6e\x6c\x69\x6e\x65\x2e\x77\x79\x72\x65\x2d\x66\x69\x6c\x65\x2e\x72\x75"
-  port: 443
-  uuid: "\x38\x30\x66\x37\x62\x36\x63\x37\x2d\x32\x62\x33\x63\x2d\x34\x39\x33\x37\x2d\x61\x66\x39\x65\x2d\x34\x39\x34\x30\x34\x64\x39\x32\x36\x65\x37\x63"
+  server: "\x39\x35\x73\x75\x62\x2e\x67\x68\x6f\x73\x74\x2d\x6c\x61\x6e\x2e\x63\x6f\x6d"
+  port: 8444
+  uuid: "\x35\x61\x66\x32\x33\x65\x33\x36\x2d\x36\x32\x62\x37\x2d\x34\x37\x36\x35\x2d\x62\x32\x37\x64\x2d\x65\x64\x30\x37\x30\x66\x30\x35\x33\x35\x65\x64"
   udp: true
+  flow: xtls-rprx-vision
   tls: true
-  servername: "\x6f\x6e\x6c\x69\x6e\x65\x2e\x77\x79\x72\x65\x2d\x66\x69\x6c\x65\x2e\x72\x75"
-  alpn:
-  - http/1.1
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /nl7ws
-    headers:
-      Host: online.wyre-file.ru
-- name: Igareck Node 013 | 🇳🇱 The Netherlands [*CIDR] YA
+  servername: "\x6d\x61\x78\x2e\x72\x75"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: bqLr1d3mbuP10WAYxWj8OEdSuZlVvrywrKq2U6ACw2w
+    short-id: "12b9ecabbf3a3b88"
+  network: tcp
+- name: Igareck Node 010 | 🇳🇱 The Netherlands | 🌐 | [*CIDR] VK
   type: vless
-  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x38\x30\x2e\x31\x33"
-  port: 443
-  uuid: "\x31\x65\x32\x62\x39\x63\x30\x63\x2d\x34\x66\x39\x62\x2d\x35\x36\x66\x35\x2d\x61\x30\x36\x32\x2d\x31\x63\x34\x66\x32\x64\x32\x61\x61\x32\x30\x30"
+  server: "\x39\x35\x73\x75\x62\x2e\x67\x68\x6f\x73\x74\x2d\x6c\x61\x6e\x2e\x63\x6f\x6d"
+  port: 8444
+  uuid: "\x35\x61\x66\x32\x33\x65\x33\x36\x2d\x36\x32\x62\x37\x2d\x34\x37\x36\x35\x2d\x62\x32\x37\x64\x2d\x65\x64\x30\x37\x30\x66\x30\x35\x33\x35\x65\x64"
   udp: true
+  flow: xtls-rprx-vision
   tls: true
-  servername: "\x61\x70\x69\x2d\x6d\x61\x70\x73\x2e\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
+  servername: "\x6d\x61\x78\x2e\x72\x75"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: bqLr1d3mbuP10WAYxWj8OEdSuZlVvrywrKq2U6ACw2w
+    short-id: "12b9ecabbf3a3b88"
+  network: tcp
+- name: Igareck Node 011 | 🇳🇱 The Netherlands | 🌐 | [*CIDR] VK
+  type: vless
+  server: "\x39\x35\x73\x75\x62\x2e\x67\x68\x6f\x73\x74\x2d\x6c\x61\x6e\x2e\x63\x6f\x6d"
+  port: 8444
+  uuid: "\x35\x61\x66\x32\x33\x65\x33\x36\x2d\x36\x32\x62\x37\x2d\x34\x37\x36\x35\x2d\x62\x32\x37\x64\x2d\x65\x64\x30\x37\x30\x66\x30\x35\x33\x35\x65\x64"
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x6d\x61\x78\x2e\x72\x75"
   client-fingerprint: edge
   reality-opts:
-    public-key: DuxQy3KWEZTU_sBhXSfeo_1Q0-0lMcSnx21bWvUi5hQ
-  network: xhttp
-  xhttp-opts:
-    host: api-maps.yandex.ru
-- name: Igareck Node 014 | 🇩🇪 Germany [*CIDR] VK
-  type: hysteria2
-  server: "\x67\x6c\x33\x2e\x63\x72\x79\x70\x6f\x73\x69\x6b\x65\x6c\x2e\x72\x75"
-  port: 443
-  password: 46785352-db89-4839-8079-d4c69ad87996
+    public-key: bqLr1d3mbuP10WAYxWj8OEdSuZlVvrywrKq2U6ACw2w
+    short-id: "12b9ecabbf3a3b88"
+  network: tcp
+- name: Igareck Node 012 | 🇳🇱 The Netherlands | 🌐 | [*CIDR] VK
+  type: vless
+  server: "\x39\x35\x73\x75\x62\x2e\x67\x68\x6f\x73\x74\x2d\x6c\x61\x6e\x2e\x63\x6f\x6d"
+  port: 8444
+  uuid: "\x35\x61\x66\x32\x33\x65\x33\x36\x2d\x36\x32\x62\x37\x2d\x34\x37\x36\x35\x2d\x62\x32\x37\x64\x2d\x65\x64\x30\x37\x30\x66\x30\x35\x33\x35\x65\x64"
   udp: true
-  sni: gl3.cryposikel.ru
-  alpn:
-  - h3
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x6d\x61\x78\x2e\x72\x75"
+  client-fingerprint: ios
+  reality-opts:
+    public-key: bqLr1d3mbuP10WAYxWj8OEdSuZlVvrywrKq2U6ACw2w
+    short-id: "12b9ecabbf3a3b88"
+  network: tcp
