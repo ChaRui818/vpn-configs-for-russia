@@ -3,7 +3,7 @@
 # Источник/Source: WHITE-CIDR-RU-checked.txt
 # 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
 # Количество/Quantity: 14
-# Date/Time: 2026-10-24 / 22:30 (Moscow)
+# Date/Time: 2026-10-25 / 00:32 (Moscow)
 #
 # Режим / Mode:
 # - Автоматический Выбор лучшего прокси / Igareck Auto Select;
@@ -164,7 +164,6 @@ proxies:
     public-key: ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc
   network: xhttp
   xhttp-opts:
-    path: /
     mode: auto
 - name: Igareck Node 002 | 🇨🇾 Cyprus | [*CIDR] VK
   type: vless
@@ -179,7 +178,6 @@ proxies:
     public-key: ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc
   network: xhttp
   xhttp-opts:
-    path: /
     mode: auto
 - name: Igareck Node 003 | 🇺🇸 United States | [*CIDR] VK
   type: vless
@@ -231,44 +229,6 @@ proxies:
       Host: deliverya.online
 - name: Igareck Node 006 | 🇺🇸 United States | [*CIDR] VK
   type: vless
-  server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x34\x32"
-  port: 443
-  uuid: "\x63\x38\x62\x33\x63\x31\x64\x37\x2d\x34\x32\x39\x34\x2d\x34\x66\x33\x30\x2d\x39\x65\x35\x62\x2d\x65\x34\x36\x39\x33\x62\x36\x34\x64\x35\x31\x38"
-  udp: true
-  tls: true
-  servername: "\x64\x65\x6c\x69\x76\x65\x72\x79\x61\x2e\x6f\x6e\x6c\x69\x6e\x65"
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /adrws
-    headers:
-      Host: deliverya.online
-- name: Igareck Node 007 | 🇺🇸 United States | [*CIDR] VK
-  type: vless
-  server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x34\x32"
-  port: 443
-  uuid: "\x63\x38\x62\x33\x63\x31\x64\x37\x2d\x34\x32\x39\x34\x2d\x34\x66\x33\x30\x2d\x39\x65\x35\x62\x2d\x65\x34\x36\x39\x33\x62\x36\x34\x64\x35\x31\x38"
-  udp: true
-  tls: true
-  servername: "\x64\x65\x6c\x69\x76\x65\x72\x79\x61\x2e\x6f\x6e\x6c\x69\x6e\x65"
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /adrws
-- name: Igareck Node 008 | 🇺🇸 United States | [*CIDR] VK
-  type: vless
-  server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x34\x32"
-  port: 443
-  uuid: "\x63\x38\x62\x33\x63\x31\x64\x37\x2d\x34\x32\x39\x34\x2d\x34\x66\x33\x30\x2d\x39\x65\x35\x62\x2d\x65\x34\x36\x39\x33\x62\x36\x34\x64\x35\x31\x38"
-  udp: true
-  tls: true
-  servername: "\x64\x65\x6c\x69\x76\x65\x72\x79\x61\x2e\x6f\x6e\x6c\x69\x6e\x65"
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /adrws
-- name: Igareck Node 009 | 🇺🇸 United States | [*CIDR] VK
-  type: vless
   server: "\x64\x65\x6c\x69\x76\x65\x72\x79\x61\x2e\x6f\x6e\x6c\x69\x6e\x65"
   port: 443
   uuid: "\x63\x38\x62\x33\x63\x31\x64\x37\x2d\x34\x32\x39\x34\x2d\x34\x66\x33\x30\x2d\x39\x65\x35\x62\x2d\x65\x34\x36\x39\x33\x62\x36\x34\x64\x35\x31\x38"
@@ -283,7 +243,23 @@ proxies:
     path: /adrws
     headers:
       Host: deliverya.online
-- name: Igareck Node 010 | 🇺🇸 United States [*CIDR] VK
+- name: Igareck Node 007 | 🇺🇸 United States | [*CIDR] VK
+  type: vless
+  server: "\x64\x65\x6c\x69\x76\x65\x72\x79\x61\x2e\x6f\x6e\x6c\x69\x6e\x65"
+  port: 443
+  uuid: "\x63\x38\x62\x33\x63\x31\x64\x37\x2d\x34\x32\x39\x34\x2d\x34\x66\x33\x30\x2d\x39\x65\x35\x62\x2d\x65\x34\x36\x39\x33\x62\x36\x34\x64\x35\x31\x38"
+  udp: true
+  tls: true
+  servername: "\x64\x65\x6c\x69\x76\x65\x72\x79\x61\x2e\x6f\x6e\x6c\x69\x6e\x65"
+  alpn:
+  - http/1.1
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /adrws
+    headers:
+      Host: deliverya.online
+- name: Igareck Node 008 | 🇺🇸 United States [*CIDR] VK
   type: vless
   server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x34\x32"
   port: 443
@@ -299,7 +275,21 @@ proxies:
     path: /adrws
     headers:
       Host: deliverya.online
-- name: Igareck Node 011 | 🇺🇸 United States [*CIDR] VK
+- name: Igareck Node 009 | 🇺🇸 United States [*CIDR] VK
+  type: vless
+  server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x34\x32"
+  port: 443
+  uuid: "\x63\x38\x62\x33\x63\x31\x64\x37\x2d\x34\x32\x39\x34\x2d\x34\x66\x33\x30\x2d\x39\x65\x35\x62\x2d\x65\x34\x36\x39\x33\x62\x36\x34\x64\x35\x31\x38"
+  udp: true
+  tls: true
+  servername: "\x64\x65\x6c\x69\x76\x65\x72\x79\x61\x2e\x6f\x6e\x6c\x69\x6e\x65"
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /adrws
+    headers:
+      Host: deliverya.online
+- name: Igareck Node 010 | 🇺🇸 United States [*CIDR] VK
   type: vless
   server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x34\x32"
   port: 443
@@ -313,7 +303,31 @@ proxies:
     path: /adrws
     headers:
       Host: deliverya.online
+- name: Igareck Node 011 | 🇺🇸 United States [*CIDR] VK
+  type: vless
+  server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x34\x32"
+  port: 443
+  uuid: "\x63\x38\x62\x33\x63\x31\x64\x37\x2d\x34\x32\x39\x34\x2d\x34\x66\x33\x30\x2d\x39\x65\x35\x62\x2d\x65\x34\x36\x39\x33\x62\x36\x34\x64\x35\x31\x38"
+  udp: true
+  tls: true
+  servername: "\x64\x65\x6c\x69\x76\x65\x72\x79\x61\x2e\x6f\x6e\x6c\x69\x6e\x65"
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /adrws
 - name: Igareck Node 012 | 🇺🇸 United States [*CIDR] VK
+  type: vless
+  server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x35\x2e\x31\x34\x32"
+  port: 443
+  uuid: "\x63\x38\x62\x33\x63\x31\x64\x37\x2d\x34\x32\x39\x34\x2d\x34\x66\x33\x30\x2d\x39\x65\x35\x62\x2d\x65\x34\x36\x39\x33\x62\x36\x34\x64\x35\x31\x38"
+  udp: true
+  tls: true
+  servername: "\x64\x65\x6c\x69\x76\x65\x72\x79\x61\x2e\x6f\x6e\x6c\x69\x6e\x65"
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /adrws
+- name: Igareck Node 013 | 🇺🇸 United States [*CIDR] VK
   type: vless
   server: "\x64\x65\x6c\x69\x76\x65\x72\x79\x61\x2e\x6f\x6e\x6c\x69\x6e\x65"
   port: 443
@@ -329,22 +343,6 @@ proxies:
     path: /adrws
     headers:
       Host: deliverya.online
-- name: Igareck Node 013 | 🇺🇸 United States [*CIDR] VK
-  type: vless
-  server: "\x64\x65\x6c\x69\x76\x65\x72\x79\x61\x2e\x6f\x6e\x6c\x69\x6e\x65"
-  port: 443
-  uuid: "\x63\x38\x62\x33\x63\x31\x64\x37\x2d\x34\x32\x39\x34\x2d\x34\x66\x33\x30\x2d\x39\x65\x35\x62\x2d\x65\x34\x36\x39\x33\x62\x36\x34\x64\x35\x31\x38"
-  udp: true
-  tls: true
-  servername: "\x64\x65\x6c\x69\x76\x65\x72\x79\x61\x2e\x6f\x6e\x6c\x69\x6e\x65"
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /adrws
-    headers:
-      Host: deliverya.online
 - name: Igareck Node 014 | 🇺🇸 United States [*CIDR] VK
   type: vless
   server: "\x64\x65\x6c\x69\x76\x65\x72\x79\x61\x2e\x6f\x6e\x6c\x69\x6e\x65"
@@ -355,7 +353,7 @@ proxies:
   servername: "\x64\x65\x6c\x69\x76\x65\x72\x79\x61\x2e\x6f\x6e\x6c\x69\x6e\x65"
   alpn:
   - http/1.1
-  client-fingerprint: ios
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /adrws
