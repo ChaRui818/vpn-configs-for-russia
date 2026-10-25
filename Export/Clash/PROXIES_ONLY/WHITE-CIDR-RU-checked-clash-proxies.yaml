@@ -2,14 +2,60 @@
 # Igareck Mihomo Subscription
 # Источник/Source: WHITE-CIDR-RU-checked.txt
 # 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
-# Количество/Quantity: 13
-# Date/Time: 2026-10-26 / 00:42 (Moscow)
+# Количество/Quantity: 18
+# Date/Time: 2026-10-26 / 02:39 (Moscow)
 #
 # Не содержит никаких настроек, только список прокси / No settings, just proxies list;
 # ============================================================
 
 proxies:
-- name: Igareck Node 001 | 🇨🇾 Cyprus [*CIDR] VK
+- name: Igareck Node 001 | 🇧🇬 Bulgaria | 🌐 [*CIDR] CDN
+  type: vless
+  server: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  port: 8443
+  uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
+  udp: true
+  tls: true
+  servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  alpn:
+  - http/1.1
+  - h2
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: flatcrest.net
+    mode: auto
+- name: Igareck Node 002 | 🇧🇬 Bulgaria [*CIDR] CDN
+  type: vless
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
+  port: 8443
+  uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
+  udp: true
+  tls: true
+  servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  alpn:
+  - http/1.1
+  - h2
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: flatcrest.net
+    mode: auto
+- name: Igareck Node 003 | 🇨🇾 Cyprus [*CIDR] VK
+  type: vless
+  server: "\x38\x39\x2e\x32\x30\x38\x2e\x32\x31\x30\x2e\x35\x33"
+  port: 19133
+  uuid: "\x36\x39\x31\x35\x38\x39\x38\x36\x2d\x63\x66\x61\x65\x2d\x34\x35\x36\x37\x2d\x38\x33\x39\x31\x2d\x30\x66\x39\x36\x64\x39\x64\x39\x38\x35\x62\x64"
+  udp: true
+  tls: true
+  servername: "\x6d\x75\x73\x69\x63\x2e\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc
+  network: xhttp
+- name: Igareck Node 004 | 🇨🇾 Cyprus [*CIDR] VK
   type: vless
   server: "\x38\x39\x2e\x32\x30\x38\x2e\x32\x31\x30\x2e\x35\x33"
   port: 19133
@@ -21,7 +67,31 @@ proxies:
   reality-opts:
     public-key: ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc
   network: xhttp
-- name: Igareck Node 002 | 🇨🇾 Cyprus [*CIDR] VK
+- name: Igareck Node 005 | 🇨🇾 Cyprus [*CIDR] VK
+  type: vless
+  server: "\x38\x39\x2e\x32\x30\x38\x2e\x32\x31\x30\x2e\x35\x33"
+  port: 19133
+  uuid: "\x36\x39\x31\x35\x38\x39\x38\x36\x2d\x63\x66\x61\x65\x2d\x34\x35\x36\x37\x2d\x38\x33\x39\x31\x2d\x30\x66\x39\x36\x64\x39\x64\x39\x38\x35\x62\x64"
+  udp: true
+  tls: true
+  servername: "\x6d\x75\x73\x69\x63\x2e\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: ios
+  reality-opts:
+    public-key: ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc
+  network: xhttp
+- name: Igareck Node 006 | 🇨🇾 Cyprus [*CIDR] VK
+  type: vless
+  server: "\x38\x39\x2e\x32\x30\x38\x2e\x32\x31\x30\x2e\x35\x33"
+  port: 19133
+  uuid: "\x36\x39\x31\x35\x38\x39\x38\x36\x2d\x63\x66\x61\x65\x2d\x34\x35\x36\x37\x2d\x38\x33\x39\x31\x2d\x30\x66\x39\x36\x64\x39\x64\x39\x38\x35\x62\x64"
+  udp: true
+  tls: true
+  servername: "\x6d\x75\x73\x69\x63\x2e\x61\x70\x70\x6c\x65\x2e\x63\x6f\x6d"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc
+  network: xhttp
+- name: Igareck Node 007 | 🇨🇾 Cyprus [*CIDR] VK
   type: vless
   server: "\x38\x39\x2e\x32\x30\x38\x2e\x32\x31\x30\x2e\x35\x33"
   port: 19133
@@ -33,7 +103,7 @@ proxies:
   reality-opts:
     public-key: ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc
   network: xhttp
-- name: Igareck Node 003 | 🇨🇾 Cyprus [*CIDR] VK
+- name: Igareck Node 008 | 🇨🇾 Cyprus [*CIDR] VK
   type: vless
   server: "\x72\x6f\x75\x74\x65\x72\x2e\x68\x65\x72\x6d\x69\x74\x2e\x70\x77"
   port: 19133
@@ -49,7 +119,7 @@ proxies:
   xhttp-opts:
     path: /
     mode: auto
-- name: Igareck Node 004 | 🇨🇾 Cyprus [*CIDR] VK
+- name: Igareck Node 009 | 🇨🇾 Cyprus [*CIDR] VK
   type: vless
   server: "\x72\x6f\x75\x74\x65\x72\x2e\x68\x65\x72\x6d\x69\x74\x2e\x70\x77"
   port: 19133
@@ -64,7 +134,7 @@ proxies:
   xhttp-opts:
     path: /
     mode: auto
-- name: Igareck Node 005 | 🇨🇾 Cyprus [*CIDR] VK
+- name: Igareck Node 010 | 🇨🇾 Cyprus [*CIDR] VK
   type: vless
   server: "\x72\x6f\x75\x74\x65\x72\x2e\x68\x65\x72\x6d\x69\x74\x2e\x70\x77"
   port: 19133
@@ -80,7 +150,7 @@ proxies:
   xhttp-opts:
     path: /
     mode: auto
-- name: Igareck Node 006 | 🇨🇾 Cyprus [*CIDR] VK
+- name: Igareck Node 011 | 🇨🇾 Cyprus [*CIDR] VK
   type: vless
   server: "\x72\x6f\x75\x74\x65\x72\x2e\x68\x65\x72\x6d\x69\x74\x2e\x70\x77"
   port: 19133
@@ -96,7 +166,7 @@ proxies:
   xhttp-opts:
     path: /
     mode: auto
-- name: Igareck Node 007 | 🇨🇾 Cyprus [*CIDR] VK
+- name: Igareck Node 012 | 🇨🇾 Cyprus [*CIDR] VK
   type: vless
   server: "\x72\x6f\x75\x74\x65\x72\x2e\x68\x65\x72\x6d\x69\x74\x2e\x70\x77"
   port: 19133
@@ -111,7 +181,7 @@ proxies:
   xhttp-opts:
     path: /
     mode: auto
-- name: Igareck Node 008 | 🇨🇾 Cyprus [*CIDR] VK
+- name: Igareck Node 013 | 🇨🇾 Cyprus [*CIDR] VK
   type: vless
   server: "\x72\x6f\x75\x74\x65\x72\x2e\x68\x65\x72\x6d\x69\x74\x2e\x70\x77"
   port: 19133
@@ -126,7 +196,7 @@ proxies:
   network: xhttp
   xhttp-opts:
     mode: auto
-- name: Igareck Node 009 | 🇫🇮 Finland [*CIDR] YA
+- name: Igareck Node 014 | 🇫🇮 Finland [*CIDR] YA
   type: vless
   server: "\x31\x35\x38\x2e\x31\x36\x30\x2e\x32\x34\x33\x2e\x34\x36"
   port: 443
@@ -140,7 +210,7 @@ proxies:
     public-key: y3dqCRYQO7GM7DIdQRG1uDjBNRK2vyXd8RJL160WZz4
     short-id: "8a1f9479"
   network: tcp
-- name: Igareck Node 010 | 🇫🇮 Finland [*CIDR] YA
+- name: Igareck Node 015 | 🇫🇮 Finland [*CIDR] YA
   type: vless
   server: "\x31\x35\x38\x2e\x31\x36\x30\x2e\x32\x34\x33\x2e\x34\x36"
   port: 443
@@ -149,26 +219,29 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   servername: "\x72\x75\x74\x75\x62\x65\x2e\x72\x75"
+  client-fingerprint: ios
+  reality-opts:
+    public-key: y3dqCRYQO7GM7DIdQRG1uDjBNRK2vyXd8RJL160WZz4
+    short-id: "8a1f9479"
+  network: tcp
+- name: Igareck Node 016 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
+  type: vless
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
+  port: 2053
+  uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
+  udp: true
+  tls: true
+  servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  alpn:
+  - http/1.1
+  - h2
   client-fingerprint: firefox
-  reality-opts:
-    public-key: y3dqCRYQO7GM7DIdQRG1uDjBNRK2vyXd8RJL160WZz4
-    short-id: "8a1f9479"
-  network: tcp
-- name: Igareck Node 011 | 🇫🇮 Finland [*CIDR] YA
-  type: vless
-  server: "\x31\x35\x38\x2e\x31\x36\x30\x2e\x32\x34\x33\x2e\x34\x36"
-  port: 443
-  uuid: "\x30\x34\x37\x37\x65\x38\x37\x39\x2d\x66\x32\x61\x37\x2d\x34\x62\x37\x36\x2d\x61\x61\x32\x39\x2d\x32\x38\x66\x33\x36\x62\x34\x35\x64\x34\x62\x36"
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: "\x72\x75\x74\x75\x62\x65\x2e\x72\x75"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: y3dqCRYQO7GM7DIdQRG1uDjBNRK2vyXd8RJL160WZz4
-    short-id: "8a1f9479"
-  network: tcp
-- name: Igareck Node 012 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: flatcrest.net
+    mode: auto
+- name: Igareck Node 017 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
   server: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
   port: 2053
@@ -185,7 +258,7 @@ proxies:
     path: /api/v1/upload
     host: flatcrest.net
     mode: auto
-- name: Igareck Node 013 | 🇷🇺 Russia | [*CIDR] YA
+- name: Igareck Node 018 | 🇷🇺 Russia | [*CIDR] YA
   type: vmess
   server: "\x31\x35\x38\x2e\x31\x36\x30\x2e\x31\x38\x30\x2e\x31\x36\x35"
   port: 24212
