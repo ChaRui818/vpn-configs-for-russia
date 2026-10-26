@@ -3,12 +3,12 @@
     "name": "WHITE-CIDR-RU-checked — Happ Auto Select GLOBAL",
     "generator": "Igareck GitHub",
     "notes": [
-      "18 proxies",
+      "21 proxies",
       "Interval is 5 minutes + leastPing + routing GLOBAL."
     ],
     "client": "Happ",
     "source": "WHITE-CIDR-RU-checked.txt",
-    "source_datetime": "2026-10-26 02:39 Moscow"
+    "source_datetime": "2026-10-26 05:21 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -452,7 +452,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "flatcrest.net",
+            "address": "37.18.14.43",
             "port": 8443,
             "users": [
               {
@@ -491,7 +491,52 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.18.14.43",
+            "address": "flatcrest.net",
+            "port": 8443,
+            "users": [
+              {
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto",
+          "extra": {
+            "xmux": {
+              "cMaxReuseTimes": "64-128",
+              "maxConcurrency": "16-32",
+              "maxConnections": 0
+            },
+            "xPaddingBytes": "100-1000",
+            "scMaxEachPostBytes": 1000000,
+            "scMinPostsIntervalMs": 30
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "flatcrest.net",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-003",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "flatcrest.net",
             "port": 8443,
             "users": [
               {
@@ -525,40 +570,6 @@
       }
     },
     {
-      "tag": "igareck-node-003",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "89.208.210.53",
-            "port": 19133,
-            "users": [
-              {
-                "id": "69158986-cfae-4567-8391-0f96d9d985bd",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "music.apple.com",
-          "fingerprint": "chrome",
-          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc"
-        }
-      }
-    },
-    {
       "tag": "igareck-node-004",
       "protocol": "vless",
       "settings": {
@@ -587,7 +598,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "music.apple.com",
-          "fingerprint": "firefox",
+          "fingerprint": "chrome",
           "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc"
         }
       }
@@ -621,7 +632,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "music.apple.com",
-          "fingerprint": "ios",
+          "fingerprint": "firefox",
           "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc"
         }
       }
@@ -655,7 +666,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "music.apple.com",
-          "fingerprint": "qq",
+          "fingerprint": "ios",
           "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc"
         }
       }
@@ -689,7 +700,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "music.apple.com",
-          "fingerprint": "safari",
+          "fingerprint": "qq",
           "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc"
         }
       }
@@ -700,7 +711,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "router.hermit.pw",
+            "address": "89.208.210.53",
             "port": 19133,
             "users": [
               {
@@ -718,15 +729,13 @@
           "tcpKeepAliveInterval": 60
         },
         "xhttpSettings": {
-          "path": "/",
-          "mode": "auto"
+          "path": "/"
         },
         "security": "reality",
         "realitySettings": {
           "serverName": "music.apple.com",
-          "fingerprint": "ios",
-          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc",
-          "shortId": "10a59b0a94367ac2"
+          "fingerprint": "safari",
+          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc"
         }
       }
     },
@@ -760,8 +769,9 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "music.apple.com",
-          "fingerprint": "firefox",
-          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc"
+          "fingerprint": "chrome",
+          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc",
+          "shortId": "10a59b0a94367ac2"
         }
       }
     },
@@ -795,7 +805,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "music.apple.com",
-          "fingerprint": "chrome",
+          "fingerprint": "firefox",
           "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc",
           "shortId": "10a59b0a94367ac2"
         }
@@ -831,7 +841,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "music.apple.com",
-          "fingerprint": "safari",
+          "fingerprint": "ios",
           "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc",
           "shortId": "10a59b0a94367ac2"
         }
@@ -867,7 +877,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "music.apple.com",
-          "fingerprint": "chrome",
+          "fingerprint": "ios",
           "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc"
         }
       }
@@ -903,8 +913,7 @@
         "realitySettings": {
           "serverName": "music.apple.com",
           "fingerprint": "firefox",
-          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc",
-          "shortId": "10a59b0a94367ac2"
+          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc"
         }
       }
     },
@@ -914,36 +923,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "158.160.243.46",
-            "port": 443,
+            "address": "router.hermit.pw",
+            "port": 19133,
             "users": [
               {
-                "id": "0477e879-f2a7-4b76-aa29-28f36b45d4b6",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "69158986-cfae-4567-8391-0f96d9d985bd",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/",
+          "mode": "auto"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "rutube.ru",
-          "fingerprint": "chrome",
-          "publicKey": "y3dqCRYQO7GM7DIdQRG1uDjBNRK2vyXd8RJL160WZz4",
-          "shortId": "8a1f9479"
+          "serverName": "music.apple.com",
+          "fingerprint": "safari",
+          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc",
+          "shortId": "10a59b0a94367ac2"
         }
       }
     },
@@ -953,41 +959,72 @@
       "settings": {
         "vnext": [
           {
-            "address": "158.160.243.46",
-            "port": 443,
+            "address": "router.hermit.pw",
+            "port": 19133,
             "users": [
               {
-                "id": "0477e879-f2a7-4b76-aa29-28f36b45d4b6",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "69158986-cfae-4567-8391-0f96d9d985bd",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/",
+          "mode": "auto"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "rutube.ru",
-          "fingerprint": "ios",
-          "publicKey": "y3dqCRYQO7GM7DIdQRG1uDjBNRK2vyXd8RJL160WZz4",
-          "shortId": "8a1f9479"
+          "serverName": "music.apple.com",
+          "fingerprint": "chrome",
+          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc"
         }
       }
     },
     {
       "tag": "igareck-node-016",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "router.hermit.pw",
+            "port": 19133,
+            "users": [
+              {
+                "id": "69158986-cfae-4567-8391-0f96d9d985bd",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/",
+          "mode": "auto"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "music.apple.com",
+          "fingerprint": "safari",
+          "publicKey": "ud15DX-emDBS7QsLMabJ7CjgIteK61jxwSp1v0Fewxc"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-017",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1012,7 +1049,46 @@
         "xhttpSettings": {
           "path": "/api/v1/upload",
           "host": "flatcrest.net",
-          "mode": "auto"
+          "mode": "auto",
+          "extra": {
+            "host": "",
+            "path": "",
+            "mode": "",
+            "headers": null,
+            "xPaddingBytes": "100-1000",
+            "xPaddingObfsMode": false,
+            "xPaddingKey": "",
+            "xPaddingHeader": "",
+            "xPaddingPlacement": "",
+            "xPaddingMethod": "",
+            "uplinkHTTPMethod": "",
+            "sessionIDPlacement": "",
+            "sessionIDKey": "",
+            "sessionIDTable": "",
+            "sessionIDLength": "0",
+            "seqPlacement": "",
+            "seqKey": "",
+            "uplinkDataPlacement": "",
+            "uplinkDataKey": "",
+            "uplinkChunkSize": "0",
+            "noGRPCHeader": false,
+            "noSSEHeader": false,
+            "scMaxEachPostBytes": "1000000",
+            "scMinPostsIntervalMs": "30",
+            "scMaxBufferedPosts": 0,
+            "scStreamUpServerSecs": "0",
+            "serverMaxHeaderBytes": 0,
+            "xmux": {
+              "maxConcurrency": "16-32",
+              "maxConnections": "0",
+              "cMaxReuseTimes": "64-128",
+              "hMaxRequestTimes": "0",
+              "hMaxReusableSecs": "0",
+              "hKeepAlivePeriod": 0
+            },
+            "downloadSettings": null,
+            "extra": null
+          }
         },
         "security": "tls",
         "tlsSettings": {
@@ -1026,7 +1102,126 @@
       }
     },
     {
-      "tag": "igareck-node-017",
+      "tag": "igareck-node-018",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "37.18.14.43",
+            "port": 2053,
+            "users": [
+              {
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto",
+          "extra": {
+            "host": "",
+            "path": "",
+            "mode": "",
+            "headers": null,
+            "xPaddingBytes": "100-1000",
+            "xPaddingObfsMode": false,
+            "xPaddingKey": "",
+            "xPaddingHeader": "",
+            "xPaddingPlacement": "",
+            "xPaddingMethod": "",
+            "uplinkHTTPMethod": "",
+            "sessionIDPlacement": "",
+            "sessionIDKey": "",
+            "sessionIDTable": "",
+            "sessionIDLength": "0",
+            "seqPlacement": "",
+            "seqKey": "",
+            "uplinkDataPlacement": "",
+            "uplinkDataKey": "",
+            "uplinkChunkSize": "0",
+            "noGRPCHeader": false,
+            "noSSEHeader": false,
+            "scMaxEachPostBytes": "1000000",
+            "scMinPostsIntervalMs": "30",
+            "scMaxBufferedPosts": 0,
+            "scStreamUpServerSecs": "0",
+            "serverMaxHeaderBytes": 0,
+            "xmux": {
+              "maxConcurrency": "16-32",
+              "maxConnections": "0",
+              "cMaxReuseTimes": "64-128",
+              "hMaxRequestTimes": "0",
+              "hMaxReusableSecs": "0",
+              "hKeepAlivePeriod": 0
+            },
+            "downloadSettings": null,
+            "extra": null
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "flatcrest.net",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-019",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "flatcrest.net",
+            "port": 2053,
+            "users": [
+              {
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto",
+          "extra": {
+            "xmux": {
+              "cMaxReuseTimes": "64-128",
+              "maxConcurrency": "16-32",
+              "maxConnections": 0
+            },
+            "xPaddingBytes": "100-1000",
+            "scMaxEachPostBytes": 1000000,
+            "scMinPostsIntervalMs": 30
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "flatcrest.net",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-020",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1065,7 +1260,7 @@
       }
     },
     {
-      "tag": "igareck-node-018",
+      "tag": "igareck-node-021",
       "protocol": "vmess",
       "settings": {
         "vnext": [
