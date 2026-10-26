@@ -115,7 +115,7 @@
             "port": 443,
             "users": [
               {
-                "id": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+                "id": "f23bb427c1f94373876c2f43e9f790f3",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -172,9 +172,7 @@
           }
         },
         "security": "tls",
-        "tlsSettings": {
-          "serverName": "6JDvArazgU3qQR6Q.v.3dns.vip"
-        }
+        "tlsSettings": {}
       }
     },
     {
@@ -183,11 +181,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "39.108.113.127",
-            "port": 10086,
+            "address": "47.250.135.244",
+            "port": 10000,
             "users": [
               {
-                "id": "2eb25c1e-c3b5-45cf-9afd-dd3ddc00da10",
+                "id": "aedc66b8-99d7-4a21-8310-61870e7f870d",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -196,14 +194,15 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/",
-          "headers": {}
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       }
     },
@@ -243,7 +242,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "nycqg19zkwacpm1b.v.3dns.vip",
+            "address": "20.235.220.189",
             "port": 443,
             "users": [
               {
@@ -267,190 +266,14 @@
           "headers": {}
         },
         "security": "tls",
-        "tlsSettings": {}
+        "tlsSettings": {
+          "serverName": "6JDvArazgU3qQR6Q.v.3dns.vip",
+          "fingerprint": "random"
+        }
       }
     },
     {
       "tag": "igareck-node-006",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "nycqg19zkwacpm1b.v.3dns.vip",
-            "port": 443,
-            "users": [
-              {
-                "id": "f23bb427c1f94373876c2f43e9f790f3",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/ws-vmess",
-          "headers": {
-            "Host": "NYcQg19zkwaCPM1B.v.3dns.vip"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "NYcQg19zkwaCPM1B.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-007",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "qtkdr8jxe3wefxjm.v.3dns.vip",
-            "port": 443,
-            "users": [
-              {
-                "id": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/ws-vmess",
-          "headers": {}
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "qtkdr8jxe3wefxjm.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-008",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "qtkdr8jxe3wefxjm.v.3dns.vip",
-            "port": 443,
-            "users": [
-              {
-                "id": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/ws-vmess",
-          "headers": {
-            "Host": "qTKDR8jXE3wEFxJM.v.3dns.vip"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "qtkdr8jxe3wefxjm.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-009",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "qtkdr8jxe3wefxjm.v.3dns.vip",
-            "port": 443,
-            "users": [
-              {
-                "id": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/ws-vmess",
-          "headers": {
-            "Host": "qTKDR8jXE3wEFxJM.v.3dns.vip"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {}
-      }
-    },
-    {
-      "tag": "igareck-node-010",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "qtkdr8jxe3wefxjm.v.3dns.vip",
-            "port": 443,
-            "users": [
-              {
-                "id": "f23bb427c1f94373876c2f43e9f790f3",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/ws-vmess",
-          "headers": {}
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "qtkdr8jxe3wefxjm.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-011",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -485,82 +308,12 @@
       }
     },
     {
-      "tag": "igareck-node-012",
+      "tag": "igareck-node-007",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "47.243.194.125",
-            "port": 443,
-            "users": [
-              {
-                "id": "f23bb427c1f94373876c2f43e9f790f3",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/ws-vmess",
-          "headers": {
-            "Host": "nycqg19zkwacpm1b.v.3dns.vip"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {}
-      }
-    },
-    {
-      "tag": "igareck-node-013",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "8.217.13.103",
-            "port": 443,
-            "users": [
-              {
-                "id": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/ws-vmess",
-          "headers": {
-            "Host": "qtkdr8jxe3wefxjm.v.3dns.vip"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {}
-      }
-    },
-    {
-      "tag": "igareck-node-014",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "20.235.220.189",
+            "address": "8.217.254.88",
             "port": 443,
             "users": [
               {
@@ -585,12 +338,83 @@
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "6JDvArazgU3qQR6Q.v.3dns.vip"
+          "serverName": "2b9hwy8ocx7q74nm.v.3dns.vip",
+          "fingerprint": "firefox"
         }
       }
     },
     {
-      "tag": "igareck-node-015",
+      "tag": "igareck-node-008",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8.217.254.88",
+            "port": 443,
+            "users": [
+              {
+                "id": "f23bb427c1f94373876c2f43e9f790f3",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/ws-vmess",
+          "headers": {
+            "Host": "2b9hwY8oCx7Q74NM.v.3dns.vip"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {}
+      }
+    },
+    {
+      "tag": "igareck-node-009",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8.217.254.88",
+            "port": 443,
+            "users": [
+              {
+                "id": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/ws-vmess",
+          "headers": {
+            "Host": "2b9hwy8ocx7q74nm.v.3dns.vip"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {}
+      }
+    },
+    {
+      "tag": "igareck-node-010",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -627,16 +451,16 @@
       }
     },
     {
-      "tag": "igareck-node-016",
+      "tag": "igareck-node-011",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "20.235.220.189",
+            "address": "2b9hwy8ocx7q74nm.v.3dns.vip",
             "port": 443,
             "users": [
               {
-                "id": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+                "id": "f23bb427c1f94373876c2f43e9f790f3",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -654,23 +478,85 @@
         "wsSettings": {
           "path": "/ws-vmess",
           "headers": {
-            "Host": "6JDvArazgU3qQR6Q.v.3dns.vip"
+            "Host": "2b9hwy8ocx7q74nm.v.3dns.vip"
           }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "6JDvArazgU3qQR6Q.v.3dns.vip",
-          "fingerprint": "random"
+          "serverName": "2b9hwy8ocx7q74nm.v.3dns.vip"
         }
       }
     },
     {
-      "tag": "igareck-node-017",
+      "tag": "igareck-node-012",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "47.250.135.244",
+            "port": 10000,
+            "users": [
+              {
+                "id": "aedc66b8-99d7-4a21-8310-61870e7f870d",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-013",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.147.222",
+            "port": 80,
+            "users": [
+              {
+                "id": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/ws",
+          "headers": {
+            "Host": "vmess.lbw666.dpdns.org"
+          }
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-014",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "45.80.111.7",
+            "address": "141.193.213.172",
             "port": 443,
             "password": "humanity"
           }
@@ -685,7 +571,41 @@
         },
         "wsSettings": {
           "path": "/assignment",
-          "headers": {}
+          "headers": {
+            "Host": "www.calmlunch.com"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.calmlunch.com",
+          "fingerprint": "android"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-015",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "141.193.213.172",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/assignment",
+          "headers": {
+            "Host": "www.calmlunch.com"
+          }
         },
         "security": "tls",
         "tlsSettings": {
@@ -695,12 +615,12 @@
       }
     },
     {
-      "tag": "igareck-node-018",
+      "tag": "igareck-node-016",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "45.80.111.7",
+            "address": "141.193.213.172",
             "port": 443,
             "password": "humanity"
           }
@@ -715,12 +635,78 @@
         },
         "wsSettings": {
           "path": "/assignment",
-          "headers": {}
+          "headers": {
+            "Host": "www.calmlunch.com"
+          }
         },
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.calmlunch.com",
-          "fingerprint": "safari"
+          "fingerprint": "edge"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-017",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "141.193.213.172",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/assignment",
+          "headers": {
+            "Host": "www.calmlunch.com"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.calmlunch.com",
+          "fingerprint": "ios"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-018",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "141.193.213.172",
+            "port": 443,
+            "password": "humanity"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/assignment",
+          "headers": {
+            "Host": "www.calmlunch.com"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.calmlunch.com",
+          "fingerprint": "qq"
         }
       }
     },
@@ -752,7 +738,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.calmlunch.com",
-          "fingerprint": "android"
+          "fingerprint": "safari"
         }
       }
     },
@@ -762,7 +748,7 @@
       "settings": {
         "servers": [
           {
-            "address": "141.193.213.172",
+            "address": "45.80.111.7",
             "port": 443,
             "password": "humanity"
           }
@@ -777,14 +763,12 @@
         },
         "wsSettings": {
           "path": "/assignment",
-          "headers": {
-            "Host": "www.calmlunch.com"
-          }
+          "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.calmlunch.com",
-          "fingerprint": "chrome"
+          "fingerprint": "android"
         }
       }
     },
@@ -794,7 +778,7 @@
       "settings": {
         "servers": [
           {
-            "address": "141.193.213.172",
+            "address": "45.80.111.7",
             "port": 443,
             "password": "humanity"
           }
@@ -809,14 +793,12 @@
         },
         "wsSettings": {
           "path": "/assignment",
-          "headers": {
-            "Host": "www.calmlunch.com"
-          }
+          "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.calmlunch.com",
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         }
       }
     },
@@ -826,7 +808,7 @@
       "settings": {
         "servers": [
           {
-            "address": "141.193.213.172",
+            "address": "45.80.111.7",
             "port": 443,
             "password": "humanity"
           }
@@ -841,14 +823,12 @@
         },
         "wsSettings": {
           "path": "/assignment",
-          "headers": {
-            "Host": "www.calmlunch.com"
-          }
+          "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.calmlunch.com",
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         }
       }
     },
@@ -858,7 +838,7 @@
       "settings": {
         "servers": [
           {
-            "address": "141.193.213.172",
+            "address": "45.80.111.7",
             "port": 443,
             "password": "humanity"
           }
@@ -873,14 +853,12 @@
         },
         "wsSettings": {
           "path": "/assignment",
-          "headers": {
-            "Host": "www.calmlunch.com"
-          }
+          "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.calmlunch.com",
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -890,7 +868,7 @@
       "settings": {
         "servers": [
           {
-            "address": "141.193.213.172",
+            "address": "45.80.111.7",
             "port": 443,
             "password": "humanity"
           }
@@ -905,14 +883,12 @@
         },
         "wsSettings": {
           "path": "/assignment",
-          "headers": {
-            "Host": "www.calmlunch.com"
-          }
+          "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.calmlunch.com",
-          "fingerprint": "qq"
+          "fingerprint": "ios"
         }
       }
     },
@@ -942,7 +918,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.calmlunch.com",
-          "fingerprint": "android"
+          "fingerprint": "qq"
         }
       }
     },
@@ -972,7 +948,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.calmlunch.com",
-          "fingerprint": "edge"
+          "fingerprint": "safari"
         }
       }
     },
@@ -982,7 +958,7 @@
       "settings": {
         "servers": [
           {
-            "address": "45.80.111.7",
+            "address": "45.131.4.38",
             "port": 443,
             "password": "humanity"
           }
@@ -997,12 +973,17 @@
         },
         "wsSettings": {
           "path": "/assignment",
-          "headers": {}
+          "headers": {
+            "Host": "www.pleadcourt.org"
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "www.calmlunch.com",
-          "fingerprint": "firefox"
+          "serverName": "www.pleadcourt.org",
+          "fingerprint": "android",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -1012,7 +993,7 @@
       "settings": {
         "servers": [
           {
-            "address": "45.80.111.7",
+            "address": "45.131.4.38",
             "port": 443,
             "password": "humanity"
           }
@@ -1027,12 +1008,17 @@
         },
         "wsSettings": {
           "path": "/assignment",
-          "headers": {}
+          "headers": {
+            "Host": "www.pleadcourt.org"
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "www.calmlunch.com",
-          "fingerprint": "ios"
+          "serverName": "www.pleadcourt.org",
+          "fingerprint": "chrome",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -1042,7 +1028,7 @@
       "settings": {
         "servers": [
           {
-            "address": "45.80.111.7",
+            "address": "45.131.4.38",
             "port": 443,
             "password": "humanity"
           }
@@ -1057,12 +1043,17 @@
         },
         "wsSettings": {
           "path": "/assignment",
-          "headers": {}
+          "headers": {
+            "Host": "www.pleadcourt.org"
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "www.calmlunch.com",
-          "fingerprint": "qq"
+          "serverName": "www.pleadcourt.org",
+          "fingerprint": "edge",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -1094,7 +1085,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.pleadcourt.org",
-          "fingerprint": "android",
+          "fingerprint": "firefox",
           "alpn": [
             "http/1.1"
           ]
@@ -1129,7 +1120,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.pleadcourt.org",
-          "fingerprint": "chrome",
+          "fingerprint": "ios",
           "alpn": [
             "http/1.1"
           ]
@@ -1164,7 +1155,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.pleadcourt.org",
-          "fingerprint": "edge",
+          "fingerprint": "qq",
           "alpn": [
             "http/1.1"
           ]
@@ -1199,7 +1190,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.pleadcourt.org",
-          "fingerprint": "firefox",
+          "fingerprint": "safari",
           "alpn": [
             "http/1.1"
           ]
@@ -1234,111 +1225,6 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "www.pleadcourt.org",
-          "fingerprint": "ios",
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-035",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "45.131.4.38",
-            "port": 443,
-            "password": "humanity"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/assignment",
-          "headers": {
-            "Host": "www.pleadcourt.org"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.pleadcourt.org",
-          "fingerprint": "qq",
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-036",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "45.131.4.38",
-            "port": 443,
-            "password": "humanity"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/assignment",
-          "headers": {
-            "Host": "www.pleadcourt.org"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.pleadcourt.org",
-          "fingerprint": "safari",
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-037",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "45.131.4.38",
-            "port": 443,
-            "password": "humanity"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/assignment",
-          "headers": {
-            "Host": "www.pleadcourt.org"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.pleadcourt.org",
           "fingerprint": "unsafe",
           "alpn": [
             "http/1.1"
@@ -1347,7 +1233,7 @@
       }
     },
     {
-      "tag": "igareck-node-038",
+      "tag": "igareck-node-035",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1382,7 +1268,7 @@
       }
     },
     {
-      "tag": "igareck-node-039",
+      "tag": "igareck-node-036",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1417,7 +1303,7 @@
       }
     },
     {
-      "tag": "igareck-node-040",
+      "tag": "igareck-node-037",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1452,7 +1338,7 @@
       }
     },
     {
-      "tag": "igareck-node-041",
+      "tag": "igareck-node-038",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1487,7 +1373,7 @@
       }
     },
     {
-      "tag": "igareck-node-042",
+      "tag": "igareck-node-039",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1522,7 +1408,7 @@
       }
     },
     {
-      "tag": "igareck-node-043",
+      "tag": "igareck-node-040",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1557,7 +1443,7 @@
       }
     },
     {
-      "tag": "igareck-node-044",
+      "tag": "igareck-node-041",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1592,7 +1478,7 @@
       }
     },
     {
-      "tag": "igareck-node-045",
+      "tag": "igareck-node-042",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1627,7 +1513,7 @@
       }
     },
     {
-      "tag": "igareck-node-046",
+      "tag": "igareck-node-043",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1659,7 +1545,7 @@
       }
     },
     {
-      "tag": "igareck-node-047",
+      "tag": "igareck-node-044",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1691,7 +1577,7 @@
       }
     },
     {
-      "tag": "igareck-node-048",
+      "tag": "igareck-node-045",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1723,7 +1609,7 @@
       }
     },
     {
-      "tag": "igareck-node-049",
+      "tag": "igareck-node-046",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1755,7 +1641,7 @@
       }
     },
     {
-      "tag": "igareck-node-050",
+      "tag": "igareck-node-047",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1787,7 +1673,7 @@
       }
     },
     {
-      "tag": "igareck-node-051",
+      "tag": "igareck-node-048",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -1819,7 +1705,7 @@
       }
     },
     {
-      "tag": "igareck-node-052",
+      "tag": "igareck-node-049",
       "protocol": "trojan",
       "settings": {
         "servers": [
