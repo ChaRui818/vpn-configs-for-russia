@@ -3,7 +3,7 @@
 # Источник/Source: WHITE-CIDR-RU-checked.txt
 # 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
 # Количество/Quantity: 13
-# Date/Time: 2026-10-27 / 02:15 (Moscow)
+# Date/Time: 2026-10-27 / 04:23 (Moscow)
 #
 # Режим / Mode:
 # - Автоматический Выбор лучшего прокси / Igareck Auto Select;
@@ -159,7 +159,10 @@ proxies:
   udp: true
   tls: true
   servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
-  client-fingerprint: firefox
+  alpn:
+  - http/1.1
+  - h2
+  client-fingerprint: qq
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
@@ -173,26 +176,18 @@ proxies:
   udp: true
   tls: true
   servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
-  alpn:
-  - http/1.1
-  - h2
-  client-fingerprint: qq
+  client-fingerprint: firefox
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
-    host: flatcrest.net
-    mode: auto
 - name: Igareck Node 003 | 🇧🇬 Bulgaria | 🌐 [*CIDR] CDN
   type: vless
-  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
+  server: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
   port: 8443
   uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
   udp: true
   tls: true
   servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
-  alpn:
-  - http/1.1
-  - h2
   client-fingerprint: firefox
   network: xhttp
   xhttp-opts:
@@ -201,17 +196,39 @@ proxies:
     mode: auto
 - name: Igareck Node 004 | 🇧🇬 Bulgaria | 🌐 [*CIDR] CDN
   type: vless
+  server: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  port: 8443
+  uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
+  udp: true
+  tls: true
+  servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  alpn:
+  - http/1.1
+  - h2
+  client-fingerprint: safari
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: flatcrest.net
+    mode: auto
+- name: Igareck Node 005 | 🇧🇬 Bulgaria [*CIDR] CDN
+  type: vless
   server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
   port: 8443
   uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
   udp: true
   tls: true
   servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  alpn:
+  - http/1.1
+  - h2
   client-fingerprint: firefox
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
-- name: Igareck Node 005 | 🇧🇬 Bulgaria | 🌐 [*CIDR] CDN
+    host: flatcrest.net
+    mode: auto
+- name: Igareck Node 006 | 🇧🇬 Bulgaria [*CIDR] CDN
   type: vless
   server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
   port: 8443
@@ -225,7 +242,7 @@ proxies:
     path: /api/v1/upload
     host: flatcrest.net
     mode: auto
-- name: Igareck Node 006 | 🇧🇬 Bulgaria | 🌐 [*CIDR] CDN
+- name: Igareck Node 007 | 🇧🇬 Bulgaria [*CIDR] CDN
   type: vless
   server: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
   port: 8443
@@ -233,21 +250,10 @@ proxies:
   udp: true
   tls: true
   servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  alpn:
+  - http/1.1
+  - h2
   client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/upload
-    host: flatcrest.net
-    mode: auto
-- name: Igareck Node 007 | 🇧🇬 Bulgaria | 🌐 [*CIDR] CDN
-  type: vless
-  server: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
-  port: 8443
-  uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
-  udp: true
-  tls: true
-  servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
-  client-fingerprint: edge
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
@@ -261,10 +267,7 @@ proxies:
   udp: true
   tls: true
   servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
-  alpn:
-  - http/1.1
-  - h2
-  client-fingerprint: safari
+  client-fingerprint: edge
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
